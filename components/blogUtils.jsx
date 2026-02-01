@@ -1,6 +1,6 @@
 import { db } from '@/lib/firebase'
 import { collection, getDocs, query, orderBy } from 'firebase/firestore'
-import DentalIcon from './icons/DentalIcon'
+import ServiceImage from './ServiceImage'
 import ImplantsIcon from './icons/ImplantsIcon'
 import ExperienceIcon from './icons/ExperienceIcon'
 
@@ -23,7 +23,7 @@ export const getSamplePosts = () => [
     id: '1',
     title: '5 Tips for Maintaining Healthy Teeth',
     excerpt: 'Learn simple daily habits that can keep your teeth healthy and your smile bright.',
-    featuredImage: <DentalIcon />,
+    featuredImage: <ServiceImage />,
     createdAt: new Date(),
   },
   {
