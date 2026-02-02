@@ -6,10 +6,11 @@ import VirtualTour from '@/components/VirtualTour'
 import PatientStories from '@/components/PatientStories'
 import WhyChooseUs from '@/components/WhyChooseUs'
 import DoctorHighlight from '@/components/DoctorHighlight'
-import Testimonials from '@/components/Testimonials'
+import TestimonialsSlider from '@/components/TestimonialsSlider'
 import EmergencyCare from '@/components/EmergencyCare'
 import InsuranceFinancing from '@/components/InsuranceFinancing'
 import CTABanner from '@/components/CTABanner'
+import StickyWhatsApp from '@/components/StickyWhatsApp'
 
 export default function Home() {
   return (
@@ -22,10 +23,11 @@ export default function Home() {
       <PatientStories />
       <WhyChooseUs />
       <DoctorHighlight />
-      <Testimonials />
+      <TestimonialsSlider />
       <EmergencyCare />
       <InsuranceFinancing />
       <CTABanner />
+      <StickyWhatsApp />
     </div>
   )
 }

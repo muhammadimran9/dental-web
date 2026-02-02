@@ -2,6 +2,7 @@ import LicensedIcon from './icons/LicensedIcon'
 import ExperienceIcon from './icons/ExperienceIcon'
 import PatientsIcon from './icons/PatientsIcon'
 import EmergencyIcon from './icons/EmergencyIcon'
+import ReviewCarousel from './ReviewCarousel'
 
 const highlights = [
   { icon: <LicensedIcon />, title: 'Licensed Dentists', description: 'Fully certified professionals' },
@@ -14,10 +15,14 @@ export default function TrustHighlights() {
   return (
     <section className="section-padding bg-gray-50">
       <div className="container-custom">
-        <div className="grid grid-cols-2 md:grid-cols-4 gap-8">
+        <div className="grid grid-cols-2 md:grid-cols-4 gap-8 mb-12">
           {highlights.map((item, index) => (
             <TrustHighlight key={index} {...item} />
           ))}
+        </div>
+        <div className="text-center">
+          <h3 className="text-2xl font-bold text-gray-800 mb-6">What Our Patients Say</h3>
+          <ReviewCarousel />
         </div>
       </div>
     </section>

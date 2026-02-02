@@ -11,12 +11,12 @@ export const previewServices = [
   { title: 'Cosmetic Dentistry', description: 'Transform your smile with our cosmetic treatments', icon: <CosmeticIcon />, href: '/services/cosmetic-dentistry' },
   { title: 'Dental Implants', description: 'Permanent solution for missing teeth', icon: <ImplantsIcon />, href: '/services/dental-implants' },
   { title: 'Teeth Whitening', description: 'Brighten your smile in just one visit', icon: <WhiteningIcon />, href: '/services/teeth-whitening' },
-  { title: 'Root Canal', description: 'Pain-free root canal treatments', icon: <RootCanalIcon />, href: '/services/root-canal' },
-  { title: 'Pediatric Dentistry', description: 'Gentle care for your children', icon: <PediatricIcon />, href: '/services/pediatric-dentistry' },
 ]
 
 export const allServices = [
   ...previewServices,
+  { title: 'Root Canal', description: 'Pain-free root canal treatments', icon: <RootCanalIcon />, href: '/services/root-canal' },
+  { title: 'Pediatric Dentistry', description: 'Gentle care for your children', icon: <PediatricIcon />, href: '/services/pediatric-dentistry' },
   { title: 'Orthodontics', description: 'Traditional braces and clear aligners for straight teeth', icon: <OrthodonticsIcon />, href: '/services/orthodontics' },
   { title: 'Periodontics', description: 'Treatment for gum disease and gum health maintenance', icon: <ServiceImage />, href: '/services/periodontics' },
 ]
