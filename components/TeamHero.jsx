@@ -37,7 +37,7 @@ export default function TeamHero() {
           <div className="relative">
             <div className="aspect-square rounded-2xl overflow-hidden ring-4 ring-accent/20">
               <Image 
-                src="https://images.unsplash.com/photo-1576091160399-112ba8d25d1d?ixlib=rb-4.0.3&auto=format&fit=crop&w=1000&q=80"
+                src="https://images.unsplash.com/photo-1576091160550-2173dba999ef?ixlib=rb-4.0.3&auto=format&fit=crop&w=1000&q=80"
                 alt="Dubai Dental Team" 
                 fill
                 className="object-cover"
