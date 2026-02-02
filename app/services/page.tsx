@@ -1,3 +1,4 @@
+"use client";
 import { useState } from 'react'
 import ServicesHero from '@/components/ServicesHero'
 import ServiceTabs from '@/components/ServiceTabs'

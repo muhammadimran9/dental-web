@@ -1,3 +1,4 @@
+"use client";
 import { useState } from 'react'
 import BlogCard from '@/components/BlogCard'
 import BlogSidebar from '@/components/BlogSidebar'

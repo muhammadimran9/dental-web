@@ -30,7 +30,7 @@ export default function EmergencyCare() {
               <EmergencyItem 
                 icon="🩸"
                 title="Bleeding Gums"
-                description "Uncontrolled bleeding from gums"
+                description="Uncontrolled bleeding from gums"
               />
               <EmergencyItem 
                 icon="😷"
