@@ -1,4 +1,5 @@
 import TeamHero from '@/components/TeamHero'
+import ContactHeader from '@/components/ContactHeader'
 import DoctorProfileCard from '@/components/DoctorProfileCard'
 import TeamValues from '@/components/TeamValues'
 import { doctors } from '@/components/doctorsConfig'
@@ -6,6 +7,7 @@ import { doctors } from '@/components/doctorsConfig'
 export default function Team() {
   return (
     <div>
+      <ContactHeader />
       <TeamHero />
       <section id="team-grid" className="section-padding">
         <div className="container-custom">

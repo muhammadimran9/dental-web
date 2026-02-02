@@ -1,16 +1,18 @@
 import AppointmentHero from '@/components/AppointmentHero'
-import QuickAppointmentForm from '@/components/QuickAppointmentForm'
+import ContactHeader from '@/components/ContactHeader'
+import StepBasedAppointmentForm from '@/components/StepBasedAppointmentForm'
 import ProcessSteps from '@/components/ProcessSteps'
 import TestimonialsSlider from '@/components/TestimonialsSlider'
 
 export default function Appointment() {
   return (
     <div>
+      <ContactHeader />
       <AppointmentHero />
       
       <section className="section-padding">
         <div className="container-custom max-w-4xl">
-          <QuickAppointmentForm />
+          <StepBasedAppointmentForm />
         </div>
       </section>
       

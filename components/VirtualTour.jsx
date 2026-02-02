@@ -1,4 +1,10 @@
 import Card from './Card'
+import BuildingIcon from './icons/BuildingIcon'
+import ToothIcon from './icons/ToothIcon'
+import DentalIcon from './icons/DentalIcon'
+import CameraIcon from './icons/CameraIcon'
+import PhoneIcon from './icons/PhoneIcon'
+import CoffeeIcon from './icons/CoffeeIcon'
 
 export default function VirtualTour() {
   return (
@@ -17,32 +23,32 @@ export default function VirtualTour() {
           <TourCard 
             title="Modern Reception"
             description="Welcome to our comfortable and welcoming reception area"
-            image="🏢"
+            image={<BuildingIcon />}
           />
           <TourCard 
             title="Advanced Treatment Rooms"
             description="State-of-the-art equipment for the best dental care"
-            image="🦷"
+            image={<ToothIcon />}
           />
           <TourCard 
             title="Sterilization Center"
             description="Highest standards of cleanliness and safety"
-            image="🔬"
+            image={<DentalIcon />}
           />
           <TourCard 
             title="Digital X-Ray Room"
             description="Latest digital imaging technology"
-            image="📷"
+            image={<CameraIcon />}
           />
           <TourCard 
             title="Consultation Area"
             description="Private spaces for treatment planning"
-            image="💬"
+            image={<PhoneIcon />}
           />
           <TourCard 
             title="Relaxation Zone"
             description="Comfortable waiting area with amenities"
-            image="☕"
+            image={<CoffeeIcon />}
           />
         </div>
       </div>
@@ -53,7 +59,7 @@ export default function VirtualTour() {
 function TourCard({ title, description, image }) {
   return (
     <Card hover className="group">
-      <div className="aspect-video bg-gradient-to-br from-primary/10 to-primary/20 rounded-lg flex items-center justify-center mb-4 text-6xl group-hover:scale-105 transition-transform duration-300">
+      <div className="aspect-video bg-gradient-to-br from-primary/10 to-primary/20 rounded-lg flex items-center justify-center mb-4 text-6xl text-accent group-hover:scale-105 transition-transform duration-300">
         {image}
       </div>
       <h3 className="text-xl font-semibold text-gray-800 mb-2">{title}</h3>

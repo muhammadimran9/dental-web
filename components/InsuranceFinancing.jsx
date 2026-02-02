@@ -1,4 +1,6 @@
 import Card from './Card'
+import ShieldIcon from './icons/ShieldIcon'
+import CardIcon from './icons/CardIcon'
 
 export default function InsuranceFinancing() {
   return (
@@ -16,7 +18,7 @@ export default function InsuranceFinancing() {
         <div className="grid md:grid-cols-2 gap-8 mb-12">
           <Card>
             <div className="text-center">
-              <div className="text-6xl mb-4">🛡️</div>
+              <ShieldIcon className="text-6xl mb-4 text-accent" />
               <h3 className="text-2xl font-bold text-gray-800 mb-4">Insurance Accepted</h3>
               <p className="text-gray-600 mb-6">
                 We work with most major insurance providers to maximize your benefits
@@ -33,7 +35,7 @@ export default function InsuranceFinancing() {
           
           <Card>
             <div className="text-center">
-              <div className="text-6xl mb-4">💳</div>
+              <CardIcon className="text-6xl mb-4 text-accent" />
               <h3 className="text-2xl font-bold text-gray-800 mb-4">Financing Options</h3>
               <p className="text-gray-600 mb-6">
                 Flexible payment plans to fit your budget

@@ -6,6 +6,7 @@ import { signInWithEmailAndPassword } from 'firebase/auth'
 import { auth } from '@/lib/firebase'
 import Button from '@/components/Button'
 import Card from '@/components/Card'
+import ToothIcon from '@/components/icons/ToothIcon'
 
 export default function AdminLogin() {
   const router = useRouter()
@@ -38,7 +39,7 @@ export default function AdminLogin() {
         <Card>
           <div className="text-center mb-8">
             <div className="w-16 h-16 bg-primary rounded-lg flex items-center justify-center mx-auto mb-4">
-              <span className="text-3xl">🦷</span>
+              <ToothIcon className="text-white text-3xl" />
             </div>
             <h1 className="text-3xl font-bold text-secondary">Admin Login</h1>
             <p className="text-gray-600 mt-2">Access the admin dashboard</p>

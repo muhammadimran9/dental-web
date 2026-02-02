@@ -1,4 +1,8 @@
 import Card from './Card'
+import CameraIcon from './icons/CameraIcon'
+import DentalIcon from './icons/DentalIcon'
+import ComputerIcon from './icons/ComputerIcon'
+import LightningIcon from './icons/LightningIcon'
 
 export default function TechnologyShowcase() {
   return (
@@ -15,25 +19,25 @@ export default function TechnologyShowcase() {
         
         <div className="grid md:grid-cols-2 lg:grid-cols-4 gap-6">
           <TechCard 
-            icon="📷"
+            icon={<CameraIcon />}
             title="Digital X-Rays"
             description="90% less radiation than traditional x-rays with instant results"
             highlight="Instant Results"
           />
           <TechCard 
-            icon="🔬"
+            icon={<DentalIcon />}
             title="Intraoral Scanner"
             description="No more messy impressions - digital scanning for perfect accuracy"
             highlight="Mess-Free"
           />
           <TechCard 
-            icon="💻"
+            icon={<ComputerIcon />}
             title="3D Imaging"
             description="Advanced 3D cone beam imaging for precise treatment planning"
             highlight="Precision Planning"
           />
           <TechCard 
-            icon="⚡"
+            icon={<LightningIcon />}
             title="Laser Dentistry"
             description="Minimally invasive procedures with faster healing times"
             highlight="Pain-Free"
@@ -47,7 +51,7 @@ export default function TechnologyShowcase() {
 function TechCard({ icon, title, description, highlight }) {
   return (
     <Card hover className="text-center group">
-      <div className="text-5xl mb-4 group-hover:scale-110 transition-transform duration-300">
+      <div className="text-5xl mb-4 text-accent group-hover:scale-110 transition-transform duration-300">
         {icon}
       </div>
       <h3 className="text-xl font-semibold text-gray-800 mb-2">{title}</h3>

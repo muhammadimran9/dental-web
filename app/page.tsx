@@ -1,4 +1,5 @@
 import Hero from '@/components/Hero'
+import ContactHeader from '@/components/ContactHeader'
 import TrustHighlights from '@/components/TrustHighlights'
 import ServicesPreview from '@/components/ServicesPreview'
 import GulfTrustBadges from '@/components/GulfTrustBadges'
@@ -17,6 +18,7 @@ import StickyWhatsApp from '@/components/StickyWhatsApp'
 export default function Home() {
   return (
     <div>
+      <ContactHeader />
       <Hero />
       <GulfTrustBadges />
       <TrustHighlights />

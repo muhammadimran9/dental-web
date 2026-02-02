@@ -1,15 +1,15 @@
 import ContactForm from '@/components/ContactForm'
 import ContactMap from '@/components/ContactMap'
 import ContactDetails from '@/components/ContactDetails'
-import EmergencyBanner from '@/components/EmergencyBanner'
+import ContactHeader from '@/components/ContactHeader'
 
 export const dynamic = 'force-dynamic'
 
 export default function Contact() {
   return (
     <div>
-      {/* Emergency Banner */}
-      <EmergencyBanner />
+      {/* Contact Header */}
+      <ContactHeader />
       
       {/* Contact Hero */}
       <section className="section-padding bg-gradient-to-br from-primary to-primary-dark text-white">

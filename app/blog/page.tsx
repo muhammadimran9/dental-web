@@ -1,5 +1,6 @@
 "use client";
 import { useState } from 'react'
+import ContactHeader from '@/components/ContactHeader'
 import BlogCard from '@/components/BlogCard'
 import BlogSidebar from '@/components/BlogSidebar'
 import { featuredPost, blogPosts, categories } from '@/components/blogConfig'
@@ -13,6 +14,7 @@ export default function Blog() {
 
   return (
     <div>
+      <ContactHeader />
       {/* Featured Post Hero */}
       <section className="section-padding bg-gradient-to-br from-primary to-primary-dark text-white">
         <div className="container-custom">

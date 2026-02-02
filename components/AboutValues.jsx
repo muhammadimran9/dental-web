@@ -1,11 +1,15 @@
 import Card from './Card'
+import StarIcon from './icons/StarIcon'
+import HeartIcon from './icons/HeartIcon'
+import LightbulbIcon from './icons/LightbulbIcon'
+import HandshakeIcon from './icons/HandshakeIcon'
 
 export default function AboutValues() {
   const values = [
-    { title: 'Excellence', description: 'We strive for excellence in every procedure and interaction.', icon: '⭐' },
-    { title: 'Compassion', description: 'We treat every patient with care, respect, and understanding.', icon: '❤️' },
-    { title: 'Innovation', description: 'We use the latest technology and techniques for better outcomes.', icon: '💡' },
-    { title: 'Integrity', description: 'We maintain the highest ethical standards in all we do.', icon: '🤝' },
+    { title: 'Excellence', description: 'We strive for excellence in every procedure and interaction.', icon: <StarIcon /> },
+    { title: 'Compassion', description: 'We treat every patient with care, respect, and understanding.', icon: <HeartIcon /> },
+    { title: 'Innovation', description: 'We use the latest technology and techniques for better outcomes.', icon: <LightbulbIcon /> },
+    { title: 'Integrity', description: 'We maintain the highest ethical standards in all we do.', icon: <HandshakeIcon /> },
   ]
 
   return (
@@ -39,7 +43,7 @@ function MissionHeader() {
 function ValueCard({ title, description, icon }) {
   return (
     <Card hover>
-      <div className="text-5xl mb-4">{icon}</div>
+      <div className="text-5xl mb-4 text-accent">{icon}</div>
       <h3 className="text-xl font-semibold text-gray-800 mb-2">{title}</h3>
       <p className="text-gray-600">{description}</p>
     </Card>

@@ -1,17 +1,21 @@
+import GraduationIcon from './icons/GraduationIcon'
+import BriefcaseIcon from './icons/BriefcaseIcon'
+import HeartIcon from './icons/HeartIcon'
+
 export default function DoctorsWhyChoose() {
   const reasons = [
     {
-      icon: '🎓',
+      icon: <GraduationIcon />,
       title: 'Highly Educated',
       description: 'All our dentists hold advanced degrees and continue their education regularly.',
     },
     {
-      icon: '💼',
+      icon: <BriefcaseIcon />,
       title: 'Experienced',
       description: 'Combined decades of experience treating thousands of patients.',
     },
     {
-      icon: '❤️',
+      icon: <HeartIcon />,
       title: 'Compassionate',
       description: 'We treat every patient with care, respect, and understanding.',
     },
@@ -36,7 +40,7 @@ export default function DoctorsWhyChoose() {
 function ReasonCard({ icon, title, description }) {
   return (
     <div className="text-center">
-      <div className="text-5xl mb-4">{icon}</div>
+      <div className="text-5xl mb-4 text-accent">{icon}</div>
       <h3 className="text-xl font-semibold text-gray-800 mb-2">{title}</h3>
       <p className="text-gray-600">{description}</p>
     </div>
