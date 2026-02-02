@@ -259,7 +259,7 @@ export default function ServicePage({ params }: ServicePageProps) {
               <ul className="space-y-2">
                 {service.benefits.map((benefit: string, index: number) => (
                   <li key={index} className="flex items-start gap-2">
-                    <span className="text-primary">✓</span>
+                    <span className="text-primary">•</span>
                     <span className="text-gray-700">{benefit}</span>
                   </li>
                 ))}

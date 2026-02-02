@@ -1,8 +1,8 @@
 "use client";
 import { useState } from 'react'
 import ContactHeader from '@/components/ContactHeader'
-import BlogCard from '@/components/BlogCard'
-import BlogSidebar from '@/components/BlogSidebar'
+import BlogCard from '@/components/blog/BlogCard'
+import BlogSidebar from '@/components/blog/BlogSidebar'
 import { featuredPost, blogPosts, categories } from '@/components/blogConfig'
 
 export default function Blog() {

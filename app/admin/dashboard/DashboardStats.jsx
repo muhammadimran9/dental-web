@@ -28,7 +28,7 @@ export default function DashboardStats({ stats }) {
         <p className="text-gray-600">Blog Posts</p>
       </Card>
       <Card>
-        <div className="text-4xl mb-2 text-primary">⚡</div>
+        <div className="text-4xl mb-2 text-primary">●</div>
         <h3 className="text-2xl font-bold text-gray-800 mb-1">Active</h3>
         <p className="text-gray-600">System Status</p>
       </Card>

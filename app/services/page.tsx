@@ -1,11 +1,11 @@
 "use client";
 import { useState } from 'react'
 import ContactHeader from '@/components/ContactHeader'
-import ServicesHero from '@/components/ServicesHero'
-import ServiceTabs from '@/components/ServiceTabs'
-import EnhancedServiceCard from '@/components/EnhancedServiceCard'
-import StickyBooking from '@/components/StickyBooking'
-import ServicesFAQ from '@/components/ServicesFAQ'
+import ServicesHero from '@/components/services/ServicesHero'
+import ServiceTabs from '@/components/services/ServiceTabs'
+import EnhancedServiceCard from '@/components/services/EnhancedServiceCard'
+import StickyBooking from '@/components/services/StickyBooking'
+import ServicesFAQ from '@/components/services/ServicesFAQ'
 import { allServices } from '@/components/servicesConfig'
 
 export const dynamic = 'force-dynamic'

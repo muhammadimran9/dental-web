@@ -1,6 +1,6 @@
-import ContactForm from '@/components/ContactForm'
-import ContactMap from '@/components/ContactMap'
-import ContactDetails from '@/components/ContactDetails'
+import ContactForm from '@/components/contact/ContactForm'
+import ContactMap from '@/components/contact/ContactMap'
+import ContactDetails from '@/components/contact/ContactDetails'
 import ContactHeader from '@/components/ContactHeader'
 
 export const dynamic = 'force-dynamic'

@@ -99,7 +99,7 @@ export default function AdminBlog() {
         {posts.length === 0 ? (
           <Card>
             <div className="text-center py-12">
-              <div className="text-6xl mb-4">📝</div>
+              <h3 className="text-4xl font-bold text-gray-300 mb-4">No Posts</h3>
               <p className="text-gray-600 text-lg mb-4">No blog posts yet.</p>
               <Link href="/admin/blog/new">
                 <Button variant="primary">Create Your First Post</Button>

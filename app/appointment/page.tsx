@@ -1,8 +1,8 @@
-import AppointmentHero from '@/components/AppointmentHero'
+import AppointmentHero from '@/components/appointment/AppointmentHero'
 import ContactHeader from '@/components/ContactHeader'
-import StepBasedAppointmentForm from '@/components/StepBasedAppointmentForm'
-import ProcessSteps from '@/components/ProcessSteps'
-import TestimonialsSlider from '@/components/TestimonialsSlider'
+import StepBasedAppointmentForm from '@/components/appointment/StepBasedAppointmentForm'
+import ProcessSteps from '@/components/appointment/ProcessSteps'
+import TestimonialsSlider from '@/components/home/TestimonialsSlider'
 
 export default function Appointment() {
   return (
