@@ -1,16 +1,17 @@
 import './globals.css'
 import Header from '@/components/Header'
 import Footer from '@/components/Footer'
+import GulfStickyButtons from '@/components/GulfStickyButtons'
 
 export const metadata = {
-  title: 'DentalCare - Premium Dental Services',
-  description: 'Exceptional dental care with modern technology and compassionate service',
+  title: 'DentalCare - Premium Dental Services Dubai',
+  description: 'World-class dental care in Dubai. Internationally trained dentists, state-of-the-art technology. DHA licensed clinic serving UAE residents.',
   manifest: '/manifest.json',
-  themeColor: '#2563eb',
+  themeColor: '#1E40AF',
   appleWebApp: {
     capable: true,
     statusBarStyle: 'default',
-    title: 'DentalCare',
+    title: 'DentalCare Dubai',
   },
   icons: {
     icon: [
@@ -31,9 +32,9 @@ export default function RootLayout({ children }: { children: React.ReactNode }) 
         <meta name="mobile-web-app-capable" content="yes" />
         <meta name="apple-mobile-web-app-capable" content="yes" />
         <meta name="apple-mobile-web-app-status-bar-style" content="default" />
-        <meta name="apple-mobile-web-app-title" content="DentalCare" />
-        <meta name="application-name" content="DentalCare" />
-        <meta name="msapplication-TileColor" content="#2563eb" />
+        <meta name="apple-mobile-web-app-title" content="DentalCare Dubai" />
+        <meta name="application-name" content="DentalCare Dubai" />
+        <meta name="msapplication-TileColor" content="#1E40AF" />
         <meta name="msapplication-config" content="/browserconfig.xml" />
         <link rel="apple-touch-icon" href="/icons/icon-152x152.png" />
         <link rel="icon" type="image/png" sizes="32x32" href="/icons/icon-32x32.png" />
@@ -44,6 +45,7 @@ export default function RootLayout({ children }: { children: React.ReactNode }) 
         <Header />
         <main>{children}</main>
         <Footer />
+        <GulfStickyButtons />
         <script
           dangerouslySetInnerHTML={{
             __html: `

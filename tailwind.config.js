@@ -9,9 +9,14 @@ module.exports = {
     extend: {
       colors: {
         primary: {
-          DEFAULT: '#3B82F6', // Soft Medical Blue
-          dark: '#2563EB', // Darker Medical Blue
-          light: '#60A5FA', // Lighter Medical Blue
+          DEFAULT: '#1E40AF', // Premium Medical Blue (Gulf Standard)
+          dark: '#1E3A8A', // Deep Medical Blue
+          light: '#3B82F6', // Light Medical Blue
+        },
+        accent: {
+          DEFAULT: '#D97706', // Premium Mustard/Gold (Gulf Luxury)
+          dark: '#B45309', // Darker Gold
+          light: '#F59E0B', // Lighter Gold
         },
         secondary: {
           DEFAULT: '#F3F4F6', // Light Gray/Mint accent

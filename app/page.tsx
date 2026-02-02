@@ -1,6 +1,8 @@
 import Hero from '@/components/Hero'
 import TrustHighlights from '@/components/TrustHighlights'
 import ServicesPreview from '@/components/ServicesPreview'
+import GulfTrustBadges from '@/components/GulfTrustBadges'
+import GulfTestimonials from '@/components/GulfTestimonials'
 import TechnologyShowcase from '@/components/TechnologyShowcase'
 import VirtualTour from '@/components/VirtualTour'
 import PatientStories from '@/components/PatientStories'
@@ -16,8 +18,10 @@ export default function Home() {
   return (
     <div>
       <Hero />
+      <GulfTrustBadges />
       <TrustHighlights />
       <ServicesPreview />
+      <GulfTestimonials />
       <TechnologyShowcase />
       <VirtualTour />
       <PatientStories />
