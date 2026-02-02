@@ -1,3 +1,5 @@
+'use client'
+
 import { useState } from 'react'
 import GeneralIcon from './icons/GeneralIcon'
 import CosmeticIcon from './icons/CosmeticIcon'

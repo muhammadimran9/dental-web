@@ -1,3 +1,5 @@
+'use client'
+
 import { useState } from 'react'
 import StarIcon from './icons/StarIcon'
 import ChevronLeftIcon from './icons/ChevronLeftIcon'

@@ -1,3 +1,5 @@
+'use client'
+
 import { useState } from 'react'
 import ChevronDownIcon from './icons/ChevronDownIcon'
 import ChevronUpIcon from './icons/ChevronUpIcon'
