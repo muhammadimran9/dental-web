@@ -2,7 +2,7 @@ export default function BleedingIcon({ className = "w-6 h-6" }) {
   return (
     <svg className={className} viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
       <path d="M12 2C11.0111 2 10.1333 2.38813 9.5 3.02148C8.86667 3.65483 8.47854 4.53263 8.47854 5.52148C8.47854 6.51034 8.86667 7.38813 9.5 8.02148C10.1333 8.65483 11.0111 9.04297 12 9.04297C12.9889 9.04297 13.8667 8.65483 14.5 8.02148C15.1333 7.38813 15.5215 6.51034 15.5215 5.52148C15.5215 4.53263 15.1333 3.65483 14.5 3.02148C13.8667 2.38813 12.9889 2 12 2Z" 
-            fill="#D4A017" stroke="#1E3A8A" strokeWidth="1"/>
+            fill="#3B82F6" stroke="#1E3A8A" strokeWidth="1"/>
       <path d="M12 10C12 10 10 12 10 14C10 16 12 18 12 18C12 18 14 16 14 14C14 12 12 10 12 10Z" 
             fill="#DC2626" stroke="#DC2626" strokeWidth="1"/>
     </svg>

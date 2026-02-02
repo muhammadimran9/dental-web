@@ -2,7 +2,7 @@ export default function PainFreeIcon({ className = "w-6 h-6" }) {
   return (
     <svg className={className} viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
       <path d="M12 2C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2zm-2 15l-5-5 1.41-1.41L10 14.17l7.59-7.59L19 8l-9 9z" 
-            fill="#D4A017"/>
+            fill="#3B82F6"/>
       <circle cx="8" cy="8" r="1.5" fill="#1E3A8A"/>
       <circle cx="16" cy="8" r="1.5" fill="#1E3A8A"/>
       <path d="M12 14c-1.48 0-2.75-.81-3.45-2h6.9c-.7 1.19-1.97 2-3.45 2z" fill="#1E3A8A"/>

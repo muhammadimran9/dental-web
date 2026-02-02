@@ -14,9 +14,9 @@ module.exports = {
           light: '#3B82F6', // Light Medical Blue
         },
         accent: {
-          DEFAULT: '#D97706', // Premium Mustard/Gold (Gulf Luxury)
-          dark: '#B45309', // Darker Gold
-          light: '#F59E0B', // Lighter Gold
+          DEFAULT: '#3B82F6', // Professional Medical Blue Accent
+          dark: '#2563EB', // Darker Blue Accent
+          light: '#60A5FA', // Lighter Blue Accent
         },
         secondary: {
           DEFAULT: '#F3F4F6', // Light Gray/Mint accent

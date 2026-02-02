@@ -6,7 +6,7 @@ export default function GraduationIcon({ className = "w-6 h-6" }) {
       <path d="M6 15V19C6 19.5304 6.21071 20.0391 6.58579 20.4142C6.96086 20.7893 7.46957 21 8 21H16C16.5304 21 17.0391 20.7893 17.4142 20.4142C17.7893 20.0391 18 19.5304 18 19V15" 
             stroke="#1E3A8A" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round"/>
       <path d="M2 10L12 14L22 10" 
-            stroke="#D4A017" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round"/>
+            stroke="#3B82F6" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round"/>
       <path d="M12 14V4" 
             stroke="#1E3A8A" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round"/>
     </svg>

@@ -4,7 +4,7 @@ export default function ShieldIcon({ className = "w-6 h-6" }) {
       <path d="M12 22S8 18 8 12V5L12 3L16 5V12C16 18 12 22 12 22Z" 
             stroke="#1E3A8A" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round"/>
       <path d="M9 12L11 14L15 10" 
-            stroke="#D4A017" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round"/>
+            stroke="#3B82F6" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round"/>
     </svg>
   )
 }

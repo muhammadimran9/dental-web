@@ -4,7 +4,7 @@ export default function CategoryIcon({ className = "w-6 h-6" }) {
       <circle cx="12" cy="12" r="10" 
               stroke="#1E3A8A" strokeWidth="2"/>
       <path d="M12 8V12L15 15" 
-            stroke="#D4A017" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round"/>
+            stroke="#3B82F6" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round"/>
     </svg>
   )
 }
