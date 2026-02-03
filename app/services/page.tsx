@@ -26,11 +26,11 @@ export default function Services() {
       <section className="section-padding">
         <div className="container-custom">
           <div className="text-center mb-12">
-            <h2 className="text-3xl md:text-4xl font-bold text-gray-800 mb-4">
-              Our Comprehensive Services
-            </h2>
+            <h1 className="text-3xl md:text-4xl font-bold text-gray-800 mb-4">
+              Our Comprehensive Dental Services
+            </h1>
             <p className="text-xl text-gray-600">
-              Professional dental care tailored to your needs
+              Professional dental care tailored to your needs in Dubai Healthcare City
             </p>
           </div>
           
