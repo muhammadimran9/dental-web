@@ -25,7 +25,7 @@ export default function AboutHero() {
           <div className="relative">
             <div className="aspect-square rounded-2xl overflow-hidden">
               <Image 
-                src="https://images.unsplash.com/photo-1600988227859-6c2857df8de0?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1000&q=80"
+                src="/images/about-hero.jpg"
                 alt="Modern Dental Clinic" 
                 fill
                 className="object-cover"

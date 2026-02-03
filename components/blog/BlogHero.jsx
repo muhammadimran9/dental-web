@@ -1,6 +1,6 @@
 export default function BlogHero() {
   return (
-    <section className="bg-gradient-to-br from-primary to-primary-dark text-white section-padding">
+    <section className="bg-gradient-to-br from-blue-300 to-blue-500 text-white section-padding">
       <div className="container-custom text-center">
         <h1 className="text-4xl md:text-5xl font-bold mb-6">
           Dental Health <span className="text-white font-extrabold">Blog</span>

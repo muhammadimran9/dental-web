@@ -4,7 +4,7 @@ import Link from 'next/link'
 
 export default function TeamHero() {
   return (
-    <section className="relative bg-gradient-to-br from-blue-600 to-blue-800 text-white section-padding">
+    <section className="relative bg-gradient-to-br from-blue-300 to-blue-500 text-white section-padding">
       <div className="container-custom">
         <div className="grid md:grid-cols-2 gap-12 items-center">
           <HeroContent />
@@ -30,7 +30,7 @@ function HeroBadge() {
   return (
     <div className="flex items-center gap-2 mb-4">
       <div className="w-3 h-3 bg-blue-400 rounded-full animate-pulse"></div>
-      <span className="text-blue-300 font-semibold">Dubai's Elite Dental Professionals</span>
+      <span className="text-blue-300 font-semibold">Elite Dental Professionals</span>
     </div>
   )
 }
@@ -47,9 +47,8 @@ function HeroTitle() {
 function HeroDescription() {
   return (
     <p className="text-xl text-gray-100 mb-8 leading-relaxed">
-      Our Dubai-based team brings world-class expertise from Harvard, 
+      Our team brings world-class expertise from Harvard, 
       King's College London, and leading international institutions.
-      All DHA licensed professionals serving the UAE.
     </p>
   )
 }
@@ -76,8 +75,8 @@ function HeroImage() {
     <div className="relative">
       <div className="aspect-square rounded-2xl overflow-hidden ring-4 ring-blue-400/20">
         <Image 
-          src="https://images.unsplash.com/photo-1576091160550-2173dba999ef?ixlib=rb-4.0.3&auto=format&fit=crop&w=1000&q=80"
-          alt="Dubai Dental Team" 
+          src="/images/team-hero.jpg"
+          alt="Dental Team" 
           fill
           className="object-cover"
         />
