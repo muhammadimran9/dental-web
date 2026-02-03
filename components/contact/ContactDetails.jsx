@@ -8,32 +8,32 @@ const contactDetails = [
   {
     icon: <PhoneIcon />,
     title: 'Phone',
-    info: '(123) 456-7890',
-    description: 'Call us for appointments'
+    info: '+971 4 123 4567',
+    description: 'Call us for appointments and inquiries'
   },
   {
     icon: <WhatsAppIcon />,
     title: 'WhatsApp',
-    info: '+1 234 567 890',
-    description: 'Chat with us instantly'
+    info: '+971 50 123 4567',
+    description: 'Chat with us instantly for quick questions'
   },
   {
     icon: <EmailIcon />,
     title: 'Email',
-    info: 'info@dentalcare.com',
-    description: 'Send us a message'
+    info: 'info@dentalcaredubai.com',
+    description: 'Send us detailed inquiries or appointment requests'
   },
   {
     icon: <ClockIcon />,
-    title: 'Hours',
-    info: 'Mon-Fri: 8AM-8PM',
-    description: 'Sat: 9AM-5PM, Emergency: 24/7'
+    title: 'Clinic Hours',
+    info: 'Mon-Fri: 9AM-8PM',
+    description: 'Sat: 9AM-6PM, Emergency: 24/7 Available'
   },
   {
     icon: <PinIcon />,
     title: 'Address',
-    info: '123 Dental Street',
-    description: 'Medical District, NY 10001'
+    info: 'Dubai Healthcare City, Block 3',
+    description: 'Dubai, United Arab Emirates'
   }
 ]
 
