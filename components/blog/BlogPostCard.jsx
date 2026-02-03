@@ -28,7 +28,7 @@ function BlogContent({ title, excerpt }) {
       <p className="text-gray-600 mb-4 line-clamp-3">
         {excerpt || 'Read more about this dental health topic...'}
       </p>
-      <span className="text-primary font-semibold">Read More →</span>
+      <span className="text-primary font-semibold">Read More ›</span>
     </>
   )
 }

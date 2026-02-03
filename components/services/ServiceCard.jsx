@@ -10,7 +10,7 @@ export default function ServiceCard({ title, description, icon, href }) {
         <p className="text-gray-600 mb-4 leading-relaxed">{description}</p>
         <div className="flex items-center text-primary font-semibold group-hover:translate-x-2 transition-transform duration-300">
           Learn More 
-          <span className="ml-2 transform group-hover:translate-x-1 transition-transform duration-300">→</span>
+          <span className="ml-2 text-xs">›</span>
         </div>
       </Card>
     </Link>

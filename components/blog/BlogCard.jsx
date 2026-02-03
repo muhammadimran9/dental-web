@@ -49,7 +49,7 @@ export default function BlogCard({ post, featured = false }) {
           </div>
           <Link href={`/blog/${post.id}`}>
             <span className="text-accent font-medium hover:underline">
-              Read More →
+              Read More ›
             </span>
           </Link>
         </div>

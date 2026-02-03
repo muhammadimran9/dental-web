@@ -15,7 +15,7 @@ export default function QuickActions() {
                 View and manage all appointment requests
               </p>
             </div>
-            <div className="text-4xl">→</div>
+            <div className="text-4xl text-gray-400">›</div>
           </div>
         </Card>
       </Link>
@@ -31,7 +31,7 @@ export default function QuickActions() {
                 View and manage contact form submissions
               </p>
             </div>
-            <div className="text-4xl">→</div>
+            <div className="text-4xl text-gray-400">›</div>
           </div>
         </Card>
       </Link>
@@ -47,7 +47,7 @@ export default function QuickActions() {
                 Create, edit, and delete blog posts
               </p>
             </div>
-            <div className="text-4xl">→</div>
+            <div className="text-4xl text-gray-400">›</div>
           </div>
         </Card>
       </Link>
