@@ -22,8 +22,11 @@ export function usePWAInstall() {
     const isInStandaloneMode = window.matchMedia('(display-mode: standalone)').matches || 
                               window.navigator.standalone === true
 
-    if (isInStandaloneMode) {
-      setShowInstallButton(false)
+    // Always show install button for testing on desktop
+    if (!isInStandaloneMode && !isIOSDevice) {
+      setShowInstallButton(true)
+    } else if (isIOSDevice && !isInStandaloneMode) {
+      setShowInstallButton(true)
     }
 
     return () => {
@@ -32,14 +35,23 @@ export function usePWAInstall() {
   }, [])
 
   const handleInstallClick = async () => {
-    if (!deferredPrompt) return
-
-    deferredPrompt.prompt()
-    const { outcome } = await deferredPrompt.userChoice
-    
-    if (outcome === 'accepted') {
-      setDeferredPrompt(null)
-      setShowInstallButton(false)
+    if (deferredPrompt) {
+      deferredPrompt.prompt()
+      const { outcome } = await deferredPrompt.userChoice
+      
+      if (outcome === 'accepted') {
+        setDeferredPrompt(null)
+        setShowInstallButton(false)
+      }
+    } else {
+      // Show instructions for manual installation
+      const instructions = `
+To install DentalCare:
+1. Click the menu button (⋮) in your browser
+2. Select "Install" or "Add to Home screen"
+3. Follow the prompts to complete installation
+      `
+      alert(instructions)
     }
   }
 

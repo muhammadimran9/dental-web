@@ -5,4 +5,5 @@ export const navLinks = [
   { href: '/doctors', label: 'Our Team' },
   { href: '/blog', label: 'Blog' },
   { href: '/contact', label: 'Contact' },
+  { href: '/appointment', label: 'Appointment' },
 ]

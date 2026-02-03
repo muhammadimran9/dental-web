@@ -2,7 +2,7 @@
 
 A modern, conversion-focused dental clinic website with a secure admin dashboard. Built with Next.js, React, Tailwind CSS, and Firebase.
 
-## 🎯 Features
+## Features
 
 ### Public Website
 - **Home Page**: Hero section, trust highlights, services preview, doctor highlights, testimonials
@@ -19,7 +19,7 @@ A modern, conversion-focused dental clinic website with a secure admin dashboard
 - **Blog Management**: Create, edit, and delete blog posts
 - **Dashboard Overview**: Statistics and quick access to management features
 
-## 🚀 Getting Started
+## Getting Started
 
 ### Prerequisites
 - Node.js 18+ installed
@@ -86,7 +86,7 @@ npm run dev
 └── public/             # Static assets
 ```
 
-## 🛠️ Tech Stack
+## Tech Stack
 
 - **Framework**: Next.js 14 (App Router)
 - **Styling**: Tailwind CSS
@@ -95,14 +95,14 @@ npm run dev
 - **Forms**: React Hook Form
 - **Language**: TypeScript
 
-## 📝 Notes
+## Notes
 
 - The appointment form stores data in Firestore collection `appointments`
 - Blog posts are stored in Firestore collection `blogPosts`
 - All admin routes are protected and require authentication
 - The website is fully responsive and mobile-friendly
 
-## 🚀 Deployment
+## Deployment
 
 1. Build the project:
 ```bash
@@ -112,6 +112,6 @@ npm run build
 2. Deploy to Vercel, Netlify, or your preferred hosting platform
 3. Make sure to set environment variables in your hosting platform
 
-## 📄 License
+## License
 
 This project is created for dental clinic use.

@@ -13,7 +13,7 @@ export default function StepIndicator({ currentStep, totalSteps }) {
                 ? 'bg-primary text-white' 
                 : 'bg-gray-200 text-gray-500'
             }`}>
-              {isCompleted ? '✓' : stepNumber}
+              {isCompleted ? 'Done' : stepNumber}
             </div>
             {stepNumber < totalSteps && (
               <div className={`w-full h-1 mx-2 ${
