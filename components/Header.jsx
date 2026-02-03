@@ -5,7 +5,6 @@ import NavLinks from './NavLinks'
 import MobileMenu from './MobileMenu'
 import Logo from './Logo'
 import MobileMenuButton from './MobileMenuButton'
-import PWAInstallButton from './PWAInstallButton'
 
 export default function Header() {
   const [isMenuOpen, setIsMenuOpen] = useState(false)
@@ -16,7 +15,6 @@ export default function Header() {
         <div className="flex items-center justify-between h-20">
           <Logo />
           <div className="flex items-center gap-4">
-            <PWAInstallButton />
             <NavLinks isMobile={false} />
           </div>
           <MobileMenuButton isMenuOpen={isMenuOpen} setIsMenuOpen={setIsMenuOpen} />
