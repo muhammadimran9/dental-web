@@ -3,7 +3,7 @@ import ClockIcon from '../icons/ClockIcon'
 
 export default function AppointmentHero() {
   return (
-    <section className="bg-gradient-to-br from-blue-300 to-blue-500 text-white section-padding">
+    <section className="bg-gradient-to-br from-blue-100 to-blue-300 text-white section-padding">
       <div className="container-custom text-center">
         <div className="flex justify-center gap-8 mb-6">
           <div className="flex items-center gap-2">

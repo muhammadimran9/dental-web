@@ -1,6 +1,5 @@
 import PhoneIcon from './icons/PhoneIcon'
 import WhatsAppIcon from './icons/WhatsAppIcon'
-import PWAInstallButton from './PWAInstallButton'
 
 export default function ContactHeader() {
   return (
@@ -17,7 +16,6 @@ export default function ContactHeader() {
             </div>
           </div>
           <div className="flex items-center gap-4">
-            <PWAInstallButton />
             <a 
               href="tel:+1234567890" 
               className="flex items-center gap-2 bg-white text-blue-500 px-6 py-3 rounded-lg font-bold hover:bg-blue-50 transition-colors"

@@ -4,7 +4,7 @@ import Link from 'next/link'
 
 export default function TeamHero() {
   return (
-    <section className="relative bg-gradient-to-br from-blue-300 to-blue-500 text-white section-padding">
+    <section className="relative bg-gradient-to-br from-blue-100 to-blue-300 text-white section-padding">
       <div className="container-custom">
         <div className="grid md:grid-cols-2 gap-12 items-center">
           <HeroContent />
