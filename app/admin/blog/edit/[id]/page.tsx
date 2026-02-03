@@ -149,7 +149,7 @@ export default function EditBlogPost() {
 
             <div>
               <label htmlFor="featuredImage" className="block text-sm font-semibold text-gray-700 mb-2">
-                Featured Image (Emoji or URL)
+                Featured Image (URL only)
               </label>
               <input
                 type="text"
