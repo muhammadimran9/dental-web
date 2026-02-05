@@ -2,6 +2,29 @@ import Header from '@/components/HeaderProfessional'
 import Footer from '@/components/Footer'
 import ContactHeader from '@/components/ContactHeaderNew'
 
+interface ServiceCardProps {
+  icon: string
+  title: string
+  description: string
+}
+
+interface BenefitItemProps {
+  title: string
+  description: string
+}
+
+interface ProcessStepProps {
+  number: number
+  title: string
+  description: string
+}
+
+interface ServiceHeroProps {
+  title: string
+  subtitle: string
+  description: string
+}
+
 export default function CosmeticDentistry() {
   return (
     <div className="min-h-screen bg-white">
@@ -61,7 +84,7 @@ function ServicesGrid() {
   )
 }
 
-function ServiceCard({ icon, title, description }) {
+function ServiceCard({ icon, title, description }: ServiceCardProps) {
   return (
     <div className="bg-white rounded-xl shadow-lg p-6 hover:shadow-xl transition-shadow">
       <div className="text-4xl mb-4">{icon}</div>
@@ -99,7 +122,7 @@ function BenefitsSection() {
   )
 }
 
-function BenefitItem({ title, description }) {
+function BenefitItem({ title, description }: BenefitItemProps) {
   return (
     <div className="flex gap-4 items-start">
       <div className="w-6 h-6 bg-blue-600 rounded-full flex items-center justify-center flex-shrink-0 mt-1">
@@ -145,7 +168,7 @@ function ProcessSection() {
   )
 }
 
-function ProcessStep({ number, title, description }) {
+function ProcessStep({ number, title, description }: ProcessStepProps) {
   return (
     <div className="text-center">
       <div className="w-12 h-12 bg-blue-600 text-white rounded-full flex items-center justify-center mx-auto mb-4 text-xl font-bold">
@@ -157,7 +180,7 @@ function ProcessStep({ number, title, description }) {
   )
 }
 
-function ServiceHero({ title, subtitle, description }) {
+function ServiceHero({ title, subtitle, description }: ServiceHeroProps) {
   return (
     <section className="text-center mb-16">
       <h1 className="text-4xl md:text-5xl font-bold text-gray-800 mb-4">

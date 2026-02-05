@@ -16,10 +16,17 @@ export const serviceItems = [
   { label: 'Root Canal', href: '/services/root-canal', border: true },
   { label: 'Pediatric Dentistry', href: '/services/pediatric-dentistry', border: true },
   { label: 'Orthodontics', href: '/services/orthodontics', border: true },
+  { label: 'Invisalign', href: '/invisalign', border: true },
   { label: 'Periodontics', href: '/services/periodontics', border: false },
 ]
 
 export const feedbackItems = [
+  { label: 'Patient Feedback', href: '/patient-feedback', border: true },
   { label: 'Testimonials', href: '/testimonials', border: true },
   { label: 'Smile Gallery', href: '/smile-gallery', border: false },
+]
+
+export const contactItems = [
+  { label: 'Contact Us', href: '/contact-us', border: true },
+  { label: 'Referral Program', href: '/referral', border: false },
 ]

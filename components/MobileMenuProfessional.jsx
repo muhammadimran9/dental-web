@@ -1,7 +1,7 @@
 import Link from 'next/link'
 import Button from './ui/ButtonNew'
 import { XIcon, ChevronDownIcon, CalendarIcon } from './ui/IconsNew'
-import { aboutItems, serviceItems, feedbackItems } from './navigationConfig'
+import { aboutItems, serviceItems, feedbackItems, contactItems } from './navigationConfig'
 
 export default function MobileMenu() {
   return (
@@ -22,8 +22,7 @@ function MobileNavigation() {
       <MobileDropdown title="Services" items={serviceItems} />
       <MobileNavLink href="/invisalign" label="Invisalign" />
       <MobileDropdown title="Patient Feedback" items={feedbackItems} />
-      <MobileNavLink href="/contact" label="Contact Us" />
-      <MobileNavLink href="/referral" label="Referral" />
+      <MobileDropdown title="Contact" items={contactItems} />
     </nav>
   )
 }

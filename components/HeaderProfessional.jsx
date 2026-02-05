@@ -3,7 +3,7 @@ import Button from './ui/ButtonNew'
 import { MenuIcon, XIcon, ChevronDownIcon, CalendarIcon } from './ui/IconsNew'
 import DropdownMenu from './DropdownMenu'
 import MobileMenu from './MobileMenuProfessional'
-import { aboutItems, serviceItems, feedbackItems } from './navigationConfig'
+import { aboutItems, serviceItems, feedbackItems, contactItems } from './navigationConfig'
 
 export default function Header() {
   return (
@@ -68,8 +68,7 @@ function Navigation() {
       <DropdownMenu title="Services" items={serviceItems} />
       <NavLink href="/invisalign" label="Invisalign" />
       <DropdownMenu title="Patient Feedback" items={feedbackItems} />
-      <NavLink href="/contact" label="Contact Us" />
-      <NavLink href="/referral" label="Referral" />
+      <DropdownMenu title="Contact" items={contactItems} />
     </nav>
   )
 }
