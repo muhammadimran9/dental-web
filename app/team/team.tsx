@@ -1,7 +1,7 @@
-import TeamHero from '@/components/TeamHero'
-import ContactHeader from '@/components/ContactHeader'
-import DoctorProfileCard from '@/components/DoctorProfileCard'
-import TeamValues from '@/components/TeamValues'
+import TeamHero from '@/components/team/TeamHeroNew'
+import ContactHeader from '@/components/ContactHeaderNew'
+import DoctorProfileCard from '@/components/team/DoctorProfileCardNew'
+import TeamValues from '@/components/team/TeamValuesNew'
 import { doctors } from '@/components/doctorsConfig'
 
 export default function Team() {
