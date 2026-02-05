@@ -2,10 +2,10 @@
 
 export const aboutItems = [
   { label: 'Our Team', href: '/team', border: true },
-  { label: 'Our Story', href: '/about', border: true },
+  { label: 'Our Story', href: '/about/our-story', border: true },
   { label: 'Blog', href: '/blog', border: true },
   { label: 'Pricing', href: '/pricing', border: true },
-  { label: 'Dental Plan', href: '/pricing#dental-plan', border: false },
+  { label: 'Dental Plan', href: '/pricing/dental-plan', border: false },
 ]
 
 export const serviceItems = [
