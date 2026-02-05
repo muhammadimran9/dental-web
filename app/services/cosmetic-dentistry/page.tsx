@@ -144,22 +144,22 @@ function ProcessSection() {
       </h2>
       <div className="grid md:grid-cols-4 gap-8">
         <ProcessStep 
-          number="1"
+          number={1}
           title="Smile Analysis"
           description="Digital analysis of your current smile and aesthetic goals."
         />
         <ProcessStep 
-          number="2"
+          number={2}
           title="Design Phase"
           description="Custom design of your new smile using advanced software."
         />
         <ProcessStep 
-          number="3"
+          number={3}
           title="Treatment"
           description="Gentle cosmetic procedures to achieve your dream smile."
         />
         <ProcessStep 
-          number="4"
+          number={4}
           title="Reveal"
           description="Final reveal of your transformed, confident smile."
         />
