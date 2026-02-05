@@ -1,5 +1,5 @@
 import './globals.css'
-import Header from '@/components/Header'
+import Header from '@/components/HeaderProfessional'
 import Footer from '@/components/Footer'
 import GulfStickyButtons from '@/components/GulfStickyButtons'
 import ContactHeader from '@/components/ContactHeaderNew'
