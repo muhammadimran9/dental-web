@@ -2,6 +2,7 @@ import './globals.css'
 import Header from '@/components/Header'
 import Footer from '@/components/Footer'
 import GulfStickyButtons from '@/components/GulfStickyButtons'
+import ContactHeader from '@/components/ContactHeaderNew'
 
 export const metadata = {
   title: {
@@ -160,6 +161,7 @@ export default function RootLayout({ children }: { children: React.ReactNode }) 
         />
       </head>
       <body className="min-h-screen bg-white antialiased">
+        <ContactHeader />
         <Header />
         <main>{children}</main>
         <Footer />
