@@ -1,5 +1,5 @@
 import Card from '../Card'
-import { AlertTriangleIcon, ToothIcon, BrokenIcon, BleedingIcon, InfectionIcon, PhoneIcon, ClockIcon } from '../ui/IconsNew'
+import { AlertTriangleIcon, PhoneIcon, ClockIcon, UserIcon, ShieldIcon, HeartIcon } from '../ui/IconsNew'
 
 export default function EmergencyCare() {
   return (
@@ -19,22 +19,22 @@ export default function EmergencyCare() {
             
             <div className="space-y-4 mb-8">
               <EmergencyItem 
-                icon={<ToothIcon className="w-6 h-6 text-red-600" />}
+                icon={<div className="w-8 h-8 bg-red-100 rounded-full flex items-center justify-center"><HeartIcon className="w-4 h-4 text-red-600" /></div>}
                 title="Severe Toothache"
                 description="Persistent pain that doesn't go away"
               />
               <EmergencyItem 
-                icon={<BrokenIcon className="w-6 h-6 text-red-600" />}
+                icon={<div className="w-8 h-8 bg-red-100 rounded-full flex items-center justify-center"><ShieldIcon className="w-4 h-4 text-red-600" /></div>}
                 title="Broken Tooth"
                 description="Cracked or knocked-out teeth"
               />
               <EmergencyItem 
-                icon={<BleedingIcon className="w-6 h-6 text-red-600" />}
+                icon={<div className="w-8 h-8 bg-red-100 rounded-full flex items-center justify-center"><UserIcon className="w-4 h-4 text-red-600" /></div>}
                 title="Bleeding Gums"
                 description="Uncontrolled bleeding from gums"
               />
               <EmergencyItem 
-                icon={<InfectionIcon className="w-6 h-6 text-red-600" />}
+                icon={<div className="w-8 h-8 bg-red-100 rounded-full flex items-center justify-center"><AlertTriangleIcon className="w-4 h-4 text-red-600" /></div>}
                 title="Infection/Swelling"
                 description="Painful swelling in face or gums"
               />
@@ -84,7 +84,7 @@ export default function EmergencyCare() {
 function EmergencyItem({ icon, title, description }) {
   return (
     <div className="flex items-start space-x-3">
-      <div className="mt-1">{icon}</div>
+      <div className="mt-1 flex-shrink-0">{icon}</div>
       <div>
         <h4 className="font-semibold text-gray-800">{title}</h4>
         <p className="text-sm text-gray-600">{description}</p>
