@@ -1,19 +1,12 @@
-import Header from '@/components/HeaderProfessional'
-import Footer from '@/components/Footer'
-import ContactHeader from '@/components/ContactHeaderNew'
+import { GiftIcon, ToothIcon, LightningIcon } from '@/components/ui/IconsNew'
 
 export default function DentalPlan() {
   return (
-    <div className="min-h-screen bg-white">
-      <ContactHeader />
-      <Header />
-      <main className="container-custom py-16">
-        <PlanHero />
-        <PlanBenefits />
-        <PlanOptions />
-        <PlanComparison />
-      </main>
-      <Footer />
+    <div className="container-custom py-16">
+      <PlanHero />
+      <PlanBenefits />
+      <PlanOptions />
+      <PlanComparison />
     </div>
   )
 }
@@ -41,17 +34,17 @@ function PlanBenefits() {
           </h2>
           <div className="space-y-4">
             <BenefitItem 
-              icon="💰" 
+              icon={<GiftIcon className="w-8 h-8 text-blue-600" />}
               title="Affordable Monthly Payments" 
               description="Spread your dental costs with predictable monthly installments"
             />
             <BenefitItem 
-              icon="🦷" 
+              icon={<ToothIcon className="w-8 h-8 text-blue-600" />}
               title="Complete Coverage" 
               description="Preventive, diagnostic, and restorative care included"
             />
             <BenefitItem 
-              icon="⚡" 
+              icon={<LightningIcon className="w-8 h-8 text-blue-600" />}
               title="Priority Service" 
               description="Get appointments faster and emergency care when needed"
             />
@@ -75,7 +68,7 @@ function PlanBenefits() {
 function BenefitItem({ icon, title, description }) {
   return (
     <div className="flex gap-4 items-start">
-      <div className="text-3xl">{icon}</div>
+      <div className="mt-1">{icon}</div>
       <div>
         <h3 className="text-xl font-bold text-gray-800 mb-2">{title}</h3>
         <p className="text-gray-600">{description}</p>

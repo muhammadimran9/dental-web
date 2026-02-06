@@ -1,11 +1,5 @@
 import Card from '../Card'
-import AlertIcon from '../icons/AlertIcon'
-import ToothIcon from '../icons/ToothIcon'
-import BrokenIcon from '../icons/BrokenIcon'
-import BleedingIcon from '../icons/BleedingIcon'
-import InfectionIcon from '../icons/InfectionIcon'
-import PhoneIcon from '../icons/PhoneIcon'
-import Clock24Icon from '../icons/Clock24Icon'
+import { AlertTriangleIcon, ToothIcon, BrokenIcon, BleedingIcon, InfectionIcon, PhoneIcon, ClockIcon } from '../ui/IconsNew'
 
 export default function EmergencyCare() {
   return (
@@ -14,7 +8,7 @@ export default function EmergencyCare() {
         <div className="grid md:grid-cols-2 gap-8 items-center">
           <div>
             <div className="flex items-center mb-4">
-              <AlertIcon className="text-4xl mr-3 text-red-600" />
+              <AlertTriangleIcon className="w-8 h-8 mr-3 text-red-600" />
               <h2 className="text-3xl font-bold text-gray-800">
                 Dental <span className="text-red-600">Emergency?</span>
               </h2>
@@ -25,31 +19,31 @@ export default function EmergencyCare() {
             
             <div className="space-y-4 mb-8">
               <EmergencyItem 
-                icon={<ToothIcon />}
+                icon={<ToothIcon className="w-6 h-6 text-red-600" />}
                 title="Severe Toothache"
                 description="Persistent pain that doesn't go away"
               />
               <EmergencyItem 
-                icon={<BrokenIcon />}
+                icon={<BrokenIcon className="w-6 h-6 text-red-600" />}
                 title="Broken Tooth"
                 description="Cracked or knocked-out teeth"
               />
               <EmergencyItem 
-                icon={<BleedingIcon />}
+                icon={<BleedingIcon className="w-6 h-6 text-red-600" />}
                 title="Bleeding Gums"
                 description="Uncontrolled bleeding from gums"
               />
               <EmergencyItem 
-                icon={<InfectionIcon />}
+                icon={<InfectionIcon className="w-6 h-6 text-red-600" />}
                 title="Infection/Swelling"
                 description="Painful swelling in face or gums"
               />
             </div>
             
             <div className="flex flex-col sm:flex-row gap-4">
-              <a href="tel:1234567890" className="bg-red-600 text-white px-6 py-3 rounded-lg font-semibold text-center hover:bg-red-700 transition-colors flex items-center justify-center gap-2">
+              <a href="tel:+97141234567" className="bg-red-600 text-white px-6 py-3 rounded-lg font-semibold text-center hover:bg-red-700 transition-colors flex items-center justify-center gap-2">
                 <PhoneIcon className="w-5 h-5" />
-                Call Now: (123) 456-7890
+                Call Now: +971 4 123 4567
               </a>
               <button className="border-2 border-red-600 text-red-600 px-6 py-3 rounded-lg font-semibold hover:bg-red-600 hover:text-white transition-colors">
                 Book Emergency Appointment
@@ -59,7 +53,7 @@ export default function EmergencyCare() {
           
           <Card className="bg-white">
             <div className="text-center">
-              <Clock24Icon className="text-6xl mb-4 text-accent" />
+              <ClockIcon className="w-16 h-16 mb-4 text-red-600" />
               <h3 className="text-2xl font-bold text-gray-800 mb-4">Available 24/7</h3>
               <div className="space-y-3 text-left">
                 <div className="flex justify-between py-2 border-b">
@@ -90,7 +84,7 @@ export default function EmergencyCare() {
 function EmergencyItem({ icon, title, description }) {
   return (
     <div className="flex items-start space-x-3">
-      <div className="text-accent text-2xl mt-1">{icon}</div>
+      <div className="mt-1">{icon}</div>
       <div>
         <h4 className="font-semibold text-gray-800">{title}</h4>
         <p className="text-sm text-gray-600">{description}</p>

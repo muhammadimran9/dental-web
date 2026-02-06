@@ -1,5 +1,5 @@
 import Link from 'next/link'
-import Button from '../Button'
+import Button from '../ui/ButtonNew'
 import QuickBookingForm from '../QuickBookingForm'
 
 export default function CTABanner() {
@@ -17,12 +17,12 @@ export default function CTABanner() {
             </p>
             <div className="flex flex-col sm:flex-row gap-4">
               <Link href="/appointment">
-                <Button variant="secondary" className="bg-accent hover:bg-accent/90 text-white">
+                <Button className="bg-white text-black hover:bg-gray-100 px-6 py-3 rounded-lg font-semibold transition-colors">
                   Full Booking
                 </Button>
               </Link>
-              <a href="tel:+1234567890">
-                <Button variant="outline" className="border-white text-white hover:bg-white hover:text-primary">
+              <a href="tel:+97141234567">
+                <Button variant="outline" className="border-white text-white hover:bg-white hover:text-primary px-6 py-3 rounded-lg font-semibold transition-colors">
                   Call Emergency
                 </Button>
               </a>

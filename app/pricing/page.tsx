@@ -1,18 +1,9 @@
-import Header from '@/components/HeaderProfessional'
-import Footer from '@/components/Footer'
-import ContactHeader from '@/components/ContactHeaderNew'
-
 export default function Pricing() {
   return (
-    <div className="min-h-screen bg-white">
-      <ContactHeader />
-      <Header />
-      <main className="container-custom py-16">
-        <PricingHero />
-        <PricingPlans />
-        <DentalPlan />
-      </main>
-      <Footer />
+    <div className="container-custom py-16">
+      <PricingHero />
+      <PricingPlans />
+      <DentalPlan />
     </div>
   )
 }

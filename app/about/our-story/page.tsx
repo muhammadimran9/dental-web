@@ -1,18 +1,9 @@
-import Header from '@/components/HeaderProfessional'
-import Footer from '@/components/Footer'
-import ContactHeader from '@/components/ContactHeaderNew'
-
 export default function OurStory() {
   return (
-    <div className="min-h-screen bg-white">
-      <ContactHeader />
-      <Header />
-      <main className="container-custom py-16">
-        <StoryHero />
-        <StoryContent />
-        <StoryTimeline />
-      </main>
-      <Footer />
+    <div className="container-custom py-16">
+      <StoryHero />
+      <StoryContent />
+      <StoryTimeline />
     </div>
   )
 }
