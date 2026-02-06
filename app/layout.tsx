@@ -18,8 +18,7 @@ export default function RootLayout({ children }: { children: React.ReactNode }) 
         <StructuredData />
       </head>
       <body className="min-h-screen bg-white antialiased">
-        <ContactHeader />
-        <Header />
+        
         <main>{children}</main>
         <Footer />
         <GulfStickyButtons />
