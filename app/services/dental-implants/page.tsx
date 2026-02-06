@@ -1,6 +1,30 @@
 import Header from '@/components/HeaderProfessional'
 import Footer from '@/components/Footer'
 import ContactHeader from '@/components/ContactHeaderNew'
+import { ToothIcon, BridgeIcon, MicroscopeIcon, LightningIcon, ShieldCheckIcon } from '@/components/ui/IconsNew'
+
+interface ServiceCardProps {
+  icon: React.ReactNode
+  title: string
+  description: string
+}
+
+interface BenefitCardProps {
+  title: string
+  description: string
+}
+
+interface ProcessStepProps {
+  number: string
+  title: string
+  description: string
+}
+
+interface ProcessItemProps {
+  title: string
+  subtitle: string
+  description: string
+}
 
 export default function DentalImplants() {
   return (
@@ -27,32 +51,32 @@ function ServicesGrid() {
     <section className="mb-16">
       <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
         <ServiceCard 
-          icon="🦷"
+          icon={<ToothIcon className="w-8 h-8 text-blue-600" />}
           title="Single Tooth Implants"
           description="Individual implant placement for single missing teeth with natural-looking crowns."
         />
         <ServiceCard 
-          icon="🦷🦷"
+          icon={<div className="flex gap-1"><ToothIcon className="w-8 h-8 text-blue-600" /><ToothIcon className="w-8 h-8 text-blue-600" /></div>}
           title="Multiple Implants"
           description="Multiple implant solutions for replacing several missing teeth."
         />
         <ServiceCard 
-          icon="🌉"
+          icon={<BridgeIcon className="w-8 h-8 text-blue-600" />}
           title="Full Arch Restoration"
           description="Complete upper or lower jaw restoration with implant-supported dentures."
         />
         <ServiceCard 
-          icon="🔬"
+          icon={<MicroscopeIcon className="w-8 h-8 text-blue-600" />}
           title="3D Imaging"
           description="Advanced CT scanning for precise implant planning and placement."
         />
         <ServiceCard 
-          icon="⚡"
+          icon={<LightningIcon className="w-8 h-8 text-blue-600" />}
           title="Immediate Loading"
           description="Same-day implant placement with temporary crowns in select cases."
         />
         <ServiceCard 
-          icon="🛡️"
+          icon={<ShieldCheckIcon className="w-8 h-8 text-blue-600" />}
           title="Bone Grafting"
           description="Bone augmentation to ensure successful implant integration."
         />
@@ -61,10 +85,12 @@ function ServicesGrid() {
   )
 }
 
-function ServiceCard({ icon, title, description }) {
+function ServiceCard({ icon, title, description }: ServiceCardProps) {
   return (
-    <div className="bg-white rounded-xl shadow-lg p-6 hover:shadow-xl transition-shadow">
-      <div className="text-4xl mb-4">{icon}</div>
+    <div className="bg-white rounded-xl shadow-lg p-6 hover:shadow-xl transition-all hover:-translate-y-1">
+      <div className="w-16 h-16 bg-blue-50 rounded-full flex items-center justify-center mx-auto mb-4">
+        {icon}
+      </div>
       <h3 className="text-xl font-bold text-gray-800 mb-3">{title}</h3>
       <p className="text-gray-600">{description}</p>
     </div>
@@ -99,7 +125,7 @@ function BenefitsSection() {
   )
 }
 
-function BenefitItem({ title, description }) {
+function BenefitItem({ title, description }: BenefitCardProps) {
   return (
     <div className="flex gap-4 items-start">
       <div className="w-6 h-6 bg-blue-600 rounded-full flex items-center justify-center flex-shrink-0 mt-1">
@@ -145,7 +171,7 @@ function ProcessSection() {
   )
 }
 
-function ProcessStep({ number, title, description }) {
+function ProcessStep({ number, title, description }: ProcessStepProps) {
   return (
     <div className="text-center">
       <div className="w-12 h-12 bg-blue-600 text-white rounded-full flex items-center justify-center mx-auto mb-4 text-xl font-bold">
@@ -157,7 +183,7 @@ function ProcessStep({ number, title, description }) {
   )
 }
 
-function ServiceHero({ title, subtitle, description }) {
+function ServiceHero({ title, subtitle, description }: ProcessItemProps) {
   return (
     <section className="text-center mb-16">
       <h1 className="text-4xl md:text-5xl font-bold text-gray-800 mb-4">

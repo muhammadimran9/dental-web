@@ -3,24 +3,10 @@ import { ClockIcon, PhoneIcon, MapPinIcon } from './ui/IconsNew'
 export default function ContactHeader() {
   return (
     <div className="w-full border-b border-gray-300 bg-gray-100">
-      <div className="container-custom flex flex-col lg:flex-row justify-between items-center py-4">
-        <div className="hidden lg:block">
-          <Logo />
-        </div>
+      <div className="container-custom flex justify-end items-center py-4">
         <ContactInfo />
       </div>
     </div>
-  )
-}
-
-function Logo() {
-  return (
-    <a href="/" className="flex items-center space-x-2">
-      <div className="w-10 h-10 bg-blue-800 rounded-lg flex items-center justify-center">
-        <span className="text-white font-bold">DC</span>
-      </div>
-      <span className="text-lg font-bold text-gray-800">DentalCare Dubai</span>
-    </a>
   )
 }
 

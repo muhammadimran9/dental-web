@@ -1,6 +1,25 @@
 import Header from '@/components/HeaderProfessional'
 import Footer from '@/components/Footer'
 import ContactHeader from '@/components/ContactHeaderNew'
+import { ToothIcon, SparklesIcon, PaletteIcon, RetainerIcon, MicroscopeIcon, LightningIcon } from '@/components/ui/IconsNew'
+
+interface ServiceCardProps {
+  icon: React.ReactNode
+  title: string
+  description: string
+}
+
+interface ProcessItemProps {
+  title: string
+  subtitle: string
+  description: string
+}
+
+interface ProcessStepProps {
+  number: string
+  title: string
+  description: string
+}
 
 export default function Orthodontics() {
   return (
@@ -27,32 +46,32 @@ function ServicesGrid() {
     <section className="mb-16">
       <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
         <ServiceCard 
-          icon="🦷"
+          icon={<ToothIcon className="w-8 h-8 text-blue-600" />}
           title="Traditional Braces"
           description="Time-tested metal braces for effective teeth alignment."
         />
         <ServiceCard 
-          icon="✨"
+          icon={<SparklesIcon className="w-8 h-8 text-blue-600" />}
           title="Clear Aligners"
           description="Nearly invisible aligners for discreet teeth straightening."
         />
         <ServiceCard 
-          icon="🎨"
+          icon={<PaletteIcon className="w-8 h-8 text-blue-600" />}
           title="Ceramic Braces"
           description="Tooth-colored braces for a more aesthetic appearance."
         />
         <ServiceCard 
-          icon="📏"
+          icon={<RetainerIcon className="w-8 h-8 text-blue-600" />}
           title="Retainers"
           description="Custom retainers to maintain your perfect smile."
         />
         <ServiceCard 
-          icon="🔬"
+          icon={<MicroscopeIcon className="w-8 h-8 text-blue-600" />}
           title="3D Imaging"
           description="Advanced digital scanning for precise treatment planning."
         />
         <ServiceCard 
-          icon="⚡"
+          icon={<LightningIcon className="w-8 h-8 text-blue-600" />}
           title="Fast Treatment"
           description="Accelerated orthodontics for quicker results."
         />
@@ -61,10 +80,12 @@ function ServicesGrid() {
   )
 }
 
-function ServiceCard({ icon, title, description }) {
+function ServiceCard({ icon, title, description }: ServiceCardProps) {
   return (
-    <div className="bg-white rounded-xl shadow-lg p-6 hover:shadow-xl transition-shadow">
-      <div className="text-4xl mb-4">{icon}</div>
+    <div className="bg-white rounded-xl shadow-lg p-6 hover:shadow-xl transition-all hover:-translate-y-1">
+      <div className="w-16 h-16 bg-blue-50 rounded-full flex items-center justify-center mx-auto mb-4">
+        {icon}
+      </div>
       <h3 className="text-xl font-bold text-gray-800 mb-3">{title}</h3>
       <p className="text-gray-600">{description}</p>
     </div>

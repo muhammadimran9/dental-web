@@ -19,7 +19,9 @@ export default function ServiceCategorySelection({ selectedCategory, onSelectCat
           >
             <div className="text-center p-6">
               <div className="w-16 h-16 bg-primary/10 rounded-full flex items-center justify-center mx-auto mb-4">
-                {category.icon}
+                <div className="w-8 h-8">
+                  {category.icon}
+                </div>
               </div>
               <h4 className="font-semibold text-gray-800 mb-2">{category.name}</h4>
               <p className="text-sm text-gray-600">{category.description}</p>

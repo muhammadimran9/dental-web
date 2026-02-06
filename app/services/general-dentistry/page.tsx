@@ -1,6 +1,25 @@
 import Header from '@/components/HeaderProfessional'
 import Footer from '@/components/Footer'
 import ContactHeader from '@/components/ContactHeaderNew'
+import { ToothIcon, SparklesIcon, MicroscopeIcon, ShieldCheckIcon, ClipboardIcon, LightningIcon } from '@/components/ui/IconsNew'
+
+interface ServiceCardProps {
+  icon: React.ReactNode
+  title: string
+  description: string
+}
+
+interface ProcessItemProps {
+  title: string
+  subtitle: string
+  description: string
+}
+
+interface ProcessStepProps {
+  number: string
+  title: string
+  description: string
+}
 
 export default function GeneralDentistry() {
   return (
@@ -27,32 +46,32 @@ function ServicesGrid() {
     <section className="mb-16">
       <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
         <ServiceCard 
-          icon="🦷"
+          icon={<ToothIcon className="w-8 h-8 text-blue-600" />}
           title="Dental Checkups"
           description="Comprehensive oral examinations to detect and prevent dental issues early."
         />
         <ServiceCard 
-          icon="🪥"
+          icon={<SparklesIcon className="w-8 h-8 text-blue-600" />}
           title="Teeth Cleaning"
           description="Professional cleaning to remove plaque and maintain healthy gums."
         />
         <ServiceCard 
-          icon="🦷"
+          icon={<MicroscopeIcon className="w-8 h-8 text-blue-600" />}
           title="X-Rays & Diagnostics"
           description="Advanced imaging technology for accurate diagnosis and treatment planning."
         />
         <ServiceCard 
-          icon="🛡️"
+          icon={<ShieldCheckIcon className="w-8 h-8 text-blue-600" />}
           title="Preventive Care"
           description="Fluoride treatments and sealants to protect against cavities."
         />
         <ServiceCard 
-          icon="📋"
+          icon={<ClipboardIcon className="w-8 h-8 text-blue-600" />}
           title="Treatment Planning"
           description="Personalized treatment plans tailored to your specific dental needs."
         />
         <ServiceCard 
-          icon="⚡"
+          icon={<LightningIcon className="w-8 h-8 text-blue-600" />}
           title="Emergency Care"
           description="Prompt treatment for dental emergencies and urgent care needs."
         />
@@ -61,10 +80,12 @@ function ServicesGrid() {
   )
 }
 
-function ServiceCard({ icon, title, description }) {
+function ServiceCard({ icon, title, description }: ServiceCardProps) {
   return (
-    <div className="bg-white rounded-xl shadow-lg p-6 hover:shadow-xl transition-shadow">
-      <div className="text-4xl mb-4">{icon}</div>
+    <div className="bg-white rounded-xl shadow-lg p-6 hover:shadow-xl transition-all hover:-translate-y-1">
+      <div className="w-16 h-16 bg-blue-50 rounded-full flex items-center justify-center mx-auto mb-4">
+        {icon}
+      </div>
       <h3 className="text-xl font-bold text-gray-800 mb-3">{title}</h3>
       <p className="text-gray-600">{description}</p>
     </div>
@@ -145,7 +166,7 @@ function ProcessSection() {
   )
 }
 
-function ProcessStep({ number, title, description }) {
+function ProcessStep({ number, title, description }: ProcessStepProps) {
   return (
     <div className="text-center">
       <div className="w-12 h-12 bg-blue-600 text-white rounded-full flex items-center justify-center mx-auto mb-4 text-xl font-bold">
@@ -157,7 +178,7 @@ function ProcessStep({ number, title, description }) {
   )
 }
 
-function ServiceHero({ title, subtitle, description }) {
+function ServiceHero({ title, subtitle, description }: ProcessItemProps) {
   return (
     <section className="text-center mb-16">
       <h1 className="text-4xl md:text-5xl font-bold text-gray-800 mb-4">

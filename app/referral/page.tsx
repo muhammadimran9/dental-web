@@ -1,6 +1,27 @@
 import Header from '@/components/HeaderProfessional'
 import Footer from '@/components/Footer'
 import ContactHeader from '@/components/ContactHeaderNew'
+import { GiftIcon, ToothIcon, HeartIcon, PhoneIcon2, LightningIcon, TrophyIcon, UserIcon } from '@/components/ui/IconsNew'
+
+interface BenefitCardProps {
+  icon: React.ReactNode
+  title: string
+  description: string
+}
+
+interface RewardCardProps {
+  level: string
+  referrals: string
+  reward: string
+  color: string
+}
+
+interface StoryCardProps {
+  name: string
+  referrals: string
+  earned: string
+  story: string
+}
 
 export default function Referral() {
   return (
@@ -51,32 +72,32 @@ function ReferralBenefits() {
       </h2>
       <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
         <BenefitCard 
-          icon="🎁"
+          icon={<GiftIcon className="w-8 h-8 text-blue-600" />}
           title="Earn Rewards"
           description="Get AED 200 credit for every successful referral. No limit on how many friends you can refer!"
         />
         <BenefitCard 
-          icon="🦷"
+          icon={<ToothIcon className="w-8 h-8 text-blue-600" />}
           title="Friend Gets Discount"
           description="Your referred friend receives 15% off their first treatment at our clinic."
         />
         <BenefitCard 
-          icon="💙"
+          icon={<HeartIcon className="w-8 h-8 text-blue-600" />}
           title="Share Quality Care"
           description="Help friends and family experience the same exceptional dental care you received."
         />
         <BenefitCard 
-          icon="📱"
+          icon={<PhoneIcon2 className="w-8 h-8 text-blue-600" />}
           title="Easy Process"
           description="Simple online referral form. Track your referrals and rewards through our portal."
         />
         <BenefitCard 
-          icon="⚡"
+          icon={<LightningIcon className="w-8 h-8 text-blue-600" />}
           title="Instant Credit"
           description="Rewards credited to your account immediately after your friend's first appointment."
         />
         <BenefitCard 
-          icon="🏆"
+          icon={<TrophyIcon className="w-8 h-8 text-blue-600" />}
           title="VIP Status"
           description="Refer 5+ friends and unlock VIP status with exclusive benefits and priority booking."
         />
@@ -85,10 +106,12 @@ function ReferralBenefits() {
   )
 }
 
-function BenefitCard({ icon, title, description }) {
+function BenefitCard({ icon, title, description }: BenefitCardProps) {
   return (
     <div className="bg-white rounded-xl shadow-lg p-6 hover:shadow-xl transition-all hover:-translate-y-1">
-      <div className="text-4xl mb-4 text-center">{icon}</div>
+      <div className="w-16 h-16 bg-blue-50 rounded-full flex items-center justify-center mx-auto mb-4">
+        {icon}
+      </div>
       <h3 className="text-xl font-bold text-gray-800 mb-3">{title}</h3>
       <p className="text-gray-600">{description}</p>
     </div>
@@ -295,7 +318,7 @@ function RewardsSection() {
   )
 }
 
-function RewardCard({ level, referrals, reward, color }) {
+function RewardCard({ level, referrals, reward, color }: RewardCardProps) {
   return (
     <div className={`bg-white rounded-xl shadow-lg p-6 text-center ${color} border-2 border-opacity-20`}>
       <div className="text-2xl font-bold mb-2">{level}</div>
@@ -318,32 +341,31 @@ function SuccessStories() {
           referrals="8"
           earned="AED 2,000"
           story="Referred my entire family! Everyone loves the clinic and I earned enough for my own treatment."
-          avatar="👨‍⚕️"
         />
         <StoryCard 
           name="Sarah Johnson"
           referrals="5"
           earned="AED 1,250"
           story="My coworkers all came after seeing my smile transformation. Best decision ever!"
-          avatar="👩‍⚕️"
         />
         <StoryCard 
           name="Mohammed Ali"
           referrals="12"
           earned="AED 4,800"
           story="VIP status unlocked! The extra rewards and priority booking are amazing."
-          avatar="👨‍⚕️"
         />
       </div>
     </section>
   )
 }
 
-function StoryCard({ name, referrals, earned, story, avatar }) {
+function StoryCard({ name, referrals, earned, story }: StoryCardProps) {
   return (
     <div className="bg-white rounded-xl shadow-lg p-6 hover:shadow-xl transition-all">
       <div className="flex items-center gap-3 mb-4">
-        <div className="text-3xl">{avatar}</div>
+        <div className="w-12 h-12 bg-blue-100 rounded-full flex items-center justify-center">
+          <UserIcon className="w-6 h-6 text-blue-600" />
+        </div>
         <div>
           <h4 className="text-lg font-bold text-gray-800">{name}</h4>
           <p className="text-sm text-blue-600">{referrals} referrals</p>
