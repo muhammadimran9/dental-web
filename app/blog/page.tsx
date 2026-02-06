@@ -14,7 +14,6 @@ export default function Blog() {
 
   return (
     <div>
-      <ContactHeader />
       {/* Featured Post Hero */}
       <section className="section-padding bg-gradient-to-br from-primary to-primary-dark text-white">
         <div className="container-custom">

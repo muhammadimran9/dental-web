@@ -7,7 +7,6 @@ import TestimonialsSlider from '@/components/home/TestimonialsSlider'
 export default function Appointment() {
   return (
     <div>
-      <ContactHeader />
       <AppointmentHero />
       
       <section className="section-padding">

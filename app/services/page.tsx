@@ -21,7 +21,6 @@ export default function Services() {
 
   return (
     <div>
-      <ContactHeader />
       <ServicesHero />
       <section className="section-padding">
         <div className="container-custom">

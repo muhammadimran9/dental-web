@@ -26,8 +26,6 @@ interface StoryCardProps {
 export default function Referral() {
   return (
     <div className="min-h-screen bg-white">
-      <ContactHeader />
-      <Header />
       <main className="container-custom py-16">
         <ReferralHero />
         <ReferralBenefits />
@@ -35,7 +33,6 @@ export default function Referral() {
         <RewardsSection />
         <SuccessStories />
       </main>
-      <Footer />
     </div>
   )
 }

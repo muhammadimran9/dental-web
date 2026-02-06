@@ -18,7 +18,6 @@ import StickyWhatsApp from '@/components/StickyWhatsApp'
 export default function Home() {
   return (
     <div>
-      <ContactHeader />
       <Hero />
       <GulfTrustBadges />
       <TrustHighlights />
@@ -30,7 +29,6 @@ export default function Home() {
       <WhyChooseUs />
       <DoctorHighlight />
       <TestimonialsSlider />
-      <EmergencyCare />
       <InsuranceFinancing />
       <CTABanner />
       <StickyWhatsApp />

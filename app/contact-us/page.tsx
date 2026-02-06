@@ -10,8 +10,6 @@ import FAQSection from './FAQSection'
 export default function ContactUs() {
   return (
     <div className="min-h-screen bg-white">
-      <ContactHeader />
-      <Header />
       <main className="container-custom py-16">
         <ContactHero />
         <ContactInfo />
@@ -19,7 +17,6 @@ export default function ContactUs() {
         <MapSection />
         <FAQSection />
       </main>
-      <Footer />
     </div>
   )
 }

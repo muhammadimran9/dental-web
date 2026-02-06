@@ -7,7 +7,6 @@ import { doctors } from '@/components/doctorsConfig'
 export default function Team() {
   return (
     <div>
-      <ContactHeader />
       <TeamHero />
       <section id="team-grid" className="section-padding">
         <div className="container-custom">

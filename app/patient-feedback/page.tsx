@@ -9,15 +9,12 @@ import StatsSection from './StatsSection'
 export default function PatientFeedback() {
   return (
     <div className="min-h-screen bg-white">
-      <ContactHeader />
-      <Header />
       <main className="container-custom py-16">
         <FeedbackHero />
         <TestimonialsGrid />
         <FeedbackForm />
         <StatsSection />
       </main>
-      <Footer />
     </div>
   )
 }

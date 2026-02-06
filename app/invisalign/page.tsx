@@ -11,8 +11,6 @@ import FAQSection from './FAQSection'
 export default function Invisalign() {
   return (
     <div className="min-h-screen bg-white">
-      <ContactHeader />
-      <Header />
       <main className="container-custom py-16">
         <InvisalignHero />
         <InvisalignBenefits />
@@ -21,7 +19,6 @@ export default function Invisalign() {
         <PricingSection />
         <FAQSection />
       </main>
-      <Footer />
     </div>
   )
 }
