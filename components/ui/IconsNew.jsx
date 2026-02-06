@@ -194,3 +194,20 @@ export const RetainerIcon = ({ className = 'w-5 h-5' }) => (
     <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z" />
   </svg>
 )
+
+// Emergency specific icons
+export const EmergencyWarningIcon = ({ className = 'w-5 h-5' }) => (
+  <svg className={className} fill="none" stroke="currentColor" viewBox="0 0 24 24">
+    <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M10.29 3.86L1.82 18C1.44531 18.6048 1.24785 19.304 1.24785 20.0165C1.24785 20.729 1.44531 21.4282 1.82 22.033C2.19469 22.6378 2.73236 23.1244 3.37234 23.4382C4.01232 23.752 4.72989 23.8808 5.44 23.81H18.56C19.2701 23.8808 19.9877 23.752 20.6277 23.4382C21.2676 23.1244 21.8053 22.6378 22.18 22.033C22.5547 21.4282 22.7522 20.729 22.7522 20.0165C22.7522 19.304 22.5547 18.6048 22.18 18L13.71 3.86C13.3353 3.25521 12.7976 2.76858 12.1577 2.45478C11.5177 2.14098 10.8001 2.01221 10.09 2.08221C9.37989 2.01221 8.66232 2.14098 8.02234 2.45478C7.38236 2.76858 6.84469 3.25521 6.47 3.86H10.29Z" />
+    <line x1="12" y1="9" x2="12" y2="13" strokeLinecap="round" />
+    <line x1="12" y1="17" x2="12.01" y2="17" strokeLinecap="round" />
+  </svg>
+)
+
+export const Clock247Icon = ({ className = 'w-5 h-5' }) => (
+  <svg className={className} fill="none" stroke="currentColor" viewBox="0 0 24 24">
+    <circle cx="12" cy="12" r="10" strokeWidth={2} />
+    <polyline points="12 6 12 12 16 14" strokeWidth={2} strokeLinecap="round" strokeLinejoin="round" />
+    <text x="12" y="20" textAnchor="middle" fontSize="8" fontWeight="bold">24/7</text>
+  </svg>
+)
