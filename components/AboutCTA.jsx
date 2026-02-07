@@ -1,4 +1,4 @@
-import QuickBookingForm from './QuickBookingForm'
+import QuickBookingForm from './home/QuickBookingForm'
 
 export default function AboutCTA() {
   return (
