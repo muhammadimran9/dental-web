@@ -174,14 +174,14 @@ function PlanComparison() {
                   <div className="text-sm text-gray-600">Emergency coverage</div>
                 </td>
                 <td className="p-4 font-medium">
-                  <div className="text-2xl font-bold text-gray-600">AED 1,996</div>
+                  <div className="text-2xl font-bold text-gray-600">AED 1996</div>
                   <div className="text-sm text-gray-600">4 people covered</div>
                   <div className="text-sm text-gray-600">1 checkup per year</div>
                   <div className="text-sm text-gray-600">10% off treatments</div>
                   <div className="text-sm text-gray-600">No emergency coverage</div>
                 </td>
                 <td className="p-4 font-medium">
-                  <div className="text-2xl font-bold text-blue-600">AED 1,397</div>
+                  <div className="text-2xl font-bold text-blue-600">AED 1397</div>
                   <div className="text-sm text-gray-600">4 people covered</div>
                   <div className="text-sm text-gray-600">1 extra checkup per year</div>
                   <div className="text-sm text-gray-600">10% more off treatments</div>
@@ -235,41 +235,5 @@ function PlanCard({ icon, title, description, price, features }) {
         ))}
       </ul>
     </div>
-  )
-}
-      <div className="overflow-x-auto">
-        <table className="w-full bg-white rounded-lg">
-          <thead>
-            <tr className="bg-blue-600 text-white">
-              <th className="p-4 text-left">Service</th>
-              <th className="p-4 text-center">Standard Price</th>
-              <th className="p-4 text-center">With Plan</th>
-            </tr>
-          </thead>
-          <tbody>
-            <tr className="border-b">
-              <td className="p-4">Regular Checkup</td>
-              <td className="p-4 text-center">AED 299</td>
-              <td className="p-4 text-center text-green-600 font-bold">FREE</td>
-            </tr>
-            <tr className="border-b">
-              <td className="p-4">Teeth Cleaning</td>
-              <td className="p-4 text-center">AED 199</td>
-              <td className="p-4 text-center text-green-600 font-bold">FREE</td>
-            </tr>
-            <tr className="border-b">
-              <td className="p-4">X-Ray</td>
-              <td className="p-4 text-center">AED 150</td>
-              <td className="p-4 text-center text-green-600 font-bold">FREE</td>
-            </tr>
-            <tr>
-              <td className="p-4">Fillings</td>
-              <td className="p-4 text-center">AED 399</td>
-              <td className="p-4 text-center text-blue-600 font-bold">AED 319</td>
-            </tr>
-          </tbody>
-        </table>
-      </div>
-    </section>
   )
 }
