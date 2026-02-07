@@ -1,19 +1,19 @@
 export default function InvisalignHero() {
   return (
     <section className="text-center mb-16">
-      <div className="bg-gradient-to-r from-blue-50 to-blue-100 rounded-2xl p-12 mb-8">
-        <h1 className="text-4xl md:text-5xl font-bold text-gray-800 mb-6">
+      <div className="bg-blue-600 rounded-2xl p-6 sm:p-8 md:p-12 mb-8" style={{backgroundColor: '#2563EB'}}>
+        <h1 className="text-3xl sm:text-4xl md:text-5xl font-bold text-white mb-6">
           Invisalign
-          <span className="block text-blue-600">Clear Aligners</span>
+          <span className="block text-white">Clear Aligners</span>
         </h1>
-        <p className="text-xl text-gray-600 mb-8 max-w-3xl mx-auto">
+        <p className="text-lg sm:text-xl text-blue-100 mb-8 max-w-3xl mx-auto px-4">
           Transform your smile with virtually invisible aligners. The modern alternative to traditional braces.
         </p>
-        <div className="flex flex-col sm:flex-row gap-4 justify-center">
-          <button className="bg-blue-600 text-white px-8 py-4 rounded-lg font-semibold hover:bg-blue-700 transition-colors">
+        <div className="flex flex-col sm:flex-row gap-3 sm:gap-4 justify-center px-4">
+          <button className="bg-white text-blue-600 px-6 sm:px-8 py-3 sm:py-4 rounded-lg font-semibold hover:bg-gray-100 transition-colors text-sm sm:text-base">
             Start Your Journey
           </button>
-          <button className="border-2 border-blue-600 text-blue-600 px-8 py-4 rounded-lg font-semibold hover:bg-blue-50 transition-colors">
+          <button className="border-2 border-white text-white px-6 sm:px-8 py-3 sm:py-4 rounded-lg font-semibold hover:bg-white hover:text-blue-600 transition-colors text-sm sm:text-base">
             Free Consultation
           </button>
         </div>
