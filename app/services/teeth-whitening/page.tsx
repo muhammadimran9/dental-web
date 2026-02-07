@@ -18,32 +18,32 @@ function ServicesGrid() {
     <section className="mb-16">
       <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
         <ServiceCard 
-          icon="✨"
+          icon="★"
           title="In-Office Whitening"
           description="Professional-grade whitening treatment for immediate, dramatic results."
         />
         <ServiceCard 
-          icon="🏠"
+          icon="◆"
           title="Take-Home Kits"
           description="Custom whitening kits for convenient at-home touch-up treatments."
         />
         <ServiceCard 
-          icon="💡"
+          icon="◈"
           title="Laser Whitening"
           description="Advanced laser technology for faster, more effective whitening."
         />
         <ServiceCard 
-          icon="🛡️"
+          icon="■"
           title="Desensitizing"
           description="Treatments to reduce sensitivity during and after whitening."
         />
         <ServiceCard 
-          icon="🎨"
+          icon="●"
           title="Stain Removal"
           description="Professional cleaning to remove stubborn stains before whitening."
         />
         <ServiceCard 
-          icon="⏰"
+          icon="○"
           title="Quick Results"
           description="Noticeably whiter teeth in just one 60-minute session."
         />

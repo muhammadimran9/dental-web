@@ -18,32 +18,32 @@ function ServicesGrid() {
     <section className="mb-16">
       <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
         <ServiceCard 
-          icon="👶"
+          icon="●"
           title="Child Checkups"
           description="Gentle examinations designed specifically for children's dental needs."
         />
         <ServiceCard 
-          icon="🦷"
+          icon="◆"
           title="Preventive Care"
           description="Fluoride treatments and sealants to protect growing teeth."
         />
         <ServiceCard 
-          icon="🎨"
+          icon="◈"
           title="Fun Education"
           description="Teaching proper brushing and flossing through interactive activities."
         />
         <ServiceCard 
-          icon="🍭"
+          icon="■"
           title="Nutrition Guidance"
           description="Dietary advice for healthy tooth development."
         />
         <ServiceCard 
-          icon="🛡️"
+          icon="◇"
           title="Habit Correction"
           description="Early intervention for thumb-sucking and other oral habits."
         />
         <ServiceCard 
-          icon="🎯"
+          icon="○"
           title="Orthodontic Screening"
           description="Early detection of alignment issues for timely treatment."
         />

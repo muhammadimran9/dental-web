@@ -14,22 +14,22 @@ export default function StatsSection() {
         <StatCard 
           number="4.9/5"
           label="Average Rating"
-          icon="⭐"
+          icon="★"
         />
         <StatCard 
           number="98%"
           label="Satisfaction Rate"
-          icon="😊"
+          icon="●"
         />
         <StatCard 
           number="5000+"
           label="Happy Patients"
-          icon="👥"
+          icon="◆"
         />
         <StatCard 
           number="15+"
           label="Years Experience"
-          icon="🏆"
+          icon="◈"
         />
       </div>
     </section>

@@ -42,32 +42,32 @@ function ServicesGrid() {
     <section className="mb-16">
       <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
         <ServiceCard 
-          icon="✨"
+          icon="★"
           title="Teeth Whitening"
           description="Professional whitening treatments for a brighter, more confident smile."
         />
         <ServiceCard 
-          icon="🦷"
+          icon="◆"
           title="Porcelain Veneers"
           description="Custom-made porcelain shells to perfect the appearance of your teeth."
         />
         <ServiceCard 
-          icon="🎨"
+          icon="◈"
           title="Digital Smile Design"
           description="Advanced digital planning to design your perfect smile before treatment."
         />
         <ServiceCard 
-          icon="💎"
+          icon="◇"
           title="Composite Bonding"
           description="Tooth-colored resin to repair chips, cracks, and gaps."
         />
         <ServiceCard 
-          icon="🧼"
+          icon="○"
           title="Stain Removal"
           description="Professional cleaning to remove stubborn stains and discoloration."
         />
         <ServiceCard 
-          icon="💉"
+          icon="●"
           title="Facial Aesthetics"
           description="Non-surgical treatments to enhance facial appearance and reduce wrinkles."
         />

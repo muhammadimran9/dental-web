@@ -6,32 +6,32 @@ export default function InvisalignBenefits() {
       </h2>
       <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
         <BenefitCard 
-          icon="👁️"
+          icon="●"
           title="Virtually Invisible"
           description="Clear aligners that are barely noticeable, perfect for professionals and adults."
         />
         <BenefitCard 
-          icon="🦷"
+          icon="◆"
           title="Removable"
           description="Eat, drink, and clean normally. No food restrictions like traditional braces."
         />
         <BenefitCard 
-          icon="⏱️"
+          icon="◈"
           title="Faster Results"
           description="Average treatment time of 12-18 months, faster than traditional braces."
         />
         <BenefitCard 
-          icon="😊"
+          icon="■"
           title="Comfortable"
           description="Smooth plastic aligners without metal brackets or wires."
         />
         <BenefitCard 
-          icon="📱"
+          icon="◇"
           title="SmartTrack Technology"
           description="Advanced material for more predictable and comfortable tooth movement."
         />
         <BenefitCard 
-          icon="🎯"
+          icon="○"
           title="Precise Results"
           description="3D digital planning ensures accurate and predictable outcomes."
         />

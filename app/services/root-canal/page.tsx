@@ -18,32 +18,32 @@ function ServicesGrid() {
     <section className="mb-16">
       <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
         <ServiceCard 
-          icon="🔬"
+          icon="◆"
           title="Diagnostic Imaging"
           description="Digital X-rays and 3D imaging for precise diagnosis."
         />
         <ServiceCard 
-          icon="⚡"
+          icon="■"
           title="Painless Treatment"
           description="Modern techniques ensuring comfortable root canal therapy."
         />
         <ServiceCard 
-          icon="🦷"
+          icon="●"
           title="Single-Visit Treatment"
           description="Complete root canal therapy in just one appointment."
         />
         <ServiceCard 
-          icon="🛡️"
+          icon="◈"
           title="Microscopic Endodontics"
           description="Dental microscope for enhanced precision and success rates."
         />
         <ServiceCard 
-          icon="💎"
+          icon="◇"
           title="Crown Restoration"
           description="Custom crowns to restore strength and appearance."
         />
         <ServiceCard 
-          icon="🔄"
+          icon="○"
           title="Retreatment Options"
           description="Specialized care for failed previous root canals."
         />

@@ -18,32 +18,32 @@ function ServicesGrid() {
     <section className="mb-16">
       <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
         <ServiceCard 
-          icon="🦷"
+          icon="●"
           title="Gum Disease Treatment"
           description="Therapy for gingivitis and periodontitis to restore gum health."
         />
         <ServiceCard 
-          icon="🧹"
+          icon="◆"
           title="Deep Cleaning"
           description="Professional scaling and root planing for thorough cleaning."
         />
         <ServiceCard 
-          icon="🔬"
+          icon="◈"
           title="Gum Surgery"
           description="Surgical procedures to treat advanced gum disease."
         />
         <ServiceCard 
-          icon="🦷"
+          icon="■"
           title="Bone Grafting"
           description="Regeneration of lost bone to support teeth."
         />
         <ServiceCard 
-          icon="📏"
+          icon="◇"
           title="Crown Lengthening"
           description="Procedures to expose more tooth for restoration."
         />
         <ServiceCard 
-          icon="🛡️"
+          icon="○"
           title="Preventive Care"
           description="Maintenance programs to prevent gum disease recurrence."
         />
