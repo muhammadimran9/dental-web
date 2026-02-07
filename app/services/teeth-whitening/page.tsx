@@ -1,3 +1,28 @@
+import { SparklesIcon, PackageIcon, ZapIcon, ShieldIcon, DropletIcon, ClockIcon } from '@/components/ui/Icons'
+
+interface ServiceCardProps {
+  icon: React.ReactNode
+  title: string
+  description: string
+}
+
+interface BenefitCardProps {
+  title: string
+  description: string
+}
+
+interface ProcessStepProps {
+  number: string
+  title: string
+  description: string
+}
+
+interface ServiceHeroProps {
+  title: string
+  subtitle: string
+  description: string
+}
+
 export default function TeethWhitening() {
   return (
     <main className="container-custom py-16">
@@ -18,32 +43,32 @@ function ServicesGrid() {
     <section className="mb-16">
       <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
         <ServiceCard 
-          icon="★"
+          icon={<SparklesIcon className="w-8 h-8 text-blue-600" />}
           title="In-Office Whitening"
           description="Professional-grade whitening treatment for immediate, dramatic results."
         />
         <ServiceCard 
-          icon="◆"
+          icon={<PackageIcon className="w-8 h-8 text-blue-600" />}
           title="Take-Home Kits"
           description="Custom whitening kits for convenient at-home touch-up treatments."
         />
         <ServiceCard 
-          icon="◈"
+          icon={<ZapIcon className="w-8 h-8 text-blue-600" />}
           title="Laser Whitening"
           description="Advanced laser technology for faster, more effective whitening."
         />
         <ServiceCard 
-          icon="■"
+          icon={<ShieldIcon className="w-8 h-8 text-blue-600" />}
           title="Desensitizing"
           description="Treatments to reduce sensitivity during and after whitening."
         />
         <ServiceCard 
-          icon="●"
+          icon={<DropletIcon className="w-8 h-8 text-blue-600" />}
           title="Stain Removal"
           description="Professional cleaning to remove stubborn stains before whitening."
         />
         <ServiceCard 
-          icon="○"
+          icon={<ClockIcon className="w-8 h-8 text-blue-600" />}
           title="Quick Results"
           description="Noticeably whiter teeth in just one 60-minute session."
         />
@@ -52,12 +77,14 @@ function ServicesGrid() {
   )
 }
 
-function ServiceCard({ icon, title, description }) {
+function ServiceCard({ icon, title, description }: ServiceCardProps) {
   return (
-    <div className="bg-white rounded-xl shadow-lg p-6 hover:shadow-xl transition-shadow">
-      <div className="text-4xl mb-4">{icon}</div>
+    <div className="bg-white rounded-xl shadow-lg p-6 hover:shadow-xl transition-shadow text-center">
+      <div className="w-16 h-16 bg-blue-50 rounded-full flex items-center justify-center mx-auto mb-4">
+        {icon}
+      </div>
       <h3 className="text-xl font-bold text-gray-800 mb-3">{title}</h3>
-      <p className="text-gray-600">{description}</p>
+      <p className="text-gray-600 text-center">{description}</p>
     </div>
   )
 }
@@ -90,9 +117,9 @@ function BenefitsSection() {
   )
 }
 
-function BenefitItem({ title, description }) {
+function BenefitItem({ title, description }: BenefitCardProps) {
   return (
-    <div className="flex gap-4 items-start">
+    <div className="flex gap-4 items-start text-center">
       <div className="w-6 h-6 bg-blue-600 rounded-full flex items-center justify-center flex-shrink-0 mt-1">
         <div className="w-2 h-2 bg-white rounded-full"></div>
       </div>
@@ -136,7 +163,7 @@ function ProcessSection() {
   )
 }
 
-function ProcessStep({ number, title, description }) {
+function ProcessStep({ number, title, description }: ProcessStepProps) {
   return (
     <div className="text-center">
       <div className="w-12 h-12 bg-blue-600 text-white rounded-full flex items-center justify-center mx-auto mb-4 text-xl font-bold">
@@ -148,7 +175,7 @@ function ProcessStep({ number, title, description }) {
   )
 }
 
-function ServiceHero({ title, subtitle, description }) {
+function ServiceHero({ title, subtitle, description }: ServiceHeroProps) {
   return (
     <section className="text-center mb-16">
       <h1 className="text-4xl md:text-5xl font-bold text-gray-800 mb-4">

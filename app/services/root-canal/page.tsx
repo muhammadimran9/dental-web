@@ -1,3 +1,28 @@
+import { MicroscopeIcon, ShieldIcon, ZapIcon, MonitorIcon, WrenchIcon, CrownIcon } from '@/components/ui/Icons'
+
+interface ServiceCardProps {
+  icon: React.ReactNode
+  title: string
+  description: string
+}
+
+interface BenefitCardProps {
+  title: string
+  description: string
+}
+
+interface ProcessStepProps {
+  number: string
+  title: string
+  description: string
+}
+
+interface ServiceHeroProps {
+  title: string
+  subtitle: string
+  description: string
+}
+
 export default function RootCanal() {
   return (
     <main className="container-custom py-16">
@@ -18,32 +43,22 @@ function ServicesGrid() {
     <section className="mb-16">
       <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
         <ServiceCard 
-          icon="◆"
+          icon={<MonitorIcon className="w-8 h-8 text-blue-600" />}
           title="Diagnostic Imaging"
           description="Digital X-rays and 3D imaging for precise diagnosis."
         />
         <ServiceCard 
-          icon="■"
+          icon={<ZapIcon className="w-8 h-8 text-blue-600" />}
           title="Painless Treatment"
           description="Modern techniques ensuring comfortable root canal therapy."
         />
         <ServiceCard 
-          icon="●"
-          title="Single-Visit Treatment"
-          description="Complete root canal therapy in just one appointment."
-        />
-        <ServiceCard 
-          icon="◈"
-          title="Microscopic Endodontics"
-          description="Dental microscope for enhanced precision and success rates."
-        />
-        <ServiceCard 
-          icon="◇"
+          icon={<CrownIcon className="w-8 h-8 text-blue-600" />}
           title="Crown Restoration"
           description="Custom crowns to restore strength and appearance."
         />
         <ServiceCard 
-          icon="○"
+          icon={<WrenchIcon className="w-8 h-8 text-blue-600" />}
           title="Retreatment Options"
           description="Specialized care for failed previous root canals."
         />
@@ -52,12 +67,14 @@ function ServicesGrid() {
   )
 }
 
-function ServiceCard({ icon, title, description }) {
+function ServiceCard({ icon, title, description }: ServiceCardProps) {
   return (
-    <div className="bg-white rounded-xl shadow-lg p-6 hover:shadow-xl transition-shadow">
-      <div className="text-4xl mb-4">{icon}</div>
+    <div className="bg-white rounded-xl shadow-lg p-6 hover:shadow-xl transition-shadow text-center">
+      <div className="w-16 h-16 bg-blue-50 rounded-full flex items-center justify-center mx-auto mb-4">
+        {icon}
+      </div>
       <h3 className="text-xl font-bold text-gray-800 mb-3">{title}</h3>
-      <p className="text-gray-600">{description}</p>
+      <p className="text-gray-600 text-center">{description}</p>
     </div>
   )
 }
@@ -90,9 +107,9 @@ function BenefitsSection() {
   )
 }
 
-function BenefitItem({ title, description }) {
+function BenefitItem({ title, description }: BenefitCardProps) {
   return (
-    <div className="flex gap-4 items-start">
+    <div className="flex gap-4 items-start text-center">
       <div className="w-6 h-6 bg-blue-600 rounded-full flex items-center justify-center flex-shrink-0 mt-1">
         <div className="w-2 h-2 bg-white rounded-full"></div>
       </div>

@@ -39,6 +39,13 @@ export function useAppointmentForm() {
       return
     }
 
+    // Validate all required fields
+    if (!formData.selectedCategory || !formData.selectedService || !formData.selectedDate || 
+        !formData.selectedTime || !formData.name || !formData.email || !formData.phone) {
+      alert('Please fill in all required fields.')
+      return
+    }
+
     setIsSubmitting(true)
     
     try {
@@ -62,9 +69,9 @@ export function useAppointmentForm() {
         }
       })
 
-      // Simulate success
-      await new Promise(resolve => setTimeout(resolve, 1500))
+      // Real success - no fake timeout
       setSubmitSuccess(true)
+      console.log('Appointment submitted successfully!')
     } catch (error) {
       console.error('Error submitting appointment:', error)
       alert('Failed to submit appointment. Please try again.')
@@ -92,8 +99,10 @@ export function useAppointmentForm() {
         return !!(formData.selectedDate && formData.selectedTime)
       case 4:
         return !!(formData.name && formData.email && formData.phone)
+      case 5:
+        return true // Final review step - always valid
       default:
-        return true
+        return false
     }
   }
 

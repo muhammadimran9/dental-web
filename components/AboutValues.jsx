@@ -1,22 +1,35 @@
 import Card from './ui/Card'
-import StarIcon from './icons/StarIcon'
-import HeartIcon from './icons/HeartIcon'
-import LightbulbIcon from './icons/LightbulbIcon'
-import HandshakeIcon from './icons/HandshakeIcon'
+import { StarIcon, HeartIcon, LightbulbIcon, HandshakeIcon } from './ui/Icons'
 
 export default function AboutValues() {
   const values = [
-    { title: 'Excellence', description: 'We strive for excellence in every procedure and interaction.', icon: <StarIcon /> },
-    { title: 'Compassion', description: 'We treat every patient with care, respect, and understanding.', icon: <HeartIcon /> },
-    { title: 'Innovation', description: 'We use the latest technology and techniques for better outcomes.', icon: <LightbulbIcon /> },
-    { title: 'Integrity', description: 'We maintain the highest ethical standards in all we do.', icon: <HandshakeIcon /> },
+    { 
+      title: 'Excellence', 
+      description: 'We strive for excellence in every procedure and interaction, ensuring the highest standards of dental care.', 
+      icon: <StarIcon className="w-8 h-8 text-blue-600" /> 
+    },
+    { 
+      title: 'Compassion', 
+      description: 'We treat every patient with care, respect, and understanding, making your comfort our priority.', 
+      icon: <HeartIcon className="w-8 h-8 text-blue-600" /> 
+    },
+    { 
+      title: 'Innovation', 
+      description: 'We use the latest technology and techniques for better outcomes and faster recovery times.', 
+      icon: <LightbulbIcon className="w-8 h-8 text-blue-600" /> 
+    },
+    { 
+      title: 'Integrity', 
+      description: 'We maintain the highest ethical standards in all we do, building trust through transparency.', 
+      icon: <HandshakeIcon className="w-8 h-8 text-blue-600" /> 
+    },
   ]
 
   return (
     <section className="section-padding bg-gray-50">
       <div className="container-custom">
         <MissionHeader />
-        <div className="grid md:grid-cols-2 lg:grid-cols-4 gap-6">
+        <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-6">
           {values.map((value, index) => (
             <ValueCard key={index} {...value} />
           ))}
@@ -32,9 +45,10 @@ function MissionHeader() {
       <h2 className="text-3xl md:text-4xl font-bold text-gray-800 mb-6 text-center">
         Our Mission & Values
       </h2>
-      <p className="text-lg text-gray-700 text-center">
-        Our mission is to provide exceptional dental care that improves 
-        the health, confidence, and quality of life for every patient we serve.
+      <p className="text-lg text-gray-700 text-center max-w-3xl mx-auto">
+        Comprehensive Dental Care for Your Entire Family. 
+        From routine check-ups to advanced cosmetic procedures, our internationally trained specialists 
+        provide world-class dental care using the latest technology and techniques.
       </p>
     </div>
   )
@@ -42,10 +56,12 @@ function MissionHeader() {
 
 function ValueCard({ title, description, icon }) {
   return (
-    <Card hover>
-      <div className="text-5xl mb-4 text-accent">{icon}</div>
-      <h3 className="text-xl font-semibold text-gray-800 mb-2">{title}</h3>
-      <p className="text-gray-600">{description}</p>
+    <Card hover className="h-full">
+      <div className="text-center p-6">
+        <div className="mb-4 flex justify-center">{icon}</div>
+        <h3 className="text-xl font-semibold text-gray-800 mb-3">{title}</h3>
+        <p className="text-gray-600 leading-relaxed">{description}</p>
+      </div>
     </Card>
   )
 }

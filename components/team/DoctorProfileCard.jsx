@@ -5,7 +5,7 @@ import Card from '../ui/Card'
 
 export default function DoctorProfileCard({ doctor }) {
   return (
-    <Card className="text-center">
+    <Card className="text-center p-6">
       <div className="relative w-32 h-32 mx-auto mb-4 rounded-full overflow-hidden ring-4 ring-accent/20">
         <Image 
           src={doctor.image}
@@ -22,15 +22,15 @@ export default function DoctorProfileCard({ doctor }) {
       <p className="text-primary font-bold text-sm mb-2">{doctor.title}</p>
       <p className="text-accent font-medium mb-3">{doctor.specialty}</p>
       
-      <div className="bg-accent/10 rounded-lg p-3 mb-4">
+      <div className="bg-accent/10 rounded-lg p-3 mb-4 text-left">
         <p className="text-sm font-semibold text-accent mb-1">{doctor.education}</p>
         <p className="text-xs text-gray-600">{doctor.certifications}</p>
       </div>
       
-      <p className="text-gray-600 text-sm mb-4">{doctor.bio}</p>
+      <p className="text-gray-600 text-sm mb-4 text-left leading-relaxed">{doctor.bio}</p>
       
       {doctor.achievements && (
-        <div className="bg-primary/10 rounded-lg p-2 mb-4">
+        <div className="bg-primary/10 rounded-lg p-2 mb-4 text-left">
           <p className="text-xs font-semibold text-primary">{doctor.achievements}</p>
         </div>
       )}

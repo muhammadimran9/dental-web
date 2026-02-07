@@ -14,13 +14,13 @@ export default function Blog() {
   return (
     <div>
       {/* Featured Post Hero */}
-      <section className="section-padding bg-gradient-to-br from-primary to-primary-dark text-white">
+      <section className="section-padding bg-gradient-to-br from-blue-50 to-blue-100 text-gray-800">
         <div className="container-custom">
           <div className="text-center mb-12">
             <h1 className="text-4xl md:text-5xl font-bold mb-4">
               Dental Health Blog
             </h1>
-            <p className="text-xl text-gray-100">
+            <p className="text-xl text-gray-600">
               Expert insights and tips for optimal oral health
             </p>
           </div>
@@ -32,7 +32,7 @@ export default function Blog() {
       </section>
 
       {/* Posts Grid with Sidebar */}
-      <section className="section-padding">
+      <section className="section-padding bg-white">
         <div className="container-custom">
           <div className="grid lg:grid-cols-3 gap-12">
             <div className="lg:col-span-2">
@@ -44,7 +44,7 @@ export default function Blog() {
                     onClick={() => setSelectedCategory(category)}
                     className={`px-4 py-2 rounded-full font-medium transition-all ${
                       selectedCategory === category
-                        ? 'bg-accent text-white'
+                        ? 'bg-blue-500 text-white'
                         : 'bg-gray-100 text-gray-700 hover:bg-gray-200'
                     }`}
                   >

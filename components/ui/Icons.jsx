@@ -231,3 +231,137 @@ export const WheelchairIcon = ({ className = 'w-5 h-5' }) => (
     <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M12 15v3m0 0l-3-3m3 3l3-3" />
   </svg>
 )
+
+export const LightbulbIcon = ({ className = 'w-5 h-5' }) => (
+  <svg className={className} fill="none" stroke="currentColor" viewBox="0 0 24 24">
+    <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M9.663 3h4.674a1 1 0 011.994.894l1.221 1.221a3 3 0 01.424 4.242L12 8.418l-1.221-1.221a3 3 0 00-4.242 4.242L9.663 3z" />
+    <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M12 2v6m0 0l-3-3m3 3h6" />
+  </svg>
+)
+
+export const HandshakeIcon = ({ className = 'w-5 h-5' }) => (
+  <svg className={className} fill="none" stroke="currentColor" viewBox="0 0 24 24">
+    <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M12 2L2 7l5.5 5.5L12 15l4.5-2.5L22 7l-5.5-5.5L12 2z" />
+    <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M7 12l3 3m0 0l-3-3m3 3h6" />
+  </svg>
+)
+
+export const TechnologyIcon = ({ className = 'w-5 h-5' }) => (
+  <svg className={className} fill="none" stroke="currentColor" viewBox="0 0 24 24">
+    <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M9.663 3h4.674a1 1 0 011.994.894l1.221 1.221a3 3 0 01.424 4.242L12 8.418l-1.221-1.221a3 3 0 00-4.242 4.242L9.663 3z" />
+    <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M12 2v6m0 0l-3-3m3 3h6" />
+  </svg>
+)
+
+export const PainFreeIcon = ({ className = 'w-5 h-5' }) => (
+  <svg className={className} fill="none" stroke="currentColor" viewBox="0 0 24 24">
+    <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M14.828 14.828a4 4 0 01-5.656 0M9 10h1m-1 4h8m-8-4v8m0 0l2-2m-2 2l-2-2" />
+    <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M21 12a9 9 0 11-18 0 9 9 0 0118 0z" />
+  </svg>
+)
+
+export const DoctorIcon = ({ className = 'w-5 h-5' }) => (
+  <svg className={className} fill="none" stroke="currentColor" viewBox="0 0 24 24">
+    <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M16 7a4 4 0 11-8 0 4 4 0 01-8 0zM12 14a7 7 0 00-7 7h14a7 7 0 00-7-7z" />
+  </svg>
+)
+
+export const PricingIcon = ({ className = 'w-5 h-5' }) => (
+  <svg className={className} fill="none" stroke="currentColor" viewBox="0 0 24 24">
+    <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M12 8c-1.657 0-3 .895-3 2s1.343 2 3 2 3 .895 3 2-1.343 2-3 2m0-8c1.11 0 2.08.402 2.599 1M12 8V7m0 1c0 1.11.402 2.08 1 2.599M12 8v8m0 0c0 1.11.402 2.08 1 2.599M12 8V6m0 0c0 1.11.402 2.08 1 2.599M12 8V4m0 0c0 1.11.402 2.08 1 2.599" />
+    <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M20 12H4" />
+  </svg>
+)
+
+export const StaffIcon = ({ className = 'w-5 h-5' }) => (
+  <svg className={className} fill="none" stroke="currentColor" viewBox="0 0 24 24">
+    <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M17 20h5v-2a3 3 0 00-5.356-3H7a3 3 0 00-3 3v2h5m-5 0v8a2 2 0 002 2h10a2 2 0 002-2v-8m-5 0h5m-5 0a2 2 0 00-2 2v2h10v-2a2 2 0 00-2-2" />
+  </svg>
+)
+
+export const SparklesIcon = ({ className = 'w-5 h-5' }) => (
+  <svg className={className} fill="none" stroke="currentColor" viewBox="0 0 24 24">
+    <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M9.663 3h4.674a1 1 0 011.994.894l1.221 1.221a3 3 0 01.424 4.242L12 8.418l-1.221-1.221a3 3 0 00-4.242 4.242L9.663 3z" />
+    <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M12 2v6m0 0l-3-3m3 3h6" />
+  </svg>
+)
+
+export const MonitorIcon = ({ className = 'w-5 h-5' }) => (
+  <svg className={className} fill="none" stroke="currentColor" viewBox="0 0 24 24">
+    <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M9.75 17L9 20l-1 1h8l-1-1m0-3l-1.75-3L12 2l-1.75 3M9 13l-1.75-3L12 7l1.75 3m0 3l1.75 3L12 17l-1.75 3" />
+    <rect x="3" y="3" width="18" height="14" rx="2" strokeWidth={2} />
+  </svg>
+)
+
+export const WrenchIcon = ({ className = 'w-5 h-5' }) => (
+  <svg className={className} fill="none" stroke="currentColor" viewBox="0 0 24 24">
+    <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M21.75 6.75a2 2 0 00-2-2H9a2 2 0 00-2 2v1.5m0 0l-1.75 1.75L12 8.25l-1.75-1.75M9 11.25l1.75 1.75L12 15.75l1.75 1.75m0 3l1.75 1.75L12 20.75l1.75 1.75" />
+  </svg>
+)
+
+export const DropletIcon = ({ className = 'w-5 h-5' }) => (
+  <svg className={className} fill="none" stroke="currentColor" viewBox="0 0 24 24">
+    <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M12 2.69l5.66 5.66a2 2 0 012.83 2.83l2.83 2.83a2 2 0 01-2.83 2.83L12 2.69m0 0l-5.66-5.66A2 2 0 019.17 9.17l2.83 2.83a2 2 0 002.83-2.83L12 21.31m0 0l5.66-5.66a2 2 0 00-2.83-2.83L12 2.69" />
+  </svg>
+)
+
+export const ClockIcon = ({ className = 'w-5 h-5' }) => (
+  <svg className={className} fill="none" stroke="currentColor" viewBox="0 0 24 24">
+    <circle cx="12" cy="12" r="10" strokeWidth={2} />
+    <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M12 6v6m0 0l-3-3m3 3h6" />
+  </svg>
+)
+
+export const PackageIcon = ({ className = 'w-5 h-5' }) => (
+  <svg className={className} fill="none" stroke="currentColor" viewBox="0 0 24 24">
+    <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M16 4h2a2 2 0 00-2 2v1.5m0 0l-1.75 1.75L12 8.25l-1.75-1.75M9 11.25l1.75 1.75L12 15.75l1.75 1.75m0 3l1.75 1.75L12 17.75l1.75 1.75" />
+    <rect x="3" y="6" width="18" height="12" rx="2" strokeWidth={2} />
+  </svg>
+)
+
+export const ZapIcon = ({ className = 'w-5 h-5' }) => (
+  <svg className={className} fill="none" stroke="currentColor" viewBox="0 0 24 24">
+    <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M13 2L3 7h14l-7 7M13 17l5 5h6m-6 0l6 6h6m0 0l6 6h6" />
+    <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M21 12h-7a2 2 0 00-2 2v1a2 2 0 00-2 2h14a2 2 0 002 2v-2a2 2 0 00-2-2" />
+  </svg>
+)
+
+export const CrownIcon = ({ className = 'w-5 h-5' }) => (
+  <svg className={className} fill="none" stroke="currentColor" viewBox="0 0 24 24">
+    <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M12 2l2 2a2 2 0 01-2 2v2a2 2 0 00-2 2h-4a2 2 0 00-2 2v-2a2 2 0 00-2-2M12 2v6m0 0l-2 2m0 0l2 2" />
+    <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M9 12l6 6m-6 0l6 6h6" />
+  </svg>
+)
+
+export const BookOpenIcon = ({ className = 'w-5 h-5' }) => (
+  <svg className={className} fill="none" stroke="currentColor" viewBox="0 0 24 24">
+    <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M12 6.7L16.65c.34a1 1.994.894l1.221 1.221a3 3 0 01.424 4.242L12 8.418l-1.221-1.221a3 3 0 00-4.242 4.242L9.663 3z" />
+    <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M12 2v6m0 0l-3-3m3 3h6" />
+  </svg>
+)
+
+export const AppleIcon = ({ className = 'w-5 h-5' }) => (
+  <svg className={className} fill="none" stroke="currentColor" viewBox="0 0 24 24">
+    <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M12 2l2 2a2 2 0 01-2 2v2a2 2 0 00-2 2h-4a2 2 0 00-2 2v-2a2 2 0 00-2-2M12 2v6m0 0l-2 2m0 0l2 2" />
+    <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M20.84 4a1.98 2.83l2.83 2.83a2 2 0 01-2.83 2.83L12 2.17m0 0l-2.83 2.83a2 2 0 002.83-2.83L12 21.31m0 0l-2.83 2.83a2 2 0 00-2.83-2.83L12 2.69" />
+  </svg>
+)
+
+export const StethoscopeIcon = ({ className = 'w-5 h-5' }) => (
+  <svg className={className} fill="none" stroke="currentColor" viewBox="0 0 24 24">
+    <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M9 18h6m-6-6 0l6 6h6m0 0l6 6h6" />
+    <circle cx="9" cy="12" r="3" strokeWidth={2} />
+    <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M9 3v6m0 0l-3-3m3 3h6" />
+    <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M14 7l3 3h6m0 0l-3-3m3 3h6" />
+  </svg>
+)
+
+export const UserCheckIcon = ({ className = 'w-5 h-5' }) => (
+  <svg className={className} fill="none" stroke="currentColor" viewBox="0 0 24 24">
+    <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M9 12l6 6m-6 0l6 6h6m0 0l6 6h6" />
+    <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M9 9l6 6m-6 0l6 6h6m0 0l6 6h6" />
+    <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M15 3l-3 3h6m0 0l-3-3m3 3h6" />
+    <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M9 3l6 6m-6 0l6 6h6m0 0l6 6h6" />
+    <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M17 7l-3 3h6m0 0l-3-3m3 3h6" />
+  </svg>
+)

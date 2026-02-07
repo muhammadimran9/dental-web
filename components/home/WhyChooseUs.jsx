@@ -1,18 +1,14 @@
 import Card from '../ui/Card'
 import SectionHeader from '../SectionHeader'
 import ReasonCard from '../ReasonCard'
-import TechnologyIcon from '../icons/TechnologyIcon'
-import PainFreeIcon from '../icons/PainFreeIcon'
-import DoctorIcon from '../icons/DoctorIcon'
-import PricingIcon from '../icons/PricingIcon'
-import StaffIcon from '../icons/StaffIcon'
+import { TechnologyIcon, PainFreeIcon, DoctorIcon, PricingIcon, StaffIcon } from '../ui/Icons'
 
 const reasons = [
-  { icon: <TechnologyIcon />, title: 'Modern Technology', description: 'State-of-the-art equipment' },
-  { icon: <PainFreeIcon />, title: 'Pain-Free Treatment', description: 'Comfortable procedures' },
-  { icon: <DoctorIcon />, title: 'Experienced Dentists', description: 'Expert care team' },
-  { icon: <PricingIcon />, title: 'Transparent Pricing', description: 'No hidden fees' },
-  { icon: <StaffIcon />, title: 'Friendly Staff', description: 'Welcoming environment' },
+  { icon: <TechnologyIcon className="w-8 h-8 text-blue-600" />, title: 'Modern Technology', description: 'State-of-the-art equipment' },
+  { icon: <PainFreeIcon className="w-8 h-8 text-blue-600" />, title: 'Pain-Free Treatment', description: 'Comfortable procedures' },
+  { icon: <DoctorIcon className="w-8 h-8 text-blue-600" />, title: 'Experienced Dentists', description: 'Expert care team' },
+  { icon: <PricingIcon className="w-8 h-8 text-blue-600" />, title: 'Transparent Pricing', description: 'No hidden fees' },
+  { icon: <StaffIcon className="w-8 h-8 text-blue-600" />, title: 'Friendly Staff', description: 'Welcoming environment' },
 ]
 
 export default function WhyChooseUs() {
@@ -20,7 +16,7 @@ export default function WhyChooseUs() {
     <section className="section-padding bg-gray-50">
       <div className="container-custom">
         <SectionHeader title="Why Choose Us" subtitle="What sets us apart from other dental clinics" />
-        <div className="grid md:grid-cols-2 lg:grid-cols-5 gap-6">
+        <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6">
           {reasons.map((reason, index) => (
             <ReasonCard key={index} {...reason} />
           ))}

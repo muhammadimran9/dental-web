@@ -1,6 +1,8 @@
 
+import { SparklesIcon, ShieldIcon, MonitorIcon, WrenchIcon, DropletIcon, HeartIcon } from '@/components/ui/Icons'
+
 interface ServiceCardProps {
-  icon: string
+  icon: React.ReactNode
   title: string
   description: string
 }
@@ -42,32 +44,32 @@ function ServicesGrid() {
     <section className="mb-16">
       <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
         <ServiceCard 
-          icon="★"
+          icon={<SparklesIcon className="w-8 h-8 text-blue-600" />}
           title="Teeth Whitening"
           description="Professional whitening treatments for a brighter, more confident smile."
         />
         <ServiceCard 
-          icon="◆"
+          icon={<ShieldIcon className="w-8 h-8 text-blue-600" />}
           title="Porcelain Veneers"
           description="Custom-made porcelain shells to perfect the appearance of your teeth."
         />
         <ServiceCard 
-          icon="◈"
+          icon={<MonitorIcon className="w-8 h-8 text-blue-600" />}
           title="Digital Smile Design"
           description="Advanced digital planning to design your perfect smile before treatment."
         />
         <ServiceCard 
-          icon="◇"
+          icon={<WrenchIcon className="w-8 h-8 text-blue-600" />}
           title="Composite Bonding"
           description="Tooth-colored resin to repair chips, cracks, and gaps."
         />
         <ServiceCard 
-          icon="○"
+          icon={<DropletIcon className="w-8 h-8 text-blue-600" />}
           title="Stain Removal"
           description="Professional cleaning to remove stubborn stains and discoloration."
         />
         <ServiceCard 
-          icon="●"
+          icon={<HeartIcon className="w-8 h-8 text-blue-600" />}
           title="Facial Aesthetics"
           description="Non-surgical treatments to enhance facial appearance and reduce wrinkles."
         />
@@ -78,10 +80,12 @@ function ServicesGrid() {
 
 function ServiceCard({ icon, title, description }: ServiceCardProps) {
   return (
-    <div className="bg-white rounded-xl shadow-lg p-6 hover:shadow-xl transition-shadow">
-      <div className="text-4xl mb-4">{icon}</div>
+    <div className="bg-white rounded-xl shadow-lg p-6 hover:shadow-xl transition-shadow text-center">
+      <div className="w-16 h-16 bg-blue-50 rounded-full flex items-center justify-center mx-auto mb-4">
+        {icon}
+      </div>
       <h3 className="text-xl font-bold text-gray-800 mb-3">{title}</h3>
-      <p className="text-gray-600">{description}</p>
+      <p className="text-gray-600 text-center">{description}</p>
     </div>
   )
 }
