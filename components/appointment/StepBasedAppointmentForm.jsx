@@ -13,6 +13,7 @@ export default function StepBasedAppointmentForm() {
     submitSuccess,
     formData,
     totalSteps,
+    isSubmitting,
     handleNext,
     handlePrevious,
     handleSubmit,
@@ -45,6 +46,7 @@ export default function StepBasedAppointmentForm() {
           onNext={handleNext}
           onSubmit={handleSubmit}
           isStepValid={isStepValid}
+          isSubmitting={isSubmitting}
         />
       </div>
     </Card>

@@ -24,11 +24,14 @@ const nextConfig = {
   // Performance optimizations
   compress: true,
   poweredByHeader: false,
-  swcMinify: true,
   // Enable experimental features for better performance
   experimental: {
-    optimizeCss: true,
     optimizePackageImports: ['lucide-react'],
+  },
+  // Turbopack configuration for Next.js 16
+  turbopack: {
+    // Empty config to silence the error and use default Turbopack settings
+    root: process.cwd(),
   },
   // PWA & Caching
   async headers() {
@@ -88,13 +91,6 @@ const nextConfig = {
         ],
       },
     ]
-  },
-  // Bundle optimization
-  webpack: (config, { isServer }) => {
-    if (!isServer) {
-      config.resolve.fallback.fs = false
-    }
-    return config
   },
 }
 

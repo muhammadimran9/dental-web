@@ -1,10 +1,13 @@
 'use client'
 
 import { useState } from 'react'
+import { auth, db } from '@/lib/firebase'
+import { collection, addDoc, serverTimestamp } from 'firebase/firestore'
 
 export function useAppointmentForm() {
   const [currentStep, setCurrentStep] = useState(1)
   const [submitSuccess, setSubmitSuccess] = useState(false)
+  const [isSubmitting, setIsSubmitting] = useState(false)
   const [formData, setFormData] = useState({
     selectedCategory: '',
     selectedService: '',
@@ -31,8 +34,43 @@ export function useAppointmentForm() {
   }
 
   const handleSubmit = async () => {
-    await new Promise(resolve => setTimeout(resolve, 1500))
-    setSubmitSuccess(true)
+    if (!auth || !db) {
+      alert('Please try again later.')
+      return
+    }
+
+    setIsSubmitting(true)
+    
+    try {
+      // Save appointment to Firebase
+      await addDoc(collection(db, 'appointments'), {
+        ...formData,
+        status: 'pending',
+        createdAt: serverTimestamp(),
+        read: false,
+        patientInfo: {
+          name: formData.name,
+          email: formData.email,
+          phone: formData.phone
+        },
+        appointmentDetails: {
+          category: formData.selectedCategory,
+          service: formData.selectedService,
+          date: formData.selectedDate,
+          time: formData.selectedTime,
+          notes: formData.notes
+        }
+      })
+
+      // Simulate success
+      await new Promise(resolve => setTimeout(resolve, 1500))
+      setSubmitSuccess(true)
+    } catch (error) {
+      console.error('Error submitting appointment:', error)
+      alert('Failed to submit appointment. Please try again.')
+    } finally {
+      setIsSubmitting(false)
+    }
   }
 
   const updateFormData = (field, value) => {
@@ -64,6 +102,7 @@ export function useAppointmentForm() {
     submitSuccess,
     formData,
     totalSteps,
+    isSubmitting,
     handleNext,
     handlePrevious,
     handleSubmit,

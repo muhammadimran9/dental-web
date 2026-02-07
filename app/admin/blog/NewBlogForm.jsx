@@ -37,6 +37,28 @@ export default function NewBlogForm({
 
           <div>
             <label className="block text-sm font-medium text-gray-700 mb-2">
+              Category
+            </label>
+            <select
+              name="category"
+              value={formData.category}
+              onChange={handleChange}
+              required
+              className="w-full px-3 py-2 border border-gray-300 rounded-lg focus:border-primary focus:ring-2 focus:ring-primary/20"
+            >
+              <option value="">Select a category</option>
+              <option value="General Dentistry">General Dentistry</option>
+              <option value="Cosmetic Dentistry">Cosmetic Dentistry</option>
+              <option value="Dental Implants">Dental Implants</option>
+              <option value="Orthodontics">Orthodontics</option>
+              <option value="Pediatric Dentistry">Pediatric Dentistry</option>
+              <option value="Oral Surgery">Oral Surgery</option>
+              <option value="Preventive Care">Preventive Care</option>
+            </select>
+          </div>
+
+          <div>
+            <label className="block text-sm font-medium text-gray-700 mb-2">
               Excerpt
             </label>
             <textarea
@@ -46,6 +68,7 @@ export default function NewBlogForm({
               rows={3}
               required
               className="w-full px-3 py-2 border border-gray-300 rounded-lg focus:border-primary focus:ring-2 focus:ring-primary/20"
+              placeholder="Brief summary of the blog post..."
             />
           </div>
 
@@ -59,6 +82,7 @@ export default function NewBlogForm({
               value={formData.featuredImage}
               onChange={handleChange}
               className="w-full px-3 py-2 border border-gray-300 rounded-lg focus:border-primary focus:ring-2 focus:ring-primary/20"
+              placeholder="https://example.com/image.jpg"
             />
           </div>
 
@@ -70,9 +94,10 @@ export default function NewBlogForm({
               name="content"
               value={formData.content}
               onChange={handleChange}
-              rows={10}
+              rows={12}
               required
               className="w-full px-3 py-2 border border-gray-300 rounded-lg focus:border-primary focus:ring-2 focus:ring-primary/20"
+              placeholder="Write your blog post content here..."
             />
           </div>
 

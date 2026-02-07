@@ -2,9 +2,9 @@
 
 import Link from 'next/link'
 import { useState } from 'react'
-import Button from '../ui/Button'
-import { XIcon, ChevronDownIcon, CalendarIcon } from '../ui/Icons'
-import { aboutItems, serviceItems, feedbackItems, contactItems } from '../navigationConfig'
+import Button from './ui/Button'
+import { XIcon, ChevronDownIcon, CalendarIcon } from './ui/Icons'
+import { aboutItems, serviceItems, feedbackItems, contactItems } from './navigationConfig'
 
 export default function MobileMenu({ isOpen, onClose }) {
   if (!isOpen) return null

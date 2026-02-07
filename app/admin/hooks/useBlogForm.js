@@ -1,6 +1,8 @@
 'use client'
 
 import { useState } from 'react'
+import { auth, db } from '@/lib/firebase'
+import { collection, addDoc, serverTimestamp } from 'firebase/firestore'
 
 export function useBlogForm() {
   const [isSubmitting, setIsSubmitting] = useState(false)
@@ -9,6 +11,7 @@ export function useBlogForm() {
     category: '',
     excerpt: '',
     content: '',
+    featuredImage: ''
   })
 
   const handleChange = (e) => {
@@ -20,36 +23,28 @@ export function useBlogForm() {
 
   const handleSubmit = async (e) => {
     e.preventDefault()
+    
+    if (!auth || !db) {
+      alert('Please try again later.')
+      return
+    }
+
     setIsSubmitting(true)
-
+    
     try {
-      // Create new post object
-      const newPost = {
-        id: Date.now().toString(),
+      // Save blog post to Firebase
+      await addDoc(collection(db, 'blogPosts'), {
         ...formData,
-        date: new Date().toLocaleDateString('en-US', { 
-          year: 'numeric', 
-          month: 'long', 
-          day: 'numeric' 
-        }),
-        readTime: Math.ceil(formData.content.split(' ').length / 200) + ' min read',
-        publishedAt: new Date().toISOString(),
-        author: 'Admin'
-      }
+        status: 'published',
+        createdAt: serverTimestamp(),
+        author: 'Admin',
+        readTime: Math.ceil(formData.content.split(' ').length / 200) + ' min read'
+      })
 
-      // Get existing posts from localStorage or use empty array
-      const existingPosts = JSON.parse(localStorage.getItem('blogPosts') || '[]')
-      
-      // Add new post to the beginning
-      const updatedPosts = [newPost, ...existingPosts]
-      
-      // Save to localStorage
-      localStorage.setItem('blogPosts', JSON.stringify(updatedPosts))
-      
       alert('Blog post published successfully!')
       window.location.href = '/admin/blog'
     } catch (error) {
-      console.error('Error creating blog post:', error)
+      console.error('Error publishing blog post:', error)
       alert('Error publishing post. Please try again.')
     } finally {
       setIsSubmitting(false)

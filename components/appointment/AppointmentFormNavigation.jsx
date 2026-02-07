@@ -5,14 +5,15 @@ export default function AppointmentFormNavigation({
   onPrevious, 
   onNext, 
   onSubmit, 
-  isStepValid 
+  isStepValid,
+  isSubmitting 
 }) {
   return (
     <div className="flex justify-between">
       <Button
         variant="outline"
         onClick={onPrevious}
-        disabled={currentStep === 1}
+        disabled={currentStep === 1 || isSubmitting}
         className={currentStep === 1 ? 'invisible' : ''}
       >
         Previous
@@ -21,14 +22,22 @@ export default function AppointmentFormNavigation({
       {currentStep === 5 ? (
         <Button
           onClick={onSubmit}
-          className="bg-primary hover:bg-primary/90 text-white"
+          disabled={isSubmitting}
+          className="bg-primary hover:bg-primary/90 text-white flex items-center gap-2"
         >
-          Confirm Appointment
+          {isSubmitting ? (
+            <>
+              <div className="w-4 h-4 border-2 border-white border-t-transparent border-r-transparent animate-spin rounded-full"></div>
+              Submitting...
+            </>
+          ) : (
+            'Confirm Appointment'
+          )}
         </Button>
       ) : (
         <Button
           onClick={onNext}
-          disabled={!isStepValid(currentStep)}
+          disabled={!isStepValid(currentStep) || isSubmitting}
           className="bg-primary hover:bg-primary/90 text-white"
         >
           Next
