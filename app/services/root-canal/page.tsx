@@ -1,24 +1,15 @@
-import Header from '@/components/HeaderProfessional'
-import Footer from '@/components/Footer'
-import ContactHeader from '@/components/ContactHeaderNew'
-
 export default function RootCanal() {
   return (
-    <div className="min-h-screen bg-white">
-      <ContactHeader />
-      <Header />
-      <main className="container-custom py-16">
-        <ServiceHero 
-          title="Root Canal Treatment"
-          subtitle="Save your natural tooth"
-          description="Advanced root canal therapy to relieve pain and preserve your natural tooth, preventing extraction."
-        />
-        <ServicesGrid />
-        <BenefitsSection />
-        <ProcessSection />
-      </main>
-      <Footer />
-    </div>
+    <main className="container-custom py-16">
+      <ServiceHero 
+        title="Root Canal Treatment"
+        subtitle="Save your natural tooth"
+        description="Advanced root canal therapy to relieve pain and preserve your natural tooth, preventing extraction."
+      />
+      <ServicesGrid />
+      <BenefitsSection />
+      <ProcessSection />
+    </main>
   )
 }
 

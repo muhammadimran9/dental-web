@@ -1,7 +1,4 @@
-import Header from '@/components/HeaderProfessional'
-import Footer from '@/components/Footer'
-import ContactHeader from '@/components/ContactHeaderNew'
-import { GiftIcon, ToothIcon, HeartIcon, PhoneIcon2, LightningIcon, TrophyIcon, UserIcon } from '@/components/ui/IconsNew'
+import { GiftIcon, ToothIcon, HeartIcon, PhoneIcon2, LightningIcon, TrophyIcon, UserIcon } from '@/components/ui/Icons'
 
 interface BenefitCardProps {
   icon: React.ReactNode
@@ -25,18 +22,13 @@ interface StoryCardProps {
 
 export default function Referral() {
   return (
-    <div className="min-h-screen bg-white">
-      <ContactHeader />
-      <Header />
-      <main className="container-custom py-16">
-        <ReferralHero />
-        <ReferralBenefits />
-        <ReferralForm />
-        <RewardsSection />
-        <SuccessStories />
-      </main>
-      <Footer />
-    </div>
+    <main className="container-custom py-16">
+      <ReferralHero />
+      <ReferralBenefits />
+      <ReferralForm />
+      <RewardsSection />
+      <SuccessStories />
+    </main>
   )
 }
 

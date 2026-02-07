@@ -1,6 +1,5 @@
 "use client";
 import { useState } from 'react'
-import ContactHeader from '@/components/ContactHeader'
 import ServicesHero from '@/components/services/ServicesHero'
 import ServiceTabs from '@/components/services/ServiceTabs'
 import EnhancedServiceCard from '@/components/services/EnhancedServiceCard'
@@ -21,7 +20,6 @@ export default function Services() {
 
   return (
     <div>
-      <ContactHeader />
       <ServicesHero />
       <section className="section-padding">
         <div className="container-custom">

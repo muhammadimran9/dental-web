@@ -1,5 +1,5 @@
 import Link from 'next/link'
-import Button from '../Button'
+import Button from '../ui/Button'
 import CheckCircleIcon from '../icons/CheckCircleIcon'
 
 export default function HeroContent() {

@@ -1,7 +1,4 @@
-import Header from '@/components/HeaderProfessional'
-import Footer from '@/components/Footer'
-import ContactHeader from '@/components/ContactHeaderNew'
-import { ToothIcon, BridgeIcon, MicroscopeIcon, LightningIcon, ShieldCheckIcon } from '@/components/ui/IconsNew'
+import { ToothIcon, BridgeIcon, MicroscopeIcon, LightningIcon, ShieldCheckIcon } from '@/components/ui/Icons'
 
 interface ServiceCardProps {
   icon: React.ReactNode
@@ -28,21 +25,16 @@ interface ProcessItemProps {
 
 export default function DentalImplants() {
   return (
-    <div className="min-h-screen bg-white">
-      <ContactHeader />
-      <Header />
-      <main className="container-custom py-16">
-        <ServiceHero 
-          title="Dental Implants"
-          subtitle="Permanent solution for missing teeth"
-          description="State-of-the-art dental implants that look, feel, and function like natural teeth, restoring your smile and confidence."
-        />
-        <ServicesGrid />
-        <BenefitsSection />
-        <ProcessSection />
-      </main>
-      <Footer />
-    </div>
+    <main className="container-custom py-16">
+      <ServiceHero 
+        title="Dental Implants"
+        subtitle="Permanent solution for missing teeth"
+        description="State-of-the-art dental implants that look, feel, and function like natural teeth, restoring your smile and confidence."
+      />
+      <ServicesGrid />
+      <BenefitsSection />
+      <ProcessSection />
+    </main>
   )
 }
 

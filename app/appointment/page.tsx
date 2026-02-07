@@ -1,5 +1,4 @@
 import AppointmentHero from '@/components/appointment/AppointmentHero'
-import ContactHeader from '@/components/ContactHeader'
 import StepBasedAppointmentForm from '@/components/appointment/StepBasedAppointmentForm'
 import ProcessSteps from '@/components/appointment/ProcessSteps'
 import TestimonialsSlider from '@/components/home/TestimonialsSlider'
@@ -7,7 +6,6 @@ import TestimonialsSlider from '@/components/home/TestimonialsSlider'
 export default function Appointment() {
   return (
     <div>
-      <ContactHeader />
       <AppointmentHero />
       
       <section className="section-padding">

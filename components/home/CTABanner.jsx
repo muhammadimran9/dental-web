@@ -1,6 +1,6 @@
 import Link from 'next/link'
-import Button from '../ui/ButtonNew'
-import QuickBookingForm from '../QuickBookingForm'
+import Button from '../ui/Button'
+import QuickBookingForm from './QuickBookingForm'
 
 export default function CTABanner() {
   return (

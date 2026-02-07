@@ -2,8 +2,8 @@
 
 import { useState } from 'react'
 import { useForm } from 'react-hook-form'
-import Button from '../Button'
-import Card from '../Card'
+import Button from '../ui/Button'
+import Card from '../ui/Card'
 import AppointmentFormFields from './AppointmentFormFields'
 import FormMessages from '../FormMessages'
 import AlternativeContact from './AlternativeContact'

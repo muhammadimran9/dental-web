@@ -1,5 +1,5 @@
-import Button from '../ui/ButtonNew'
-import Input from '../ui/InputNew'
+import Button from '../ui/Button'
+import Input from '../ui/Input'
 
 export default function CTAQuickBooking() {
   return (

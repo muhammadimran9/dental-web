@@ -1,11 +1,13 @@
 import Link from 'next/link'
-import Button from './Button'
+import Button from './ui/Button'
 
-export default function ViewAllButton() {
+export default function ViewAllButton({ href, children = 'View All' }) {
   return (
     <div className="text-center mt-12">
-      <Link href="/services">
-        <Button variant="outline">View All Services</Button>
+      <Link href={href}>
+        <Button variant="primary" className="px-8 py-3">
+          {children}
+        </Button>
       </Link>
     </div>
   )

@@ -1,44 +1,70 @@
 export function StructuredData() {
   const structuredData = {
     "@context": "https://schema.org",
-    "@type": "DentalClinic",
+    "@type": "Dentist",
     "name": "DentalCare Dubai",
-    "description": "World-class dental care in Dubai. Internationally trained dentists, state-of-the-art technology.",
+    "description": "Top-rated dental clinic in Dubai Healthcare City. Expert dentists, advanced technology, comprehensive dental services.",
     "url": "https://dental-web-app.netlify.app",
-    "telephone": "+971 4 123 4567",
+    "telephone": "+971-4-123-4567",
+    "email": "info@dentalcaredubai.com",
+    "priceRange": "$$-$$$",
+    "image": "https://dental-web-app.netlify.app/images/clinic-exterior.jpg",
     "address": {
       "@type": "PostalAddress",
       "streetAddress": "Dubai Healthcare City, Block 3",
       "addressLocality": "Dubai",
-      "addressCountry": "AE",
-      "postalCode": "123456"
+      "addressRegion": "Dubai",
+      "postalCode": "123456",
+      "addressCountry": "AE"
     },
     "geo": {
       "@type": "GeoCoordinates",
-      "latitude": "25.2267",
-      "longitude": "55.2962"
+      "latitude": 25.2267,
+      "longitude": 55.2962
     },
-    "openingHours": [
-      "Mo-Fr 09:00-20:00",
-      "Sa 09:00-18:00",
-      "Su 00:00-00:00"
+    "openingHoursSpecification": [
+      {
+        "@type": "OpeningHoursSpecification",
+        "dayOfWeek": ["Monday", "Tuesday", "Wednesday", "Thursday", "Friday"],
+        "opens": "08:00",
+        "closes": "20:00"
+      },
+      {
+        "@type": "OpeningHoursSpecification",
+        "dayOfWeek": "Saturday",
+        "opens": "09:00",
+        "closes": "17:00"
+      },
+      {
+        "@type": "OpeningHoursSpecification",
+        "dayOfWeek": "Sunday",
+        "opens": "10:00",
+        "closes": "16:00"
+      }
     ],
-    "priceRange": "$$$",
-    "image": "https://dental-web-app.netlify.app/images/clinic-exterior.jpg",
+    "aggregateRating": {
+      "@type": "AggregateRating",
+      "ratingValue": "4.9",
+      "reviewCount": "500",
+      "bestRating": "5",
+      "worstRating": "1"
+    },
     "sameAs": [
       "https://www.facebook.com/dentalcaredubai",
-      "https://www.instagram.com/dentalcaredubai"
+      "https://www.instagram.com/dentalcaredubai",
+      "https://twitter.com/dentalcaredubai",
+      "https://www.linkedin.com/company/dentalcaredubai"
     ],
     "hasOfferCatalog": {
       "@type": "OfferCatalog",
-      "nameOfPart": "Dental Services",
+      "name": "Dental Services",
       "itemListElement": [
         {
           "@type": "Offer",
           "itemOffered": {
             "@type": "Service",
             "name": "General Dentistry",
-            "description": "Comprehensive dental care for the whole family"
+            "description": "Comprehensive dental checkups, cleanings, and preventive care"
           }
         },
         {
@@ -46,7 +72,7 @@ export function StructuredData() {
           "itemOffered": {
             "@type": "Service",
             "name": "Cosmetic Dentistry",
-            "description": "Transform your smile with our cosmetic treatments"
+            "description": "Teeth whitening, veneers, and smile makeover treatments"
           }
         },
         {
@@ -54,7 +80,15 @@ export function StructuredData() {
           "itemOffered": {
             "@type": "Service", 
             "name": "Dental Implants",
-            "description": "Permanent solution for missing teeth"
+            "description": "Permanent tooth replacement with advanced implant technology"
+          }
+        },
+        {
+          "@type": "Offer",
+          "itemOffered": {
+            "@type": "Service",
+            "name": "Orthodontics",
+            "description": "Braces, Invisalign, and teeth straightening solutions"
           }
         }
       ]

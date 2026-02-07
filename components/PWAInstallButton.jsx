@@ -1,6 +1,6 @@
 'use client'
 
-import Button from './Button'
+import Button from './ui/Button'
 import InstallIcon from './icons/InstallIcon'
 import { usePWAInstall } from './hooks/usePWAInstall'
 

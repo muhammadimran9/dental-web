@@ -1,4 +1,4 @@
-import { MenuIcon } from '../ui/IconsNew'
+import { MenuIcon } from '../ui/Icons'
 
 export default function MobileMenuButton() {
   return (

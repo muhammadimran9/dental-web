@@ -1,6 +1,6 @@
 import Link from 'next/link'
-import Button from './ui/ButtonNew'
-import { XIcon, ChevronDownIcon, CalendarIcon } from './ui/IconsNew'
+import Button from './ui/Button'
+import { XIcon, ChevronDownIcon, CalendarIcon } from './ui/Icons'
 import { aboutItems, serviceItems, feedbackItems, contactItems } from './navigationConfig'
 
 export default function MobileMenu() {

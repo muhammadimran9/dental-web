@@ -1,16 +1,12 @@
 import ContactForm from '@/components/contact/ContactForm'
 import ContactMap from '@/components/contact/ContactMap'
 import ContactDetails from '@/components/contact/ContactDetails'
-import ContactHeader from '@/components/ContactHeader'
 
 export const dynamic = 'force-dynamic'
 
 export default function Contact() {
   return (
     <div>
-      {/* Contact Header */}
-      <ContactHeader />
-      
       {/* Contact Hero */}
       <section className="section-padding bg-gradient-to-br from-primary to-primary-dark text-white">
         <div className="container-custom text-center">

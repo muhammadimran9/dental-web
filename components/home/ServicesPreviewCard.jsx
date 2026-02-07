@@ -1,6 +1,6 @@
 import Link from 'next/link'
-import Card from '../Card'
-import Button from '../Button'
+import Card from '../ui/Card'
+import Button from '../ui/Button'
 import ArrowRightIcon from '../icons/ArrowRightIcon'
 
 export default function ServicesPreviewCard({ title, description, icon, href }) {

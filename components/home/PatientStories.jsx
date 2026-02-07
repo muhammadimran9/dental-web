@@ -1,4 +1,4 @@
-import Card from '../Card'
+import Card from '../ui/Card'
 import StarIcon from '../icons/StarIcon'
 
 export default function PatientStories() {

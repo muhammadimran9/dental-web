@@ -1,4 +1,4 @@
-import Card from '../Card'
+import Card from '../ui/Card'
 import ContactCard from './ContactCard'
 import HoursCard from './HoursCard'
 

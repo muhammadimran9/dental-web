@@ -1,7 +1,7 @@
 import Image from 'next/image'
 import Link from 'next/link'
-import Button from '../Button'
-import Card from '../Card'
+import Button from '../ui/Button'
+import Card from '../ui/Card'
 
 export default function DoctorProfileCard({ doctor }) {
   return (

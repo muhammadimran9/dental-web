@@ -1,5 +1,5 @@
 import Link from 'next/link'
-import Card from '../Card'
+import Card from '../ui/Card'
 
 export default function ServiceCard({ title, description, icon, href }) {
   return (

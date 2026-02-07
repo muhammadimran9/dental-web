@@ -1,4 +1,4 @@
-import { ChevronDownIcon } from './ui/IconsNew'
+import { ChevronDownIcon } from './ui/Icons'
 
 export default function DropdownMenu({ title, items }) {
   return (

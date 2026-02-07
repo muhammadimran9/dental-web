@@ -1,4 +1,4 @@
-import Card from '../Card'
+import Card from '../ui/Card'
 import ContactItem from './ContactItem'
 import AddressIcon from '../icons/AddressIcon'
 import PhoneIcon from '../icons/PhoneIcon'

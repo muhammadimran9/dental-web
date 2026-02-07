@@ -1,24 +1,15 @@
-import Header from '@/components/HeaderProfessional'
-import Footer from '@/components/Footer'
-import ContactHeader from '@/components/ContactHeaderNew'
-
 export default function TeethWhitening() {
   return (
-    <div className="min-h-screen bg-white">
-      <ContactHeader />
-      <Header />
-      <main className="container-custom py-16">
-        <ServiceHero 
-          title="Teeth Whitening"
-          subtitle="Brighten your smile safely"
-          description="Professional teeth whitening treatments that deliver dramatic results while maintaining your dental health and comfort."
-        />
-        <ServicesGrid />
-        <BenefitsSection />
-        <ProcessSection />
-      </main>
-      <Footer />
-    </div>
+    <main className="container-custom py-16">
+      <ServiceHero 
+        title="Teeth Whitening"
+        subtitle="Brighten your smile safely"
+        description="Professional teeth whitening treatments that deliver dramatic results while maintaining your dental health and comfort."
+      />
+      <ServicesGrid />
+      <BenefitsSection />
+      <ProcessSection />
+    </main>
   )
 }
 

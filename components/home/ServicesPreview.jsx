@@ -1,6 +1,6 @@
 import Link from 'next/link'
-import Button from '../Button'
-import Card from '../Card'
+import Button from '../ui/Button'
+import Card from '../ui/Card'
 import SectionHeader from '../SectionHeader'
 import ServiceCard from './ServicesPreviewCard'
 import { previewServices } from '../servicesConfig'

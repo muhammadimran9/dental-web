@@ -1,7 +1,7 @@
 'use client'
 
 import { useState } from 'react'
-import Button from '../Button'
+import Button from '../ui/Button'
 import CalendarIcon from '../icons/CalendarIcon'
 
 export default function StickyBooking() {

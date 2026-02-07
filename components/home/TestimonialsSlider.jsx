@@ -1,47 +1,19 @@
 'use client'
 
 import { useState } from 'react'
-import Card from '../Card'
-import StarIcon from '../icons/StarIcon'
-import ChevronLeftIcon from '../icons/ChevronLeftIcon'
-import ChevronRightIcon from '../icons/ChevronRightIcon'
-
-const testimonials = [
-  {
-    name: 'Sarah Johnson',
-    rating: 5,
-    text: 'Best dental experience I\'ve ever had! The staff is professional and caring.',
-    service: 'Teeth Whitening'
-  },
-  {
-    name: 'Michael Chen',
-    rating: 5,
-    text: 'Pain-free root canal treatment. Highly recommend this clinic!',
-    service: 'Root Canal'
-  },
-  {
-    name: 'Emily Davis',
-    rating: 5,
-    text: 'My smile transformation exceeded all expectations. Thank you!',
-    service: 'Veneers'
-  },
-  {
-    name: 'Robert Wilson',
-    rating: 5,
-    text: 'Amazing emergency service. They saved my tooth!',
-    service: 'Emergency Care'
-  },
-]
+import SliderContent from './SliderContent'
+import SliderControls from './SliderControls'
+import { sliderTestimonials } from './sliderTestimonialsData'
 
 export default function TestimonialsSlider() {
   const [currentIndex, setCurrentIndex] = useState(0)
 
   const nextTestimonial = () => {
-    setCurrentIndex((prev) => (prev + 1) % testimonials.length)
+    setCurrentIndex((prev) => (prev + 1) % sliderTestimonials.length)
   }
 
   const prevTestimonial = () => {
-    setCurrentIndex((prev) => (prev - 1 + testimonials.length) % testimonials.length)
+    setCurrentIndex((prev) => (prev - 1 + sliderTestimonials.length) % sliderTestimonials.length)
   }
 
   return (
@@ -55,39 +27,8 @@ export default function TestimonialsSlider() {
         </div>
         
         <div className="relative max-w-4xl mx-auto">
-          <div className="bg-white rounded-2xl shadow-xl p-8">
-            <div className="flex flex-col md:flex-row gap-8 items-center">
-              <div className="flex-1">
-                <div className="flex justify-center mb-4">
-                  {[...Array(testimonials[currentIndex].rating)].map((_, i) => (
-                    <StarIcon key={i} className="text-yellow-400 w-6 h-6" />
-                  ))}
-                </div>
-                <p className="text-xl text-gray-700 mb-6 italic leading-relaxed">
-                  "{testimonials[currentIndex].text}"
-                </p>
-                <div>
-                  <p className="font-bold text-lg text-gray-900">{testimonials[currentIndex].name}</p>
-                  <p className="text-accent font-medium">{testimonials[currentIndex].service}</p>
-                </div>
-              </div>
-            </div>
-          </div>
-          
-          <div className="flex justify-center mt-6 gap-4">
-            <button 
-              onClick={prevTestimonial}
-              className="p-3 rounded-full bg-white shadow-lg hover:shadow-xl transition-shadow"
-            >
-              <ChevronLeftIcon className="w-5 h-5 text-gray-600" />
-            </button>
-            <button 
-              onClick={nextTestimonial}
-              className="p-3 rounded-full bg-white shadow-lg hover:shadow-xl transition-shadow"
-            >
-              <ChevronRightIcon className="w-5 h-5 text-gray-600" />
-            </button>
-          </div>
+          <SliderContent testimonial={sliderTestimonials[currentIndex]} />
+          <SliderControls onPrev={prevTestimonial} onNext={nextTestimonial} />
         </div>
       </div>
     </section>

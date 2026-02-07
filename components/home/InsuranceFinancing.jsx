@@ -1,4 +1,4 @@
-import Card from '../Card'
+import Card from '../ui/Card'
 import ShieldIcon from '../icons/ShieldIcon'
 import CardIcon from '../icons/CardIcon'
 

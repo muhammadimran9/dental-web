@@ -1,4 +1,4 @@
-import Card from '@/components/Card'
+import Card from '@/components/ui/Card'
 import DentalIcon from '@/components/icons/DentalIcon'
 import BlogIcon from '@/components/icons/BlogIcon'
 import EmailIcon from '@/components/icons/EmailIcon'

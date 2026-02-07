@@ -22,11 +22,9 @@ export const serviceItems = [
 
 export const feedbackItems = [
   { label: 'Patient Feedback', href: '/patient-feedback', border: true },
-  { label: 'Testimonials', href: '/testimonials', border: true },
   { label: 'Smile Gallery', href: '/smile-gallery', border: false },
 ]
 
 export const contactItems = [
-  { label: 'Contact Us', href: '/contact-us', border: true },
-  { label: 'Referral Program', href: '/referral', border: false },
+  { label: 'Contact Us', href: '/contact-us', border: false },
 ]

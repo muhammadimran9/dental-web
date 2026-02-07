@@ -1,6 +1,3 @@
-import Header from '@/components/HeaderProfessional'
-import Footer from '@/components/Footer'
-import ContactHeader from '@/components/ContactHeaderNew'
 import InvisalignHero from './InvisalignHero'
 import InvisalignBenefits from './InvisalignBenefits'
 import TreatmentProcess from './TreatmentProcess'
@@ -10,18 +7,13 @@ import FAQSection from './FAQSection'
 
 export default function Invisalign() {
   return (
-    <div className="min-h-screen bg-white">
-      <ContactHeader />
-      <Header />
-      <main className="container-custom py-16">
-        <InvisalignHero />
-        <InvisalignBenefits />
-        <TreatmentProcess />
-        <TechnologySection />
-        <PricingSection />
-        <FAQSection />
-      </main>
-      <Footer />
-    </div>
+    <main className="container-custom py-16">
+      <InvisalignHero />
+      <InvisalignBenefits />
+      <TreatmentProcess />
+      <TechnologySection />
+      <PricingSection />
+      <FAQSection />
+    </main>
   )
 }

@@ -1,4 +1,4 @@
-import { UserIcon, StarIcon } from '@/components/ui/IconsNew'
+import { UserIcon, StarIcon } from '@/components/ui/Icons'
 
 interface TestimonialCardProps {
   name: string

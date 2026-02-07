@@ -4,8 +4,8 @@ import { useState } from 'react'
 import { useRouter } from 'next/navigation'
 import { signInWithEmailAndPassword } from 'firebase/auth'
 import { auth } from '@/lib/firebase'
-import Button from '@/components/Button'
-import Card from '@/components/Card'
+import Button from '@/components/ui/Button'
+import Card from '@/components/ui/Card'
 import ToothIcon from '@/components/icons/ToothIcon'
 
 export default function AdminLogin() {

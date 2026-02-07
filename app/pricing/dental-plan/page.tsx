@@ -1,4 +1,4 @@
-import { GiftIcon, ToothIcon, LightningIcon } from '@/components/ui/IconsNew'
+import { GiftIcon, ToothIcon, LightningIcon } from '@/components/ui/Icons'
 
 export default function DentalPlan() {
   return (

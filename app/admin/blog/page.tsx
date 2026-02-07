@@ -5,8 +5,8 @@ import { useRouter } from 'next/navigation'
 import { onAuthStateChanged } from 'firebase/auth'
 import { auth, db } from '@/lib/firebase'
 import { collection, getDocs, query, orderBy, deleteDoc, doc } from 'firebase/firestore'
-import Button from '@/components/Button'
-import Card from '@/components/Card'
+import Button from '@/components/ui/Button'
+import Card from '@/components/ui/Card'
 import Link from 'next/link'
 
 interface BlogPost {

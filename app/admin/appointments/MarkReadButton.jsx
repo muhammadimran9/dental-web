@@ -1,4 +1,4 @@
-import Button from '@/components/Button'
+import Button from '@/components/ui/Button'
 
 export default function MarkReadButton({ appointment, onMarkAsRead }) {
   if (appointment.read) return null

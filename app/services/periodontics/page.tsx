@@ -1,24 +1,15 @@
-import Header from '@/components/HeaderProfessional'
-import Footer from '@/components/Footer'
-import ContactHeader from '@/components/ContactHeaderNew'
-
 export default function Periodontics() {
   return (
-    <div className="min-h-screen bg-white">
-      <ContactHeader />
-      <Header />
-      <main className="container-custom py-16">
-        <ServiceHero 
-          title="Periodontics"
-          subtitle="Healthy gums for healthy smile"
-          description="Specialized treatment for gum disease and supporting structures to ensure the foundation of your smile stays strong."
-        />
-        <ServicesGrid />
-        <BenefitsSection />
-        <ProcessSection />
-      </main>
-      <Footer />
-    </div>
+    <main className="container-custom py-16">
+      <ServiceHero 
+        title="Periodontics"
+        subtitle="Healthy gums for healthy smile"
+        description="Specialized treatment for gum disease and supporting structures to ensure the foundation of your smile stays strong."
+      />
+      <ServicesGrid />
+      <BenefitsSection />
+      <ProcessSection />
+    </main>
   )
 }
 

@@ -1,6 +1,6 @@
 export default function OurStory() {
   return (
-    <div className="container-custom py-16">
+    <div>
       <StoryHero />
       <StoryContent />
       <StoryTimeline />

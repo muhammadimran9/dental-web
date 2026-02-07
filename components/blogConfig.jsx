@@ -6,7 +6,7 @@ export const featuredPost = {
   author: 'Dr. Sarah Johnson',
   date: '2024-01-15',
   readTime: '5 min read',
-  image: 'https://images.unsplash.com/photo-1600988227859-6c2857df8de0?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80',
+  image: 'https://images.unsplash.com/photo-1606811841689-23dfddce3e95?w=800&h=500&fit=crop&q=80',
   featured: true
 }
 
@@ -19,7 +19,7 @@ export const blogPosts = [
     author: 'Dr. John Smith',
     date: '2024-01-10',
     readTime: '7 min read',
-    image: 'https://images.unsplash.com/photo-1600988227859-6c2857df8de0?ixlib=rb-4.0.3&auto=format&fit=crop&w=400&q=80'
+    image: 'https://images.unsplash.com/photo-1588776814546-1ffcf47267a5?w=400&h=300&fit=crop&q=80'
   },
   {
     id: 'kids-dental-care',
@@ -29,7 +29,7 @@ export const blogPosts = [
     author: 'Dr. Sarah Johnson',
     date: '2024-01-08',
     readTime: '4 min read',
-    image: 'https://images.unsplash.com/photo-1559839734-f51b6037b1b4?ixlib=rb-4.0.3&auto=format&fit=crop&w=400&q=80'
+    image: 'https://images.unsplash.com/photo-1629909613654-28e377c37b09?w=400&h=300&fit=crop&q=80'
   },
   {
     id: 'dental-implants-101',
@@ -39,7 +39,7 @@ export const blogPosts = [
     author: 'Dr. Michael Chen',
     date: '2024-01-05',
     readTime: '6 min read',
-    image: 'https://images.unsplash.com/photo-1612349317150-e413f6a5b16d?ixlib=rb-4.0.3&auto=format&fit=crop&w=400&q=80'
+    image: 'https://images.unsplash.com/photo-1606811841689-23dfddce3e95?w=400&h=300&fit=crop&q=80'
   },
   {
     id: 'emergency-dental-care',
@@ -49,7 +49,7 @@ export const blogPosts = [
     author: 'Dr. Emily Davis',
     date: '2024-01-03',
     readTime: '5 min read',
-    image: 'https://images.unsplash.com/photo-1576091160399-112ba8d25d1d?ixlib=rb-4.0.3&auto=format&fit=crop&w=400&q=80'
+    image: 'https://images.unsplash.com/photo-1598256989800-fe5f95da9787?w=400&h=300&fit=crop&q=80'
   },
   {
     id: 'gum-disease-prevention',
@@ -59,7 +59,7 @@ export const blogPosts = [
     author: 'Dr. John Smith',
     date: '2024-01-01',
     readTime: '8 min read',
-    image: 'https://images.unsplash.com/photo-1600988227859-6c2857df8de0?ixlib=rb-4.0.3&auto=format&fit=crop&w=400&q=80'
+    image: 'https://images.unsplash.com/photo-1609840114035-3c981407e31f?w=400&h=300&fit=crop&q=80'
   },
   {
     id: 'orthodontic-options',
@@ -69,7 +69,7 @@ export const blogPosts = [
     author: 'Dr. Michael Chen',
     date: '2023-12-28',
     readTime: '6 min read',
-    image: 'https://images.unsplash.com/photo-1612349317150-e413f6a5b16d?ixlib=rb-4.0.3&auto=format&fit=crop&w=400&q=80'
+    image: 'https://images.unsplash.com/photo-1606811971618-4486d14f3f99?w=400&h=300&fit=crop&q=80'
   }
 ]
 

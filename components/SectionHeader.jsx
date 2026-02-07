@@ -1,10 +1,14 @@
-export default function SectionHeader({ title, subtitle }) {
+export default function SectionHeader({ title, subtitle, centered = true }) {
   return (
-    <div className="text-center mb-12">
-      <h2 className="text-3xl md:text-4xl font-bold text-gray-800 mb-4">
-        <span className="text-gradient">{title}</span>
+    <div className={`mb-12 ${centered ? 'text-center' : ''}`}>
+      {subtitle && (
+        <p className="text-primary font-semibold text-sm uppercase tracking-wide mb-2">
+          {subtitle}
+        </p>
+      )}
+      <h2 className="text-3xl md:text-4xl font-bold text-gray-900">
+        {title}
       </h2>
-      <p className="text-gray-600 text-lg max-w-2xl mx-auto leading-relaxed">{subtitle}</p>
     </div>
   )
 }

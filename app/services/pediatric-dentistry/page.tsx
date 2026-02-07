@@ -1,24 +1,15 @@
-import Header from '@/components/HeaderProfessional'
-import Footer from '@/components/Footer'
-import ContactHeader from '@/components/ContactHeaderNew'
-
 export default function PediatricDentistry() {
   return (
-    <div className="min-h-screen bg-white">
-      <ContactHeader />
-      <Header />
-      <main className="container-custom py-16">
-        <ServiceHero 
-          title="Pediatric Dentistry"
-          subtitle="Gentle care for little smiles"
-          description="Specialized dental care for children in a fun, friendly environment that makes dental visits enjoyable."
-        />
-        <ServicesGrid />
-        <BenefitsSection />
-        <ProcessSection />
-      </main>
-      <Footer />
-    </div>
+    <main className="container-custom py-16">
+      <ServiceHero 
+        title="Pediatric Dentistry"
+        subtitle="Gentle care for little smiles"
+        description="Specialized dental care for children in a fun, friendly environment that makes dental visits enjoyable."
+      />
+      <ServicesGrid />
+      <BenefitsSection />
+      <ProcessSection />
+    </main>
   )
 }
 

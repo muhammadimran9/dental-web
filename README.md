@@ -1,6 +1,40 @@
 # Premium Dental Clinic Website
 
+**STATUS: READY TO DEPLOY**
+
 A modern, conversion-focused dental clinic website with a secure admin dashboard. Built with Next.js, React, Tailwind CSS, and Firebase.
+
+## Quick Start
+
+### For Local Development
+```bash
+# 1. Install dependencies
+npm install
+
+# 2. Setup environment variables (see QUICKSTART.md)
+cp .env.example .env.local
+# Edit .env.local with your Firebase credentials
+
+# 3. Run development server
+npm run dev
+```
+
+### For Deployment
+```bash
+# Verify build
+npm run build
+
+# See detailed deployment instructions
+# - DEPLOYMENT_INSTRUCTIONS.md (Step-by-step guide)
+# - DEPLOYMENT_CHECKLIST.md (Complete checklist)
+# - QUICKSTART.md (Local development guide)
+```
+
+## Documentation
+
+- **[QUICKSTART.md](./QUICKSTART.md)** - Get started with local development
+- **[DEPLOYMENT_INSTRUCTIONS.md](./DEPLOYMENT_INSTRUCTIONS.md)** - Complete deployment guide
+- **[DEPLOYMENT_CHECKLIST.md](./DEPLOYMENT_CHECKLIST.md)** - Pre-launch checklist
 
 ## Features
 
@@ -55,21 +89,21 @@ npm run dev
 
 5. Open [http://localhost:3000](http://localhost:3000) in your browser.
 
-## 🔐 Admin Access
+## Admin Access
 
 1. Navigate to `/admin/login`
 2. Create an admin user in Firebase Authentication (Email/Password)
 3. Log in with your credentials
 4. Access the dashboard at `/admin/dashboard`
 
-## 🎨 Design System
+## Design System
 
-- **Primary Color**: Mustard Yellow (#F2B705)
-- **Secondary Color**: Deep Medical Blue (#0B3C5D)
-- **Typography**: Inter font family
+- **Primary Color**: Medical Blue (#1E40AF)
+- **Accent Color**: Professional Blue (#3B82F6)
+- **Typography**: Poppins font family
 - **Style**: Modern, minimal, premium medical aesthetic
 
-## 📁 Project Structure
+## Project Structure
 
 ```
 ├── app/
@@ -88,7 +122,7 @@ npm run dev
 
 ## Tech Stack
 
-- **Framework**: Next.js 14 (App Router)
+- **Framework**: Next.js 16 (App Router)
 - **Styling**: Tailwind CSS
 - **Database**: Firebase Firestore
 - **Authentication**: Firebase Auth

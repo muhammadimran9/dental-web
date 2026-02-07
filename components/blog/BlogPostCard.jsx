@@ -1,5 +1,5 @@
 import Link from 'next/link'
-import Card from '../Card'
+import Card from '../ui/Card'
 import BlogIcon from '../icons/BlogIcon'
 
 export default function BlogPostCard({ id, title, excerpt, featuredImage }) {

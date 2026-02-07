@@ -1,6 +1,3 @@
-import Header from '@/components/HeaderProfessional'
-import Footer from '@/components/Footer'
-import ContactHeader from '@/components/ContactHeaderNew'
 
 interface ServiceCardProps {
   icon: string
@@ -27,21 +24,16 @@ interface ServiceHeroProps {
 
 export default function CosmeticDentistry() {
   return (
-    <div className="min-h-screen bg-white">
-      <ContactHeader />
-      <Header />
-      <main className="container-custom py-16">
-        <ServiceHero 
-          title="Cosmetic Dentistry"
-          subtitle="Transform your smile with confidence"
-          description="Enhance your natural beauty with our advanced cosmetic dental treatments designed to give you the perfect smile."
-        />
-        <ServicesGrid />
-        <BenefitsSection />
-        <ProcessSection />
-      </main>
-      <Footer />
-    </div>
+    <main className="container-custom py-16">
+      <ServiceHero 
+        title="Cosmetic Dentistry"
+        subtitle="Transform your smile with confidence"
+        description="Enhance your natural beauty with our advanced cosmetic dental treatments designed to give you the perfect smile."
+      />
+      <ServicesGrid />
+      <BenefitsSection />
+      <ProcessSection />
+    </main>
   )
 }
 

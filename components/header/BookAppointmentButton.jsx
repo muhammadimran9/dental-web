@@ -1,6 +1,6 @@
 import Link from 'next/link'
-import Button from '../ui/ButtonNew'
-import { CalendarIcon } from '../ui/IconsNew'
+import Button from '../ui/Button'
+import { CalendarIcon } from '../ui/Icons'
 
 export default function BookAppointmentButton() {
   return (
