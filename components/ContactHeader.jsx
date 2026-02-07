@@ -1,7 +1,33 @@
+'use client'
+
+import { useState, useEffect } from 'react'
 import PhoneIcon from './icons/PhoneIcon'
 import WhatsAppIcon from './icons/WhatsAppIcon'
 
 export default function ContactHeader() {
+  const [deferredPrompt, setDeferredPrompt] = useState(null)
+  const [showInstall, setShowInstall] = useState(false)
+
+  useEffect(() => {
+    const handler = (e) => {
+      e.preventDefault()
+      setDeferredPrompt(e)
+      setShowInstall(true)
+    }
+    window.addEventListener('beforeinstallprompt', handler)
+    return () => window.removeEventListener('beforeinstallprompt', handler)
+  }, [])
+
+  const handleInstall = async () => {
+    if (!deferredPrompt) return
+    deferredPrompt.prompt()
+    const { outcome } = await deferredPrompt.userChoice
+    if (outcome === 'accepted') {
+      setShowInstall(false)
+    }
+    setDeferredPrompt(null)
+  }
+
   return (
     <div className="bg-blue-500 text-white py-4 px-6">
       <div className="container-custom">
@@ -16,6 +42,17 @@ export default function ContactHeader() {
             </div>
           </div>
           <div className="flex items-center gap-4">
+            {showInstall && (
+              <button
+                onClick={handleInstall}
+                className="flex items-center gap-2 bg-yellow-500 text-gray-900 px-4 py-2 rounded-lg font-bold hover:bg-yellow-400 transition-colors text-sm"
+              >
+                <svg className="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                  <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M4 16v1a3 3 0 003 3h10a3 3 0 003-3v-1m-4-4l-4 4m0 0l-4-4m4 4V4" />
+                </svg>
+                Install App
+              </button>
+            )}
             <a 
               href="tel:+1234567890" 
               className="flex items-center gap-2 bg-white text-blue-500 px-6 py-3 rounded-lg font-bold hover:bg-blue-50 transition-colors"

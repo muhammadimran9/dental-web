@@ -1,59 +1,26 @@
-const CACHE_NAME = 'dentalcare-v1';
+const CACHE_NAME = 'dental-clinic-v1'
 const urlsToCache = [
   '/',
   '/about',
   '/services',
-  '/team',
-  '/blog',
-  '/contact',
-  '/appointment',
-  '/manifest.json',
-  '/_next/static/css/app/layout.css',
-  '/_next/static/chunks/webpack.js',
-  '/_next/static/chunks/main-app.js',
-  '/_next/static/chunks/app/_app.js',
-  '/_next/static/chunks/app/page.js',
-  '/icons/icon-192x192.png',
-  '/icons/icon-512x512.png'
-];
+  '/doctors',
+  '/contact-us',
+  '/appointment'
+]
 
 self.addEventListener('install', (event) => {
   event.waitUntil(
     caches.open(CACHE_NAME)
       .then((cache) => cache.addAll(urlsToCache))
-  );
-});
+  )
+})
 
 self.addEventListener('fetch', (event) => {
   event.respondWith(
     caches.match(event.request)
-      .then((response) => {
-        // Cache hit - return response
-        if (response) {
-          return response;
-        }
-
-        return fetch(event.request).then(
-          (response) => {
-            // Check if valid response
-            if (!response || response.status !== 200 || response.type !== 'basic') {
-              return response;
-            }
-
-            // Clone response
-            const responseToCache = response.clone();
-
-            caches.open(CACHE_NAME)
-              .then((cache) => {
-                cache.put(event.request, responseToCache);
-              });
-
-            return response;
-          }
-        );
-      })
-  );
-});
+      .then((response) => response || fetch(event.request))
+  )
+})
 
 self.addEventListener('activate', (event) => {
   event.waitUntil(
@@ -61,10 +28,10 @@ self.addEventListener('activate', (event) => {
       return Promise.all(
         cacheNames.map((cacheName) => {
           if (cacheName !== CACHE_NAME) {
-            return caches.delete(cacheName);
+            return caches.delete(cacheName)
           }
         })
-      );
+      )
     })
-  );
-});
+  )
+})
