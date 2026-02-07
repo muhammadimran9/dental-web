@@ -27,9 +27,10 @@ export const MapPinIcon = ({ className = 'w-5 h-5' }) => (
   </svg>
 )
 
-export const ClockIcon = ({ className = 'w-5 h-5' }) => (
+export const PackageIcon = ({ className = 'w-5 h-5' }) => (
   <svg className={className} fill="none" stroke="currentColor" viewBox="0 0 24 24">
-    <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M12 8v4l3 3m6-3a9 9 0 11-18 0 9 9 0 0118 0z" />
+    <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M16 4h2a2 2 0 00-2 2v1.5m0 0l-1.75 1.75L12 8.25l-1.75-1.75M9 11.25l1.75 1.75L12 15.75l1.75 1.75m0 3l1.75 1.75L12 17.75l1.75 1.75" />
+    <rect x="3" y="6" width="18" height="12" rx="2" strokeWidth={2} />
   </svg>
 )
 
@@ -279,13 +280,6 @@ export const StaffIcon = ({ className = 'w-5 h-5' }) => (
   </svg>
 )
 
-export const SparklesIcon = ({ className = 'w-5 h-5' }) => (
-  <svg className={className} fill="none" stroke="currentColor" viewBox="0 0 24 24">
-    <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M9.663 3h4.674a1 1 0 011.994.894l1.221 1.221a3 3 0 01.424 4.242L12 8.418l-1.221-1.221a3 3 0 00-4.242 4.242L9.663 3z" />
-    <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M12 2v6m0 0l-3-3m3 3h6" />
-  </svg>
-)
-
 export const MonitorIcon = ({ className = 'w-5 h-5' }) => (
   <svg className={className} fill="none" stroke="currentColor" viewBox="0 0 24 24">
     <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M9.75 17L9 20l-1 1h8l-1-1m0-3l-1.75-3L12 2l-1.75 3M9 13l-1.75-3L12 7l1.75 3m0 3l1.75 3L12 17l-1.75 3" />
@@ -305,20 +299,6 @@ export const DropletIcon = ({ className = 'w-5 h-5' }) => (
   </svg>
 )
 
-export const ClockIcon = ({ className = 'w-5 h-5' }) => (
-  <svg className={className} fill="none" stroke="currentColor" viewBox="0 0 24 24">
-    <circle cx="12" cy="12" r="10" strokeWidth={2} />
-    <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M12 6v6m0 0l-3-3m3 3h6" />
-  </svg>
-)
-
-export const PackageIcon = ({ className = 'w-5 h-5' }) => (
-  <svg className={className} fill="none" stroke="currentColor" viewBox="0 0 24 24">
-    <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M16 4h2a2 2 0 00-2 2v1.5m0 0l-1.75 1.75L12 8.25l-1.75-1.75M9 11.25l1.75 1.75L12 15.75l1.75 1.75m0 3l1.75 1.75L12 17.75l1.75 1.75" />
-    <rect x="3" y="6" width="18" height="12" rx="2" strokeWidth={2} />
-  </svg>
-)
-
 export const ZapIcon = ({ className = 'w-5 h-5' }) => (
   <svg className={className} fill="none" stroke="currentColor" viewBox="0 0 24 24">
     <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M13 2L3 7h14l-7 7M13 17l5 5h6m-6 0l6 6h6m0 0l6 6h6" />
@@ -333,10 +313,24 @@ export const CrownIcon = ({ className = 'w-5 h-5' }) => (
   </svg>
 )
 
+export const ClockIcon = ({ className = 'w-5 h-5' }) => (
+  <svg className={className} fill="none" stroke="currentColor" viewBox="0 0 24 24">
+    <circle cx="12" cy="12" r="10" strokeWidth={2} />
+    <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M12 6v6m0 0l-3-3m3 3h6" />
+  </svg>
+)
+
+export const CheckCircleIcon = ({ className = 'w-5 h-5' }) => (
+  <svg className={className} fill="none" stroke="currentColor" viewBox="0 0 24 24">
+    <circle cx="12" cy="12" r="10" strokeWidth={2} />
+    <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M9 12l2 2 4-4" />
+  </svg>
+)
+
 export const BookOpenIcon = ({ className = 'w-5 h-5' }) => (
   <svg className={className} fill="none" stroke="currentColor" viewBox="0 0 24 24">
-    <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M12 6.7L16.65c.34a1 1.994.894l1.221 1.221a3 3 0 01.424 4.242L12 8.418l-1.221-1.221a3 3 0 00-4.242 4.242L9.663 3z" />
-    <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M12 2v6m0 0l-3-3m3 3h6" />
+    <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M12 6.25v15m0 0l-3-3m3 3h6m-6 0l-3-3m3 3h6" />
+    <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M9 12l6 6m-6 0l6 6h6m0 0l6 6h6" />
   </svg>
 )
 
