@@ -172,8 +172,8 @@ export const BrokenIcon = ({ className = 'w-5 h-5' }) => (
 )
 
 export const BleedingIcon = ({ className = 'w-5 h-5' }) => (
-  <svg className={className} fill="currentColor" viewBox="0 0 24 24">
-    <path d="M12 2C12 2 8 6 8 12C8 14.21 9.79 16 12 16C14.21 16 16 14.21 16 12C16 6 12 2 12 2Z" />
+  <svg className={className} fill="none" stroke="currentColor" viewBox="0 0 24 24">
+    <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M12 2C12 2 8 6 8 12C8 14.21 9.79 16 12 16C14.21 16 16 14.21 16 12C16 6 12 2 12 2Z" />
   </svg>
 )
 
@@ -209,5 +209,25 @@ export const Clock247Icon = ({ className = 'w-5 h-5' }) => (
     <circle cx="12" cy="12" r="10" strokeWidth={2} />
     <polyline points="12 6 12 12 16 14" strokeWidth={2} strokeLinecap="round" strokeLinejoin="round" />
     <text x="12" y="20" textAnchor="middle" fontSize="8" fontWeight="bold">24/7</text>
+  </svg>
+)
+
+export const CarIcon = ({ className = 'w-5 h-5' }) => (
+  <svg className={className} fill="none" stroke="currentColor" viewBox="0 0 24 24">
+    <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M9 17V7m0 10a2 2 0 01-2 2H5a2 2 0 01-2-2V7a2 2 0 012-2h2a2 2 0 012 2m0 10a2 2 0 002 2h2a2 2 0 002-2M9 7a2 2 0 012-2h2a2 2 0 012 2m0 10V7m0 10a2 2 0 002 2h2a2 2 0 002-2V7a2 2 0 00-2-2h-2a2 2 0 00-2 2" />
+  </svg>
+)
+
+export const BusIcon = ({ className = 'w-5 h-5' }) => (
+  <svg className={className} fill="none" stroke="currentColor" viewBox="0 0 24 24">
+    <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M8 7v8m0 0l2-2m-2 2l-2-2m4-4h8m-4 4h4m-4 4v4m-4-4h4m-4 0H8m8 0v4m0-4h4m-4 0l2 2m-2-2l-2 2" />
+  </svg>
+)
+
+export const WheelchairIcon = ({ className = 'w-5 h-5' }) => (
+  <svg className={className} fill="none" stroke="currentColor" viewBox="0 0 24 24">
+    <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M12 8v4m0 4h.01M21 12a9 9 0 11-18 0 9 9 0 0118 0z" />
+    <circle cx="12" cy="12" r="3" strokeWidth={2} />
+    <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M12 15v3m0 0l-3-3m3 3l3-3" />
   </svg>
 )

@@ -16,6 +16,7 @@ const nextConfig = {
         hostname: 'via.placeholder.com',
       },
     ],
+    minimumCacheTTL: 60,
   },
   typescript: {
     ignoreBuildErrors: true,
@@ -23,6 +24,12 @@ const nextConfig = {
   // Performance optimizations
   compress: true,
   poweredByHeader: false,
+  swcMinify: true,
+  // Enable experimental features for better performance
+  experimental: {
+    optimizeCss: true,
+    optimizePackageImports: ['lucide-react'],
+  },
   // PWA & Caching
   async headers() {
     return [
@@ -45,7 +52,7 @@ const nextConfig = {
         ],
       },
       {
-        source: '/:all*(svg|jpg|jpeg|png|gif|ico|webp)',
+        source: '/:all*(svg|jpg|jpeg|png|gif|ico|webp|avif)',
         headers: [
           {
             key: 'Cache-Control',
@@ -62,7 +69,32 @@ const nextConfig = {
           },
         ],
       },
+      // Add security headers
+      {
+        source: '/(.*)',
+        headers: [
+          {
+            key: 'X-Content-Type-Options',
+            value: 'nosniff',
+          },
+          {
+            key: 'X-Frame-Options',
+            value: 'DENY',
+          },
+          {
+            key: 'X-XSS-Protection',
+            value: '1; mode=block',
+          },
+        ],
+      },
     ]
+  },
+  // Bundle optimization
+  webpack: (config, { isServer }) => {
+    if (!isServer) {
+      config.resolve.fallback.fs = false
+    }
+    return config
   },
 }
 

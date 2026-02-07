@@ -1,3 +1,5 @@
+import { MapPinIcon, CarIcon, BusIcon, WheelchairIcon } from '../../components/ui/Icons'
+
 export default function MapSection() {
   return (
     <section className="mb-16">
@@ -7,7 +9,9 @@ export default function MapSection() {
       <div className="bg-white rounded-xl shadow-lg overflow-hidden">
         <div className="bg-blue-600 h-96 flex items-center justify-center">
           <div className="text-white text-center">
-            <div className="text-6xl mb-4">🗺️</div>
+            <div className="mb-4 flex justify-center">
+              <MapPinIcon className="w-16 h-16" />
+            </div>
             <p className="text-xl font-semibold">Interactive Map</p>
             <p className="text-sm opacity-90">Building 12, Dubai Healthcare City</p>
           </div>
@@ -38,10 +42,22 @@ export default function MapSection() {
             <div>
               <h4 className="text-lg font-bold text-gray-800 mb-3">Getting Here</h4>
               <div className="space-y-2">
-                <p className="text-gray-600">🚗 Free parking available</p>
-                <p className="text-gray-600">🚇 Dubai Metro: Healthcare City Station</p>
-                <p className="text-gray-600">🚌 Bus routes: 10, 21, 28, 33</p>
-                <p className="text-gray-600">♿ Wheelchair accessible</p>
+                <p className="text-gray-600 flex items-center gap-2">
+                  <CarIcon className="w-4 h-4" />
+                  Free parking available
+                </p>
+                <p className="text-gray-600 flex items-center gap-2">
+                  <BusIcon className="w-4 h-4" />
+                  Dubai Metro: Healthcare City Station
+                </p>
+                <p className="text-gray-600 flex items-center gap-2">
+                  <BusIcon className="w-4 h-4" />
+                  Bus routes: 10, 21, 28, 33
+                </p>
+                <p className="text-gray-600 flex items-center gap-2">
+                  <WheelchairIcon className="w-4 h-4" />
+                  Wheelchair accessible
+                </p>
               </div>
             </div>
           </div>

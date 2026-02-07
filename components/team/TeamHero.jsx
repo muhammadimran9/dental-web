@@ -37,10 +37,10 @@ export default function TeamHero() {
           <div className="relative">
             <div className="aspect-square rounded-2xl overflow-hidden ring-4 ring-accent/20">
               <Image 
-                src="/images/team-hero.jpg" 
+                src="/images/team-hero.svg" 
                 alt="Dental Experts Team" 
-                layout="fill" 
-                objectFit="cover" 
+                fill
+                className="object-cover" 
               />
             </div>
             <div className="absolute -bottom-4 -left-4 bg-accent text-white rounded-lg p-4 shadow-xl">

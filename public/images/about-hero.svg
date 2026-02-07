@@ -1,0 +1,21 @@
+<svg width="800" height="600" viewBox="0 0 800 600" xmlns="http://www.w3.org/2000/svg">
+  <defs>
+    <linearGradient id="about-bg" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:#FEF3C7;stop-opacity:1" />
+      <stop offset="100%" style="stop-color:#FDE68A;stop-opacity:1" />
+    </linearGradient>
+  </defs>
+  <rect width="800" height="600" fill="url(#about-bg)"/>
+  <rect x="200" y="150" width="400" height="250" rx="20" fill="#FFFFFF" opacity="0.9"/>
+  <rect x="250" y="200" width="300" height="8" rx="4" fill="#3B82F6" opacity="0.3"/>
+  <rect x="250" y="220" width="250" height="8" rx="4" fill="#3B82F6" opacity="0.2"/>
+  <rect x="250" y="240" width="280" height="8" rx="4" fill="#3B82F6" opacity="0.2"/>
+  <rect x="250" y="260" width="200" height="8" rx="4" fill="#3B82F6" opacity="0.2"/>
+  <rect x="250" y="280" width="270" height="8" rx="4" fill="#3B82F6" opacity="0.2"/>
+  <circle cx="150" cy="200" r="40" fill="#3B82F6" opacity="0.2"/>
+  <path d="M130 200 L170 200 M150 180 L150 220" stroke="#3B82F6" stroke-width="4" opacity="0.6"/>
+  <circle cx="650" cy="350" r="30" fill="#10B981" opacity="0.3"/>
+  <path d="M635 350 L665 350 M650 335 L650 365" stroke="#10B981" stroke-width="3" opacity="0.7"/>
+  <text x="400" y="480" font-family="Arial, sans-serif" font-size="32" fill="#92400E" text-anchor="middle" font-weight="600">About Our Clinic</text>
+  <text x="400" y="510" font-family="Arial, sans-serif" font-size="18" fill="#78350F" text-anchor="middle">Modern Dental Care in Dubai</text>
+</svg>

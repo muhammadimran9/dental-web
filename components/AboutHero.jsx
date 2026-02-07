@@ -25,7 +25,7 @@ export default function AboutHero() {
           <div className="relative">
             <div className="aspect-square rounded-2xl overflow-hidden">
               <Image 
-                src="/images/about-hero.jpg"
+                src="/images/about-hero.svg"
                 alt="Modern Dental Clinic" 
                 fill
                 className="object-cover"

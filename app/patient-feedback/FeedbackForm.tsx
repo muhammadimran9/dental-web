@@ -1,3 +1,5 @@
+import { StarIcon } from '../../components/ui/Icons'
+
 export default function FeedbackForm() {
   return (
     <section className="mb-16">
@@ -58,9 +60,9 @@ export default function FeedbackForm() {
                   <button
                     key={star}
                     type="button"
-                    className="text-3xl hover:text-yellow-400 transition-colors"
+                    className="hover:text-yellow-400 transition-colors"
                   >
-                    ⭐
+                    <StarIcon className="w-8 h-8" />
                   </button>
                 ))}
               </div>

@@ -1,5 +1,7 @@
+import { GiftIcon, ToothIcon, HeartIcon, PhoneIcon2, LightningIcon, TrophyIcon } from '../../components/ui/Icons'
+
 interface BenefitCardProps {
-  icon: string
+  icon: React.ReactNode
   title: string
   description: string
 }
@@ -12,32 +14,32 @@ export default function ReferralBenefits() {
       </h2>
       <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
         <BenefitCard 
-          icon="🎁"
+          icon={<GiftIcon className="w-8 h-8 text-blue-600" />}
           title="Earn Rewards"
           description="Get AED 200 credit for every successful referral. No limit on how many friends you can refer!"
         />
         <BenefitCard 
-          icon="🦷"
+          icon={<ToothIcon className="w-8 h-8 text-blue-600" />}
           title="Friend Gets Discount"
           description="Your referred friend receives 15% off their first treatment at our clinic."
         />
         <BenefitCard 
-          icon="💙"
+          icon={<HeartIcon className="w-8 h-8 text-blue-600" />}
           title="Share Quality Care"
           description="Help friends and family experience the same exceptional dental care you received."
         />
         <BenefitCard 
-          icon="📱"
+          icon={<PhoneIcon2 className="w-8 h-8 text-blue-600" />}
           title="Easy Process"
           description="Simple online referral form. Track your referrals and rewards through our portal."
         />
         <BenefitCard 
-          icon="⚡"
+          icon={<LightningIcon className="w-8 h-8 text-blue-600" />}
           title="Instant Credit"
           description="Rewards credited to your account immediately after your friend's first appointment."
         />
         <BenefitCard 
-          icon="🏆"
+          icon={<TrophyIcon className="w-8 h-8 text-blue-600" />}
           title="VIP Status"
           description="Refer 5+ friends and unlock VIP status with exclusive benefits and priority booking."
         />
@@ -49,7 +51,7 @@ export default function ReferralBenefits() {
 function BenefitCard({ icon, title, description }: BenefitCardProps) {
   return (
     <div className="bg-white rounded-xl shadow-lg p-6 hover:shadow-xl transition-all hover:-translate-y-1">
-      <div className="text-4xl mb-4">{icon}</div>
+      <div className="mb-4 flex justify-center">{icon}</div>
       <h3 className="text-xl font-bold text-gray-800 mb-3">{title}</h3>
       <p className="text-gray-600">{description}</p>
     </div>

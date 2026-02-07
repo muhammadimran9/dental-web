@@ -1,5 +1,7 @@
+import { MapPinIcon, PhoneIcon, MailIcon } from '../../components/ui/Icons'
+
 interface ContactCardProps {
-  icon: string
+  icon: React.ReactNode
   title: string
   details: string[]
   action: string
@@ -13,7 +15,7 @@ export default function ContactInfo() {
       </h2>
       <div className="grid md:grid-cols-3 gap-8">
         <ContactCard 
-          icon="📍"
+          icon={<MapPinIcon className="w-8 h-8 text-blue-600" />}
           title="Visit Us"
           details={[
             "DentalCare Dubai Clinic",
@@ -23,7 +25,7 @@ export default function ContactInfo() {
           action="Get Directions"
         />
         <ContactCard 
-          icon="📞"
+          icon={<PhoneIcon className="w-8 h-8 text-blue-600" />}
           title="Call Us"
           details={[
             "Main: +971 4 123 4567",
@@ -33,7 +35,7 @@ export default function ContactInfo() {
           action="Call Now"
         />
         <ContactCard 
-          icon="📧"
+          icon={<MailIcon className="w-8 h-8 text-blue-600" />}
           title="Email Us"
           details={[
             "info@dentalcaredubai.com",
@@ -50,7 +52,7 @@ export default function ContactInfo() {
 function ContactCard({ icon, title, details, action }: ContactCardProps) {
   return (
     <div className="bg-white rounded-xl shadow-lg p-6 hover:shadow-xl transition-all hover:-translate-y-1">
-      <div className="text-4xl mb-4 text-center">{icon}</div>
+      <div className="mb-4 flex justify-center">{icon}</div>
       <h3 className="text-xl font-bold text-gray-800 mb-4 text-center">{title}</h3>
       <div className="space-y-2 mb-6">
         {details.map((detail, index) => (
