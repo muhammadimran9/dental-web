@@ -1,5 +1,6 @@
 
 import { SparklesIcon, ShieldIcon, MonitorIcon, WrenchIcon, DropletIcon, HeartIcon } from '@/components/ui/Icons'
+import UniversalHero from '@/components/ui/UniversalHero'
 
 interface ServiceCardProps {
   icon: React.ReactNode
@@ -18,23 +19,22 @@ interface ProcessStepProps {
   description: string
 }
 
-interface ServiceHeroProps {
-  title: string
-  subtitle: string
-  description: string
-}
 
 export default function CosmeticDentistry() {
   return (
-    <main className="container-custom py-16">
-      <ServiceHero 
+    <main>
+      <UniversalHero 
         title="Cosmetic Dentistry"
         subtitle="Transform your smile with confidence"
         description="Enhance your natural beauty with our advanced cosmetic dental treatments designed to give you the perfect smile."
+        backgroundImage="/dental-images/dental-veneers.jpg"
+        overlayOpacity="bg-black/60"
       />
-      <ServicesGrid />
-      <BenefitsSection />
-      <ProcessSection />
+      <div className="container-custom py-16">
+        <ServicesGrid />
+        <BenefitsSection />
+        <ProcessSection />
+      </div>
     </main>
   )
 }
@@ -176,16 +176,3 @@ function ProcessStep({ number, title, description }: ProcessStepProps) {
   )
 }
 
-function ServiceHero({ title, subtitle, description }: ServiceHeroProps) {
-  return (
-    <section className="text-center mb-16">
-      <h1 className="text-4xl md:text-5xl font-bold text-gray-800 mb-4">
-        {title}
-      </h1>
-      <p className="text-xl text-blue-600 font-medium mb-6">{subtitle}</p>
-      <p className="text-lg text-gray-600 max-w-3xl mx-auto">
-        {description}
-      </p>
-    </section>
-  )
-}

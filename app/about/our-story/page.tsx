@@ -1,25 +1,27 @@
+import UniversalHero from '@/components/ui/UniversalHero'
+
+interface TimelineItemProps {
+  year: string
+  title: string
+  description: string
+}
+
 export default function OurStory() {
   return (
     <div>
-      <StoryHero />
+      <UniversalHero 
+        title="Our Story"
+        subtitle="Excellence Since 2008"
+        description="From a single clinic to Dubai's trusted dental care provider"
+        backgroundImage="/dental-images/appointment-bg.jpg"
+        overlayOpacity="bg-black/60"
+      />
       <StoryContent />
       <StoryTimeline />
     </div>
   )
 }
 
-function StoryHero() {
-  return (
-    <section className="text-center mb-16">
-      <h1 className="text-4xl md:text-5xl font-bold text-gray-800 mb-6">
-        Our Story
-      </h1>
-      <p className="text-xl text-gray-600 max-w-3xl mx-auto">
-        From a single clinic to Dubai's trusted dental care provider
-      </p>
-    </section>
-  )
-}
 
 function StoryContent() {
   return (
@@ -67,7 +69,7 @@ function StoryTimeline() {
   )
 }
 
-function TimelineItem({ year, title, description }) {
+function TimelineItem({ year, title, description }: TimelineItemProps) {
   return (
     <div className="flex gap-6 items-start">
       <div className="bg-blue-600 text-white px-4 py-2 rounded-lg font-bold min-w-fit">

@@ -1,14 +1,14 @@
-import LicensedIcon from '../icons/LicensedIcon'
-import ExperienceIcon from '../icons/ExperienceIcon'
-import PatientsIcon from '../icons/PatientsIcon'
-import EmergencyIcon from '../icons/EmergencyIcon'
+import LicensedDentalImage from '../images/LicensedDentalImage'
+import ExperienceDentalImage from '../images/ExperienceDentalImage'
+import PatientsDentalImage from '../images/PatientsDentalImage'
+import EmergencyDentalImage from '../images/EmergencyDentalImage'
 import ReviewCarousel from '../ReviewCarousel'
 
 const highlights = [
-  { icon: <LicensedIcon />, title: 'DHA Licensed', description: 'Fully certified dental professionals' },
-  { icon: <ExperienceIcon />, title: '15+ Years', description: 'Trusted dental expertise' },
-  { icon: <PatientsIcon />, title: '50,000+ Patients', description: 'Happy smiles created' },
-  { icon: <EmergencyIcon />, title: '24/7 Emergency', description: 'Always here for you' },
+  { icon: <LicensedDentalImage />, title: 'DHA Licensed', description: 'Fully certified dental professionals' },
+  { icon: <ExperienceDentalImage />, title: '15+ Years', description: 'Trusted dental expertise' },
+  { icon: <PatientsDentalImage />, title: '50,000+ Patients', description: 'Happy smiles created' },
+  { icon: <EmergencyDentalImage />, title: '24/7 Emergency', description: 'Always here for you' },
 ]
 
 export default function TrustHighlights() {

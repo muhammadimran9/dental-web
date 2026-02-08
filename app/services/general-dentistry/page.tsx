@@ -1,4 +1,5 @@
-import { ToothIcon, SparklesIcon, MicroscopeIcon, ShieldCheckIcon, ClipboardIcon, LightningIcon } from '@/components/ui/Icons'
+import { ToothIcon, SparklesIcon, PaletteIcon, RetainerIcon, MicroscopeIcon, LightningIcon } from '@/components/ui/Icons'
+import UniversalHero from '@/components/ui/UniversalHero'
 
 interface ServiceCardProps {
   icon: React.ReactNode
@@ -20,15 +21,19 @@ interface ProcessStepProps {
 
 export default function GeneralDentistry() {
   return (
-    <main className="container-custom py-16">
-      <ServiceHero 
+    <main>
+      <UniversalHero 
         title="General Dentistry"
         subtitle="Comprehensive dental care for the whole family"
         description="From routine checkups to preventive care, we provide complete dental services to maintain your oral health."
+        backgroundImage="/dental-images/5.png"
+        overlayOpacity="bg-black/60"
       />
-      <ServicesGrid />
-      <BenefitsSection />
-      <ProcessSection />
+      <div className="container-custom py-16">
+        <ServicesGrid />
+        <BenefitsSection />
+        <ProcessSection />
+      </div>
     </main>
   )
 }

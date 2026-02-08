@@ -1,4 +1,5 @@
 import { HeartIcon, ShieldIcon, BookOpenIcon, AppleIcon, StethoscopeIcon, UserCheckIcon } from '@/components/ui/Icons'
+import UniversalHero from '@/components/ui/UniversalHero'
 
 interface ServiceCardProps {
   icon: React.ReactNode
@@ -17,23 +18,22 @@ interface ProcessStepProps {
   description: string
 }
 
-interface ServiceHeroProps {
-  title: string
-  subtitle: string
-  description: string
-}
 
 export default function PediatricDentistry() {
   return (
-    <main className="container-custom py-16">
-      <ServiceHero 
+    <main>
+      <UniversalHero 
         title="Pediatric Dentistry"
         subtitle="Gentle care for little smiles"
         description="Specialized dental care for children in a fun, friendly environment that makes dental visits enjoyable."
+        backgroundImage="/dental-images/3.png"
+        overlayOpacity="bg-black/60"
       />
-      <ServicesGrid />
-      <BenefitsSection />
-      <ProcessSection />
+      <div className="container-custom py-16">
+        <ServicesGrid />
+        <BenefitsSection />
+        <ProcessSection />
+      </div>
     </main>
   )
 }

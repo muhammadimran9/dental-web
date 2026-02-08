@@ -1,4 +1,4 @@
-import PhoneIcon from '../icons/PhoneIcon'
+import PhoneDentalImage from '../images/PhoneDentalImage'
 
 export default function QuickPhoneField({ formData, onChange }) {
   return (
@@ -7,7 +7,7 @@ export default function QuickPhoneField({ formData, onChange }) {
         Phone *
       </label>
       <div className="relative">
-        <PhoneIcon className="absolute left-3 top-3 w-5 h-5 text-gray-400" />
+        <PhoneDentalImage className="absolute left-3 top-3 w-5 h-5 text-gray-400" />
         <input
           type="tel"
           name="phone"

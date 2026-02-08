@@ -1,4 +1,5 @@
 import { MicroscopeIcon, ShieldIcon, ZapIcon, MonitorIcon, WrenchIcon, CrownIcon } from '@/components/ui/Icons'
+import UniversalHero from '@/components/ui/UniversalHero'
 
 interface ServiceCardProps {
   icon: React.ReactNode
@@ -17,23 +18,21 @@ interface ProcessStepProps {
   description: string
 }
 
-interface ServiceHeroProps {
-  title: string
-  subtitle: string
-  description: string
-}
-
 export default function RootCanal() {
   return (
-    <main className="container-custom py-16">
-      <ServiceHero 
+    <main>
+      <UniversalHero 
         title="Root Canal Treatment"
         subtitle="Save your natural tooth"
         description="Advanced root canal therapy to relieve pain and preserve your natural tooth, preventing extraction."
+        backgroundImage="/dental-images/2.png"
+        overlayOpacity="bg-black/60"
       />
-      <ServicesGrid />
-      <BenefitsSection />
-      <ProcessSection />
+      <div className="container-custom py-16">
+        <ServicesGrid />
+        <BenefitsSection />
+        <ProcessSection />
+      </div>
     </main>
   )
 }
@@ -165,16 +164,3 @@ function ProcessStep({ number, title, description }) {
   )
 }
 
-function ServiceHero({ title, subtitle, description }) {
-  return (
-    <section className="text-center mb-16">
-      <h1 className="text-4xl md:text-5xl font-bold text-gray-800 mb-4">
-        {title}
-      </h1>
-      <p className="text-xl text-blue-600 font-medium mb-6">{subtitle}</p>
-      <p className="text-lg text-gray-600 max-w-3xl mx-auto">
-        {description}
-      </p>
-    </section>
-  )
-}

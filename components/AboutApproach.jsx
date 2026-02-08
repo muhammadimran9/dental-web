@@ -1,13 +1,13 @@
-import ExperienceIcon from './icons/ExperienceIcon'
-import TechnologyIcon from './icons/TechnologyIcon'
-import CareIcon from './icons/CareIcon'
-import ResultsIcon from './icons/ResultsIcon'
+import ExperienceDentalImage from './images/ExperienceDentalImage'
+import TechnologyDentalImage from './images/TechnologyDentalImage'
+import CareDentalImage from './images/CareDentalImage'
+import ResultsDentalImage from './images/ResultsDentalImage'
 
 const approaches = [
-  { icon: <ExperienceIcon />, title: '20+ Years Experience', description: 'Trusted expertise in dental care' },
-  { icon: <TechnologyIcon />, title: 'Advanced Technology', description: 'Latest dental equipment and techniques' },
-  { icon: <CareIcon />, title: 'Patient-Centered Care', description: 'Your comfort is our priority' },
-  { icon: <ResultsIcon />, title: 'Proven Results', description: 'Thousands of satisfied patients' },
+  { icon: <ExperienceDentalImage />, title: '20+ Years Experience', description: 'Trusted expertise in dental care' },
+  { icon: <TechnologyDentalImage />, title: 'Advanced Technology', description: 'Latest dental equipment and techniques' },
+  { icon: <CareDentalImage />, title: 'Patient-Centered Care', description: 'Your comfort is our priority' },
+  { icon: <ResultsDentalImage />, title: 'Proven Results', description: 'Thousands of satisfied patients' },
 ]
 
 export default function AboutApproach() {

@@ -1,5 +1,5 @@
-import UserIcon from '../icons/UserIcon'
-import PhoneIcon from '../icons/PhoneIcon'
+import UserDentalImage from '../images/UserDentalImage'
+import PhoneDentalImage from '../images/PhoneDentalImage'
 
 export default function PersonalInformation({ formData, onChange }) {
   return (
@@ -12,7 +12,7 @@ export default function PersonalInformation({ formData, onChange }) {
             Full Name *
           </label>
           <div className="relative">
-            <UserIcon className="absolute left-3 top-3 w-5 h-5 text-gray-400" />
+            <UserDentalImage className="absolute left-3 top-3 w-5 h-5 text-gray-400" />
             <input
               type="text"
               name="name"
@@ -45,7 +45,7 @@ export default function PersonalInformation({ formData, onChange }) {
             Phone Number *
           </label>
           <div className="relative">
-            <PhoneIcon className="absolute left-3 top-3 w-5 h-5 text-gray-400" />
+            <PhoneDentalImage className="absolute left-3 top-3 w-5 h-5 text-gray-400" />
             <input
               type="tel"
               name="phone"
