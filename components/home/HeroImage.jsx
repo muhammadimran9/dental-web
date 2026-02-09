@@ -7,7 +7,7 @@ export default function HeroImage() {
       <div className="relative rounded-2xl overflow-hidden shadow-2xl">
         <div className="aspect-[4/5] lg:aspect-[3/4]">
           <Image 
-            src="/images/home-hero.svg"
+            src="/components/images/home-img.webp"
             alt="Professional Dental Care in Dubai" 
             fill
             className="object-cover"

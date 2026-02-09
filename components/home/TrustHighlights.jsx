@@ -49,14 +49,22 @@ export default function TrustHighlights() {
 
 function TrustHighlight({ icon, title, description }) {
   return (
-    <div className="text-center group">
-      <div className="w-16 h-16 mx-auto bg-blue-50 rounded-2xl flex items-center justify-center mb-4 group-hover:bg-blue-100 transition-colors duration-300">
-        <div className="text-3xl text-blue-600 group-hover:scale-110 transition-transform duration-300">
-          {icon}
+    <div className="text-center group h-full flex flex-col">
+      <div className="flex-1 flex flex-col">
+        <div className="relative mb-6">
+          <div className="w-20 h-20 mx-auto bg-gradient-to-br from-blue-50 via-blue-100 to-blue-50 rounded-2xl flex items-center justify-center group-hover:scale-110 transition-all duration-300 shadow-lg group-hover:shadow-xl border-2 border-blue-100 group-hover:border-blue-200">
+            <div className="text-4xl text-blue-600 group-hover:scale-110 transition-transform duration-300">
+              {icon}
+            </div>
+          </div>
+          {/* Decorative ring */}
+          <div className="absolute inset-0 rounded-2xl bg-gradient-to-br from-blue-400/5 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-500"></div>
+        </div>
+        <div className="flex-1 space-y-3">
+          <h3 className="text-xl font-bold text-gray-900 mb-2 group-hover:text-blue-600 transition-colors duration-300">{title}</h3>
+          <p className="text-gray-600 leading-relaxed text-base">{description}</p>
         </div>
       </div>
-      <h3 className="text-xl font-bold text-gray-900 mb-2">{title}</h3>
-      <p className="text-gray-600 leading-relaxed">{description}</p>
     </div>
   )
 }

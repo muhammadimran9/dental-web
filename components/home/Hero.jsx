@@ -8,7 +8,7 @@ export default function Hero() {
       title="Transform Your Smile Today"
       subtitle="Expert Dental Care in Dubai"
       description="Experience world-class dental treatments with our internationally trained specialists. From routine check-ups to advanced cosmetic procedures, we're here to help you achieve the perfect smile."
-      backgroundImage="/dental-images/dental-white.jpg"
+      backgroundImage="/components/images/home-img.webp"
       overlayOpacity="bg-black/50"
     >
       <div className="mt-8 flex flex-col sm:flex-row gap-4 justify-center">

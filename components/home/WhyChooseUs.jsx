@@ -1,14 +1,16 @@
 import Card from '../ui/Card'
 import SectionHeader from '../SectionHeader'
 import ReasonCard from '../ReasonCard'
-import { TechnologyIcon, PainFreeIcon, DoctorIcon, PricingIcon, StaffIcon } from '../ui/Icons'
+import TechnologyDentalImage from '../images/TechnologyDentalImage'
+import ExperienceDentalImage from '../images/ExperienceDentalImage'
+import UserDentalImage from '../images/UserDentalImage'
+import HeartDentalImage from '../images/HeartDentalImage'
 
 const reasons = [
-  { icon: <TechnologyIcon className="w-8 h-8 text-blue-600" />, title: 'Modern Technology', description: 'State-of-the-art equipment' },
-  { icon: <PainFreeIcon className="w-8 h-8 text-blue-600" />, title: 'Pain-Free Treatment', description: 'Comfortable procedures' },
-  { icon: <DoctorIcon className="w-8 h-8 text-blue-600" />, title: 'Experienced Dentists', description: 'Expert care team' },
-  { icon: <PricingIcon className="w-8 h-8 text-blue-600" />, title: 'Transparent Pricing', description: 'No hidden fees' },
-  { icon: <StaffIcon className="w-8 h-8 text-blue-600" />, title: 'Friendly Staff', description: 'Welcoming environment' },
+  { icon: <TechnologyDentalImage className="w-8 h-8" />, title: 'Modern Technology', description: 'State-of-the-art equipment' },
+  { icon: <ExperienceDentalImage className="w-8 h-8" />, title: 'Pain-Free Treatment', description: 'Comfortable procedures' },
+  { icon: <UserDentalImage className="w-8 h-8" />, title: 'Experienced Dentists', description: 'Expert care team' },
+  { icon: <HeartDentalImage className="w-8 h-8" />, title: 'Friendly Staff', description: 'Welcoming environment' },
 ]
 
 export default function WhyChooseUs() {

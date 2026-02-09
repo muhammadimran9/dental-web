@@ -1,11 +1,11 @@
 import Card from '../ui/Card'
-import { ClockIcon } from '../ui/Icons'
+import EmergencyDentalImage from '../images/EmergencyDentalImage'
 
 export default function EmergencySchedule() {
   return (
     <Card className="bg-white">
       <div className="text-center">
-        <ClockIcon className="w-12 h-12 mb-4 text-red-600" />
+        <EmergencyDentalImage className="w-16 h-16 mb-4" />
         <h3 className="text-2xl font-bold text-gray-800 mb-4">Available 24/7</h3>
         <div className="space-y-3 text-left">
           <div className="flex justify-between py-2 border-b">

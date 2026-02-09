@@ -1,7 +1,12 @@
+import Image from 'next/image'
+
 export default function ContactHero() {
   return (
-    <section className="bg-gradient-to-br from-blue-100 to-blue-300 text-white section-padding">
-      <div className="container-custom text-center">
+    <section className="relative bg-gradient-to-br from-blue-100 to-blue-300 text-white section-padding overflow-hidden">
+      <div className="absolute inset-0 opacity-10">
+        <Image src="/components/images/bg-img.jpg" alt="" fill className="object-cover" />
+      </div>
+      <div className="container-custom text-center relative z-10">
         <h1 className="text-4xl md:text-5xl font-bold mb-6">
           Contact <span className="text-white font-extrabold">Us</span>
         </h1>

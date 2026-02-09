@@ -6,7 +6,7 @@ export default function AboutClinicImage() {
       <Card className="overflow-hidden">
         <div className="aspect-[4/3] relative">
           <img 
-            src="https://images.unsplash.com/photo-1600988227859-6c2857df8de0?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80"
+            src="/components/images/dental-white.jpg"
             alt="DentalCare Dubai Clinic Interior" 
             className="w-full h-full object-cover"
           />
