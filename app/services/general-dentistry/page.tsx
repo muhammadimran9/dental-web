@@ -1,4 +1,4 @@
-import { ToothIcon, SparklesIcon, PaletteIcon, RetainerIcon, MicroscopeIcon, LightningIcon } from '@/components/ui/Icons'
+import { ToothIcon, SparklesIcon, PaletteIcon, RetainerIcon, MicroscopeIcon, LightningIcon, ShieldCheckIcon, ClipboardIcon } from '@/components/ui/Icons'
 import UniversalHero from '@/components/ui/UniversalHero'
 
 interface ServiceCardProps {
