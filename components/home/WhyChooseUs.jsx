@@ -1,26 +1,30 @@
-import Card from '../ui/Card'
-import SectionHeader from '../SectionHeader'
-import ReasonCard from '../ReasonCard'
-import TechnologyDentalImage from '../images/TechnologyDentalImage'
-import ExperienceDentalImage from '../images/ExperienceDentalImage'
-import UserDentalImage from '../images/UserDentalImage'
-import HeartDentalImage from '../images/HeartDentalImage'
+import Image from 'next/image'
 
 const reasons = [
-  { icon: <TechnologyDentalImage className="w-8 h-8" />, title: 'Modern Technology', description: 'State-of-the-art equipment' },
-  { icon: <ExperienceDentalImage className="w-8 h-8" />, title: 'Pain-Free Treatment', description: 'Comfortable procedures' },
-  { icon: <UserDentalImage className="w-8 h-8" />, title: 'Experienced Dentists', description: 'Expert care team' },
-  { icon: <HeartDentalImage className="w-8 h-8" />, title: 'Friendly Staff', description: 'Welcoming environment' },
+  { image: '/dental-images/1.png', title: 'Modern Technology', description: 'State-of-the-art equipment for precise treatment' },
+  { image: '/dental-images/2.png', title: 'Experienced Dentists', description: 'Expert care from qualified professionals' },
+  { image: '/dental-images/3.png', title: 'Pain-Free Treatment', description: 'Comfortable procedures with advanced techniques' },
+  { image: '/dental-images/icon-7.png', title: 'Affordable Pricing', description: 'Quality dental care at competitive rates' },
 ]
 
 export default function WhyChooseUs() {
   return (
     <section className="section-padding bg-gray-50">
       <div className="container-custom">
-        <SectionHeader title="Why Choose Us" subtitle="What sets us apart from other dental clinics" />
-        <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6">
+        <div className="text-center mb-12">
+          <h2 className="text-3xl md:text-4xl font-bold text-gray-900 mb-4">Why Choose Us</h2>
+          <p className="text-xl text-gray-600">What sets us apart from other dental clinics</p>
+        </div>
+        
+        <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-6">
           {reasons.map((reason, index) => (
-            <ReasonCard key={index} {...reason} />
+            <div key={index} className="bg-white rounded-xl p-6 shadow-lg hover:shadow-xl transition group">
+              <div className="relative w-16 h-16 mx-auto mb-4">
+                <Image src={reason.image} alt={reason.title} fill className="object-contain" />
+              </div>
+              <h3 className="text-xl font-bold text-gray-900 mb-2 text-center group-hover:text-blue-600 transition">{reason.title}</h3>
+              <p className="text-gray-600 text-center">{reason.description}</p>
+            </div>
           ))}
         </div>
       </div>

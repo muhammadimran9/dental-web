@@ -16,15 +16,15 @@ export default function Footer() {
           <div>
             <h3 className="text-lg font-bold mb-4">Services</h3>
             <ul className="space-y-2 text-sm">
-              <li><Link href="/services/orthodontics" className="text-gray-300 hover:text-white transition">Orthodontic Treatment</Link></li>
-              <li><Link href="/services/orthodontics" className="text-gray-300 hover:text-white transition">Metal Braces</Link></li>
-              <li><Link href="/services/orthodontics" className="text-gray-300 hover:text-white transition">Clear Aligners</Link></li>
-              <li><Link href="/services/general-dentistry" className="text-gray-300 hover:text-white transition">Routine Dental Check-Up</Link></li>
+              <li><Link href="/services/orthodontic-treatment" className="text-gray-300 hover:text-white transition">Orthodontic Treatment</Link></li>
+              <li><Link href="/services/metal-braces" className="text-gray-300 hover:text-white transition">Metal Braces</Link></li>
+              <li><Link href="/services/clear-aligners" className="text-gray-300 hover:text-white transition">Clear Aligners</Link></li>
+              <li><Link href="/services/routine-dental-checkup" className="text-gray-300 hover:text-white transition">Routine Dental Check-Up</Link></li>
               <li><Link href="/services/cosmetic-dentistry" className="text-gray-300 hover:text-white transition">Cosmetic Dentistry</Link></li>
               <li><Link href="/services/dental-implants" className="text-gray-300 hover:text-white transition">Dental Implants</Link></li>
-              <li><Link href="/services/pediatric-dentistry" className="text-gray-300 hover:text-white transition">Children's Dentistry</Link></li>
-              <li><Link href="/services/general-dentistry" className="text-gray-300 hover:text-white transition">Dental Fillings</Link></li>
-              <li><Link href="/services/general-dentistry" className="text-gray-300 hover:text-white transition">Teeth Cleaning</Link></li>
+              <li><Link href="/services/childrens-dentistry" className="text-gray-300 hover:text-white transition">Children's Dentistry</Link></li>
+              <li><Link href="/services/dental-fillings" className="text-gray-300 hover:text-white transition">Dental Fillings</Link></li>
+              <li><Link href="/services/teeth-cleaning" className="text-gray-300 hover:text-white transition">Teeth Cleaning</Link></li>
               <li><Link href="/services/teeth-whitening" className="text-gray-300 hover:text-white transition">Teeth Whitening</Link></li>
             </ul>
           </div>

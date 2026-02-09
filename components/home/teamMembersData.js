@@ -4,20 +4,20 @@ export const teamMembers = [
     title: "Chief Dental Surgeon",
     specialty: "Cosmetic & Restorative Dentistry",
     experience: "15+ Years",
-    image: "/components/images/dh1.png"
+    image: "/dental-images/10.png"
   },
   {
     name: "Dr. Michael Chen", 
     title: "Orthodontic Specialist",
     specialty: "Braces & Invisalign",
     experience: "12+ Years",
-    image: "/components/images/dh2.png"
+    image: "/dental-images/11.png"
   },
   {
     name: "Dr. Emily Rodriguez",
     title: "Pediatric Dentist", 
     specialty: "Children's Dental Care",
     experience: "10+ Years",
-    image: "/components/images/dh3.png"
+    image: "/dental-images/12.png"
   }
 ]

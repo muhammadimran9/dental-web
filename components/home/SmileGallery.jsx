@@ -1,12 +1,13 @@
 import Link from 'next/link'
+import Image from 'next/image'
 
 const galleryImages = [
-  { src: '/dental-images/dh1.png', alt: 'Smile Transformation 1' },
-  { src: '/dental-images/dh2.png', alt: 'Smile Transformation 2' },
-  { src: '/dental-images/dh3 (1).png', alt: 'Smile Transformation 3' },
-  { src: '/dental-images/dh4.png', alt: 'Smile Transformation 4' },
-  { src: '/dental-images/dh5.png', alt: 'Smile Transformation 5' },
-  { src: '/dental-images/dh6.png', alt: 'Smile Transformation 6' }
+  { src: '/dental-images/sh1.png', alt: 'Patient Smile 1' },
+  { src: '/dental-images/sh2.png', alt: 'Patient Smile 2' },
+  { src: '/dental-images/sh3.png', alt: 'Patient Smile 3' },
+  { src: '/dental-images/sh4.png', alt: 'Patient Smile 4' },
+  { src: '/dental-images/dh7.png', alt: 'Patient Smile 5' },
+  { src: '/dental-images/dh8.png', alt: 'Patient Smile 6' }
 ]
 
 export default function SmileGallery() {
@@ -21,7 +22,7 @@ export default function SmileGallery() {
         <div className="grid grid-cols-2 md:grid-cols-3 gap-4 mb-8">
           {galleryImages.map((img, i) => (
             <div key={i} className="relative overflow-hidden rounded-lg shadow-lg group aspect-square">
-              <img src={img.src} alt={img.alt} className="w-full h-full object-cover transition-transform duration-300 group-hover:scale-110" />
+              <Image src={img.src} alt={img.alt} fill className="object-cover transition-transform duration-300 group-hover:scale-110" sizes="(max-width: 768px) 50vw, 33vw" />
               <div className="absolute inset-0 bg-blue-600/0 group-hover:bg-blue-600/20 transition-colors duration-300" />
             </div>
           ))}
