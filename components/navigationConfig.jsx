@@ -16,7 +16,6 @@ export const serviceItems = [
   { label: 'Root Canal', href: '/services/root-canal', border: true },
   { label: 'Pediatric Dentistry', href: '/services/pediatric-dentistry', border: true },
   { label: 'Orthodontics', href: '/services/orthodontics', border: true },
-  { label: 'Invisalign', href: '/invisalign', border: true },
   { label: 'Periodontics', href: '/services/periodontics', border: false },
 ]
 
