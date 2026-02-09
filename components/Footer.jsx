@@ -26,6 +26,11 @@ export default function Footer() {
               <li><Link href="/services/dental-fillings" className="text-gray-300 hover:text-white transition">Dental Fillings</Link></li>
               <li><Link href="/services/teeth-cleaning" className="text-gray-300 hover:text-white transition">Teeth Cleaning</Link></li>
               <li><Link href="/services/teeth-whitening" className="text-gray-300 hover:text-white transition">Teeth Whitening</Link></li>
+              <li><Link href="/services/root-canal-treatment" className="text-gray-300 hover:text-white transition">Root Canal Treatment</Link></li>
+              <li><Link href="/services/dental-veneers" className="text-gray-300 hover:text-white transition">Dental Veneers</Link></li>
+              <li><Link href="/services/dental-crowns" className="text-gray-300 hover:text-white transition">Dental Crowns</Link></li>
+              <li><Link href="/services/gum-treatment" className="text-gray-300 hover:text-white transition">Gum Treatment</Link></li>
+              <li><Link href="/services/emergency-dental-care" className="text-gray-300 hover:text-white transition">Emergency Dental Care</Link></li>
             </ul>
           </div>
           

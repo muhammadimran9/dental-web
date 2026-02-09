@@ -1,122 +1,165 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9" xmlns:image="http://www.google.com/schemas/sitemap-image/1.1">
+<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
   
-  <!-- Homepage -->
   <url>
     <loc>https://dental-web-app.netlify.app/</loc>
-    <lastmod>2024-01-20</lastmod>
+    <lastmod>2026-01-20</lastmod>
     <changefreq>weekly</changefreq>
     <priority>1.0</priority>
-    <image:image>
-      <image:loc>https://dental-web-app.netlify.app/images/hero-dental-clinic.jpg</image:loc>
-      <image:title>DentalCare Dubai - Premium Dental Services</image:title>
-      <image:caption>World-class dental care in Dubai Healthcare City</image:caption>
-    </image:image>
   </url>
   
-  <!-- Services Page -->
   <url>
     <loc>https://dental-web-app.netlify.app/services</loc>
-    <lastmod>2024-01-20</lastmod>
+    <lastmod>2026-01-20</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.9</priority>
   </url>
   
-  <!-- Individual Service Pages -->
   <url>
-    <loc>https://dental-web-app.netlify.app/services/general-dentistry</loc>
-    <lastmod>2024-01-20</lastmod>
+    <loc>https://dental-web-app.netlify.app/services/orthodontic-treatment</loc>
+    <lastmod>2026-01-20</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+  </url>
+  
+  <url>
+    <loc>https://dental-web-app.netlify.app/services/metal-braces</loc>
+    <lastmod>2026-01-20</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+  </url>
+  
+  <url>
+    <loc>https://dental-web-app.netlify.app/services/clear-aligners</loc>
+    <lastmod>2026-01-20</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+  </url>
+  
+  <url>
+    <loc>https://dental-web-app.netlify.app/services/routine-dental-checkup</loc>
+    <lastmod>2026-01-20</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
   </url>
   
   <url>
     <loc>https://dental-web-app.netlify.app/services/cosmetic-dentistry</loc>
-    <lastmod>2024-01-20</lastmod>
+    <lastmod>2026-01-20</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
   </url>
   
   <url>
     <loc>https://dental-web-app.netlify.app/services/dental-implants</loc>
-    <lastmod>2024-01-20</lastmod>
+    <lastmod>2026-01-20</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+  </url>
+  
+  <url>
+    <loc>https://dental-web-app.netlify.app/services/childrens-dentistry</loc>
+    <lastmod>2026-01-20</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+  </url>
+  
+  <url>
+    <loc>https://dental-web-app.netlify.app/services/dental-fillings</loc>
+    <lastmod>2026-01-20</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+  </url>
+  
+  <url>
+    <loc>https://dental-web-app.netlify.app/services/teeth-cleaning</loc>
+    <lastmod>2026-01-20</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
   </url>
   
   <url>
     <loc>https://dental-web-app.netlify.app/services/teeth-whitening</loc>
-    <lastmod>2024-01-20</lastmod>
+    <lastmod>2026-01-20</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
   </url>
   
   <url>
-    <loc>https://dental-web-app.netlify.app/services/root-canal</loc>
-    <lastmod>2024-01-20</lastmod>
+    <loc>https://dental-web-app.netlify.app/services/root-canal-treatment</loc>
+    <lastmod>2026-01-20</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
   </url>
   
   <url>
-    <loc>https://dental-web-app.netlify.app/services/pediatric-dentistry</loc>
-    <lastmod>2024-01-20</lastmod>
+    <loc>https://dental-web-app.netlify.app/services/dental-veneers</loc>
+    <lastmod>2026-01-20</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
   </url>
   
   <url>
-    <loc>https://dental-web-app.netlify.app/services/orthodontics</loc>
-    <lastmod>2024-01-20</lastmod>
+    <loc>https://dental-web-app.netlify.app/services/dental-crowns</loc>
+    <lastmod>2026-01-20</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
   </url>
   
   <url>
-    <loc>https://dental-web-app.netlify.app/services/periodontics</loc>
-    <lastmod>2024-01-20</lastmod>
+    <loc>https://dental-web-app.netlify.app/services/gum-treatment</loc>
+    <lastmod>2026-01-20</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
   </url>
   
-  <!-- Team Page -->
   <url>
-    <loc>https://dental-web-app.netlify.app/doctors</loc>
-    <lastmod>2024-01-20</lastmod>
+    <loc>https://dental-web-app.netlify.app/services/emergency-dental-care</loc>
+    <lastmod>2026-01-20</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+  </url>
+  
+  <url>
+    <loc>https://dental-web-app.netlify.app/team</loc>
+    <lastmod>2026-01-20</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
   </url>
   
-  <!-- Blog Pages -->
   <url>
     <loc>https://dental-web-app.netlify.app/blog</loc>
-    <lastmod>2024-01-20</lastmod>
+    <lastmod>2026-01-20</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.6</priority>
   </url>
   
-  <!-- Contact Page -->
   <url>
     <loc>https://dental-web-app.netlify.app/contact</loc>
-    <lastmod>2024-01-20</lastmod>
+    <lastmod>2026-01-20</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
   </url>
   
-  <!-- Appointment Page -->
   <url>
     <loc>https://dental-web-app.netlify.app/appointment</loc>
-    <lastmod>2024-01-20</lastmod>
+    <lastmod>2026-01-20</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.9</priority>
   </url>
   
-  <!-- About Page -->
   <url>
     <loc>https://dental-web-app.netlify.app/about</loc>
-    <lastmod>2024-01-20</lastmod>
+    <lastmod>2026-01-20</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.6</priority>
+  </url>
+  
+  <url>
+    <loc>https://dental-web-app.netlify.app/smile-gallery</loc>
+    <lastmod>2026-01-20</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
   </url>
   
 </urlset>

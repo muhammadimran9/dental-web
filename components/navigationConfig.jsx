@@ -16,7 +16,12 @@ export const serviceItems = [
   { label: "Children's Dentistry", href: '/services/childrens-dentistry', border: true },
   { label: 'Dental Fillings', href: '/services/dental-fillings', border: true },
   { label: 'Teeth Cleaning', href: '/services/teeth-cleaning', border: true },
-  { label: 'Teeth Whitening', href: '/services/teeth-whitening', border: false },
+  { label: 'Teeth Whitening', href: '/services/teeth-whitening', border: true },
+  { label: 'Root Canal Treatment', href: '/services/root-canal-treatment', border: true },
+  { label: 'Dental Veneers', href: '/services/dental-veneers', border: true },
+  { label: 'Dental Crowns', href: '/services/dental-crowns', border: true },
+  { label: 'Gum Treatment', href: '/services/gum-treatment', border: true },
+  { label: 'Emergency Dental Care', href: '/services/emergency-dental-care', border: false },
 ]
 
 export const feedbackItems = [
