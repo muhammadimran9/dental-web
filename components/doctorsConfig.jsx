@@ -11,7 +11,7 @@ export const doctors = [
     education: 'King\'s College London, UK',
     certifications: 'UK General Dental Council, DHA Licensed',
     bio: 'Dr. Ahmed is a renowned cosmetic dentist with 20+ years of international experience. Trained in London, now serving Dubai\'s elite with world-class aesthetic dentistry.',
-    image: 'https://images.unsplash.com/photo-1622253692010-333f2da6031d?w=400&h=400&fit=crop&q=80',
+    image: '/images/profile-fb-1480085465-bb6c9de79b16.jpg',
     achievements: 'Over 5,000 smile transformations',
   },
   {
@@ -23,7 +23,7 @@ export const doctors = [
     education: 'University of Pennsylvania, USA',
     certifications: 'American Board of Pediatric Dentistry, DHA Licensed',
     bio: 'Dr. Fatima specializes in pediatric dentistry with extensive training from the US. She creates positive dental experiences for children across the UAE.',
-    image: 'https://images.unsplash.com/photo-1594824476967-48c8b964273f?w=400&h=400&fit=crop&q=80',
+    image: '/images/profile-fb-1502817706-2b51aa841673.jpg',
     achievements: 'Dubai\'s Top Pediatric Dentist 2023',
   },
   {
@@ -35,7 +35,7 @@ export const doctors = [
     education: 'Harvard Dental School, USA',
     certifications: 'American Board of Orthodontics, DHA Licensed',
     bio: 'Dr. Hassan is a Harvard-trained orthodontist and implant specialist. He brings cutting-edge orthodontic solutions to Dubai with 18+ years of expertise.',
-    image: 'https://images.unsplash.com/photo-1537368910025-700350fe46c7?w=400&h=400&fit=crop&q=80',
+    image: '/images/profile-fb-1506718363-818e3cb347dc.jpg',
     achievements: 'Published 25+ research papers',
   },
   {
@@ -47,7 +47,7 @@ export const doctors = [
     education: 'University of Toronto, Canada',
     certifications: 'Canadian Board of Periodontology, DHA Licensed',
     bio: 'Dr. Noora is a periodontology expert with Canadian training. She specializes in advanced gum treatments and implant surgery for Dubai residents.',
-    image: 'https://images.unsplash.com/photo-1551836022-d5d88e9218df?w=400&h=400&fit=crop&q=80',
+    image: '/images/profile-fb-1511174309-478bb5fd4b45.jpg',
     achievements: 'Pioneer in laser gum therapy',
   },
 ]

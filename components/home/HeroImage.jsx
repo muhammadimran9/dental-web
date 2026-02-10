@@ -7,7 +7,7 @@ export default function HeroImage() {
       <div className="relative rounded-2xl overflow-hidden shadow-2xl">
         <div className="aspect-[4/5] lg:aspect-[3/4]">
           <Image 
-            src="/components/images/home-img.webp"
+            src="/images/istockphoto-1133756788-612x612.webp"
             alt="Professional Dental Care in Dubai" 
             fill
             className="object-cover"
