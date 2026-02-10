@@ -1,5 +1,6 @@
 'use client'
 import Link from 'next/link'
+import Image from 'next/image'
 import { services } from '@/lib/servicesData'
 
 export default function HomeServices() {
@@ -27,6 +28,15 @@ export default function HomeServices() {
               href={`/services/${service.slug}`}
               className="group bg-white rounded-xl shadow-md hover:shadow-xl transition-all duration-300 overflow-hidden"
             >
+              <div className="relative h-48 w-full overflow-hidden">
+                <Image 
+                  src={service.image} 
+                  alt={service.title} 
+                  fill 
+                  className="object-cover group-hover:scale-110 transition-transform duration-300" 
+                  sizes="(max-width: 768px) 100vw, (max-width: 1024px) 50vw, 33vw"
+                />
+              </div>
               <div className="p-6">
                 <h3 className="text-xl font-bold text-gray-900 mb-3 group-hover:text-blue-600 transition">
                   {service.title}

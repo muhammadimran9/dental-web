@@ -1,12 +1,10 @@
 import Link from 'next/link'
+import Image from 'next/image'
 
 export default function MobileLogo() {
   return (
-    <Link href="/" className="flex items-center space-x-2">
-      <div className="w-8 h-8 bg-blue-600 rounded-lg flex items-center justify-center">
-        <span className="text-white font-bold text-sm">DC</span>
-      </div>
-      <span className="text-sm font-bold text-gray-800">DentalCare</span>
+    <Link href="/" className="flex items-center">
+      <Image src="/dental-images/kdlogo.png" alt="Dental Clinic Logo" width={140} height={50} className="object-contain" priority />
     </Link>
   )
 }

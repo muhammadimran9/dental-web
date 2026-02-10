@@ -6,9 +6,9 @@ import { services } from '@/lib/servicesData'
 import { notFound } from 'next/navigation'
 
 interface ServicePageProps {
-  params: {
+  params: Promise<{
     slug: string
-  }
+  }>
 }
 
 export async function generateStaticParams() {
@@ -17,8 +17,23 @@ export async function generateStaticParams() {
   }))
 }
 
-export default function ServicePage({ params }: ServicePageProps) {
-  const service = services.find(s => s.slug === params.slug)
+export async function generateMetadata({ params }: ServicePageProps) {
+  const { slug } = await params
+  const service = services.find(s => s.slug === slug)
+  
+  if (!service) {
+    return { title: 'Service Not Found' }
+  }
+  
+  return {
+    title: `${service.title} | Dental Services`,
+    description: service.description,
+  }
+}
+
+export default async function ServicePage({ params }: ServicePageProps) {
+  const { slug } = await params
+  const service = services.find(s => s.slug === slug)
   
   if (!service) {
     notFound()
@@ -39,7 +54,14 @@ export default function ServicePage({ params }: ServicePageProps) {
         <section className="section-padding bg-gray-50">
           <div className="container-custom max-w-4xl">
             <div className="relative h-96 rounded-2xl overflow-hidden shadow-xl">
-              <Image src={service.image} alt={service.title} fill className="object-cover" />
+              <Image 
+                src={service.image} 
+                alt={service.title} 
+                fill 
+                className="object-cover" 
+                sizes="(max-width: 1024px) 100vw, 1024px"
+                priority
+              />
             </div>
           </div>
         </section>

@@ -7,7 +7,6 @@ export default function Navigation() {
       <NavLink href="/" label="Home" active />
       <DropdownMenu title="About Us" items={aboutItems} />
       <DropdownMenu title="Services" items={serviceItems} />
-      <NavLink href="/invisalign" label="Invisalign" />
       <DropdownMenu title="Patient Feedback" items={feedbackItems} />
       <DropdownMenu title="Contact" items={contactItems} />
     </nav>
