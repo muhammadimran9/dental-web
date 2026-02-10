@@ -31,7 +31,7 @@ export default function AboutCTA() {
             
           <div className="relative rounded-xl overflow-hidden shadow-2xl lg:order-first lg:order-last">
             <Image
-              src="/components/images/dental-veneers.jpg"
+              src="/dental-images/dental-veneers.jpg"
               alt="Happy patient with beautiful smile"
               width={500}
               height={300}
