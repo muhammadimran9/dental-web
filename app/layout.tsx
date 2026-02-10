@@ -2,6 +2,7 @@ import './globals.css'
 import dynamic from 'next/dynamic'
 import Header from '@/components/HeaderProfessional'
 import ContactHeader from '@/components/ContactHeader'
+import StickyAppointmentButton from '@/components/StickyAppointmentButton'
 import { siteMetadata } from '@/components/metadata/SiteMetadata'
 import { StructuredData } from '@/components/metadata/StructuredData'
 import { HeadScripts } from '@/components/layout/HeadScripts'
@@ -35,6 +36,7 @@ export default function RootLayout({ children }: { children: React.ReactNode }) 
         <Header />
         <main id="main-content" role="main">{children}</main>
         <Footer />
+        <StickyAppointmentButton />
         <GulfStickyButtons />
         <ServiceWorkerScript />
         <AnalyticsScript />

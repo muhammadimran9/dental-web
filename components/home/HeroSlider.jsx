@@ -4,10 +4,10 @@ import Link from 'next/link'
 import Image from 'next/image'
 
 const slides = [
-  { img: '/dental-images/img-cosmetic-smile1.webp', title: 'Transform Your Smile', text: 'Expert Cosmetic Dentistry Services' },
-  { img: '/dental-images/img-dental-implants.webp', title: 'Dental Implants', text: 'Permanent Solution for Missing Teeth' },
-  { img: '/dental-images/img-teeth-whitening.webp', title: 'Teeth Whitening', text: 'Brighten Your Smile Today' },
-  { img: '/dental-images/img-dental-braces.webp', title: 'Orthodontics', text: 'Straighten Your Teeth with Confidence' }
+  { img: '/dental-images/dh1.png', title: 'Transform Your Smile', text: 'Expert Cosmetic Dentistry Services' },
+  { img: '/dental-images/dh2.png', title: 'Dental Implants', text: 'Permanent Solution for Missing Teeth' },
+  { img: '/dental-images/dh3 (1).png', title: 'Teeth Whitening', text: 'Brighten Your Smile Today' },
+  { img: '/dental-images/dh4.png', title: 'Orthodontics', text: 'Straighten Your Teeth with Confidence' }
 ]
 
 export default function HeroSlider() {

@@ -1,10 +1,10 @@
 import Image from 'next/image'
 
 const reasons = [
-  { image: '/dental-images/1.png', title: 'Modern Technology', description: 'State-of-the-art equipment for precise treatment' },
-  { image: '/dental-images/2.png', title: 'Experienced Dentists', description: 'Expert care from qualified professionals' },
-  { image: '/dental-images/3.png', title: 'Pain-Free Treatment', description: 'Comfortable procedures with advanced techniques' },
-  { image: '/dental-images/icon-7.png', title: 'Affordable Pricing', description: 'Quality dental care at competitive rates' },
+  { image: '/dental-images/12.png', title: 'Modern Technology', description: 'State-of-the-art equipment for precise treatment' },
+  { image: '/dental-images/13.png', title: 'Experienced Dentists', description: 'Expert care from qualified professionals' },
+  { image: '/dental-images/14.png', title: 'Pain-Free Treatment', description: 'Comfortable procedures with advanced techniques' },
+  { image: '/dental-images/15.png', title: 'Affordable Pricing', description: 'Quality dental care at competitive rates' },
 ]
 
 export default function WhyChooseUs() {
@@ -19,7 +19,7 @@ export default function WhyChooseUs() {
         <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-6">
           {reasons.map((reason, index) => (
             <div key={index} className="bg-white rounded-xl p-6 shadow-lg hover:shadow-xl transition group">
-              <div className="relative w-16 h-16 mx-auto mb-4">
+              <div className="relative w-20 h-20 mx-auto mb-4">
                 <Image src={reason.image} alt={reason.title} fill className="object-contain" />
               </div>
               <h3 className="text-xl font-bold text-gray-900 mb-2 text-center group-hover:text-blue-600 transition">{reason.title}</h3>

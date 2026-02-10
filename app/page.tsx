@@ -1,5 +1,5 @@
 import HeroSlider from '@/components/home/HeroSlider'
-import ServicesPreview from '@/components/home/ServicesPreview'
+import HomeServices from '@/components/home/HomeServices'
 import TeamPreview from '@/components/home/TeamPreview'
 import WhyChooseUs from '@/components/home/WhyChooseUs'
 import Testimonials from '@/components/home/Testimonials'
@@ -13,7 +13,7 @@ export default function Home() {
   return (
     <div>
       <HeroSlider />
-      <ServicesPreview />
+      <HomeServices />
       <TeamPreview />
       <WhyChooseUs />
       <Testimonials />
