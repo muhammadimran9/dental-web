@@ -1,6 +1,6 @@
-import CalendarDentalImage from '../images/CalendarDentalImage'
-import ClockDentalImage from '../images/ClockDentalImage'
 import UniversalHero from '../ui/UniversalHero'
+import CalendarIcon from '../icons/CalendarIcon'
+import ClockIcon from '../icons/ClockIcon'
 
 export default function AppointmentHero() {
   return (
@@ -13,11 +13,11 @@ export default function AppointmentHero() {
     >
       <div className="flex justify-center gap-8 mb-6">
         <div className="flex items-center gap-2">
-          <CalendarDentalImage className="w-12 h-12" />
+          <CalendarIcon className="w-12 h-12 text-white" />
           <span className="text-2xl font-bold text-white">30 Seconds</span>
         </div>
         <div className="flex items-center gap-2">
-          <ClockDentalImage className="w-12 h-12" />
+          <ClockIcon className="w-12 h-12 text-white" />
           <span className="text-2xl font-bold text-white">Quick Booking</span>
         </div>
       </div>

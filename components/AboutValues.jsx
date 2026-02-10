@@ -1,30 +1,30 @@
 import Card from './ui/Card'
-import StarDentalImage from './images/StarDentalImage'
-import HeartDentalImage from './images/HeartDentalImage'
-import LightbulbDentalImage from './images/LightbulbDentalImage'
-import HandshakeDentalImage from './images/HandshakeDentalImage'
+import StarIcon from './icons/StarIcon'
+import HeartIcon from './icons/HeartIcon'
+import LightbulbIcon from './icons/LightbulbIcon'
+import HandshakeIcon from './icons/HandshakeIcon'
 
 export default function AboutValues() {
   const values = [
     { 
       title: 'Excellence', 
       description: 'We strive for excellence in every procedure and interaction, ensuring the highest standards of dental care.', 
-      icon: <StarDentalImage /> 
+      icon: <StarIcon className="w-12 h-12 text-blue-600" /> 
     },
     { 
       title: 'Compassion', 
       description: 'We treat every patient with care, respect, and understanding, making your comfort our priority.', 
-      icon: <HeartDentalImage /> 
+      icon: <HeartIcon className="w-12 h-12 text-blue-600" /> 
     },
     { 
       title: 'Innovation', 
       description: 'We use the latest technology and techniques for better outcomes and faster recovery times.', 
-      icon: <LightbulbDentalImage /> 
+      icon: <LightbulbIcon className="w-12 h-12 text-blue-600" /> 
     },
     { 
       title: 'Integrity', 
       description: 'We maintain the highest ethical standards in all we do, building trust through transparency.', 
-      icon: <HandshakeDentalImage /> 
+      icon: <HandshakeIcon className="w-12 h-12 text-blue-600" /> 
     },
   ]
 

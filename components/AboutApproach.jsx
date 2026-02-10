@@ -1,13 +1,13 @@
-import ExperienceDentalImage from './images/ExperienceDentalImage'
-import TechnologyDentalImage from './images/TechnologyDentalImage'
-import CareDentalImage from './images/CareDentalImage'
-import ResultsDentalImage from './images/ResultsDentalImage'
+import ExperienceIcon from './icons/ExperienceIcon'
+import TechnologyIcon from './icons/TechnologyIcon'
+import CareIcon from './icons/CareIcon'
+import ResultsIcon from './icons/ResultsIcon'
 
 const approaches = [
-  { icon: <ExperienceDentalImage />, title: '20+ Years Experience', description: 'Trusted expertise in dental care' },
-  { icon: <TechnologyDentalImage />, title: 'Advanced Technology', description: 'Latest dental equipment and techniques' },
-  { icon: <CareDentalImage />, title: 'Patient-Centered Care', description: 'Your comfort is our priority' },
-  { icon: <ResultsDentalImage />, title: 'Proven Results', description: 'Thousands of satisfied patients' },
+  { icon: <ExperienceIcon className="w-16 h-16 text-blue-600" />, title: '20+ Years Experience', description: 'Trusted expertise in dental care' },
+  { icon: <TechnologyIcon className="w-16 h-16 text-blue-600" />, title: 'Advanced Technology', description: 'Latest dental equipment and techniques' },
+  { icon: <CareIcon className="w-16 h-16 text-blue-600" />, title: 'Patient-Centered Care', description: 'Your comfort is our priority' },
+  { icon: <ResultsIcon className="w-16 h-16 text-blue-600" />, title: 'Proven Results', description: 'Thousands of satisfied patients' },
 ]
 
 export default function AboutApproach() {
@@ -26,7 +26,7 @@ export default function AboutApproach() {
         <div className="grid md:grid-cols-4 gap-8">
           {approaches.map((item, index) => (
             <div key={index} className="text-center">
-              <div className="text-5xl mb-4 text-primary">{item.icon}</div>
+              <div className="flex justify-center mb-4">{item.icon}</div>
               <h3 className="text-lg font-semibold text-gray-800 mb-2">{item.title}</h3>
               <p className="text-gray-600 text-sm">{item.description}</p>
             </div>
