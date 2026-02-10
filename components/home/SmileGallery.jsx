@@ -2,12 +2,12 @@ import Link from 'next/link'
 import Image from 'next/image'
 
 const galleryImages = [
-  { src: '/dental-images/16.png', alt: 'Dental Transformation 1' },
-  { src: '/dental-images/17.png', alt: 'Dental Transformation 2' },
-  { src: '/dental-images/18.png', alt: 'Dental Transformation 3' },
-  { src: '/dental-images/19.png', alt: 'Dental Transformation 4' },
-  { src: '/dental-images/20.png', alt: 'Dental Transformation 5' },
-  { src: '/dental-images/21.png', alt: 'Dental Transformation 6' }
+  { src: '/dental-images/26.png', alt: 'Beautiful Smile Transformation' },
+  { src: '/dental-images/27.png', alt: 'Professional Teeth Whitening Result' },
+  { src: '/dental-images/28.png', alt: 'Dental Veneers Before After' },
+  { src: '/dental-images/1.png', alt: 'Orthodontic Treatment Success' },
+  { src: '/dental-images/2.png', alt: 'Cosmetic Dentistry Result' },
+  { src: '/dental-images/3.png', alt: 'Perfect Smile Makeover' }
 ]
 
 export default function SmileGallery() {

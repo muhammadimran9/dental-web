@@ -4,10 +4,10 @@ import Link from 'next/link'
 import Image from 'next/image'
 
 const slides = [
-  { img: '/dental-images/dh1.png', title: 'Transform Your Smile', text: 'Expert Cosmetic Dentistry Services' },
-  { img: '/dental-images/dh2.png', title: 'Dental Implants', text: 'Permanent Solution for Missing Teeth' },
-  { img: '/dental-images/dh3 (1).png', title: 'Teeth Whitening', text: 'Brighten Your Smile Today' },
-  { img: '/dental-images/dh4.png', title: 'Orthodontics', text: 'Straighten Your Teeth with Confidence' }
+  { img: '/dental-images/22.png', title: 'Your Perfect Smile Starts Here', text: 'Expert Dental Care with Advanced Technology' },
+  { img: '/dental-images/23.png', title: 'Transform Your Confidence', text: 'Professional Cosmetic Dentistry Services' },
+  { img: '/dental-images/24.png', title: 'Gentle Family Dentistry', text: 'Comprehensive Care for All Ages' },
+  { img: '/dental-images/25.png', title: 'Smile Brighter Today', text: 'Advanced Teeth Whitening & Treatments' }
 ]
 
 export default function HeroSlider() {
@@ -23,7 +23,7 @@ export default function HeroSlider() {
       {slides.map((s, i) => (
         <div key={i} className={`absolute inset-0 transition-opacity duration-1000 ${active === i ? 'opacity-100' : 'opacity-0'}`}>
           <Image src={s.img} alt={s.title} fill priority={i === 0} className="object-cover" sizes="100vw" quality={90} />
-          <div className="absolute inset-0 bg-gradient-to-r from-black/70 to-black/40" />
+          <div className="absolute inset-0 bg-gradient-to-r from-black/70 via-black/50 to-transparent" />
           <div className="absolute inset-0 flex items-center">
             <div className="container-custom">
               <div className="max-w-2xl text-white">
