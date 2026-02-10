@@ -1,12 +1,7 @@
-import OptimizedDentalImage from '../ui/OptimizedDentalImage'
-
 export default function UserDentalImage({ className = "w-6 h-6" }) {
   return (
-    <OptimizedDentalImage
-      src="/components/images/dh9.png"
-      alt="User"
-      className={className}
-      priority={false}
-    />
+    <svg className={className} fill="currentColor" viewBox="0 0 20 20">
+      <path fillRule="evenodd" d="M10 9a3 3 0 100-6 3 3 0 000 6zm-7 9a7 7 0 1114 0H3z" clipRule="evenodd"/>
+    </svg>
   )
 }

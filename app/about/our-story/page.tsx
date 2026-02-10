@@ -90,7 +90,11 @@ function MissionVision() {
       <div className="container-custom max-w-6xl">
         <div className="grid md:grid-cols-2 gap-8">
           <div className="bg-white p-8 rounded-xl shadow-lg">
-            <div className="text-5xl mb-4">🎯</div>
+            <div className="w-16 h-16 bg-blue-100 rounded-full flex items-center justify-center mb-4">
+              <svg className="w-8 h-8 text-blue-600" fill="currentColor" viewBox="0 0 20 20">
+                <path d="M10 2a6 6 0 00-6 6v3.586l-.707.707A1 1 0 004 14h12a1 1 0 00.707-1.707L16 11.586V8a6 6 0 00-6-6zM10 18a3 3 0 01-3-3h6a3 3 0 01-3 3z"/>
+              </svg>
+            </div>
             <h3 className="text-3xl font-bold text-gray-900 mb-4">Our Mission</h3>
             <p className="text-lg text-gray-700">
               To provide exceptional dental care that combines advanced technology, 
@@ -99,7 +103,12 @@ function MissionVision() {
             </p>
           </div>
           <div className="bg-white p-8 rounded-xl shadow-lg">
-            <div className="text-5xl mb-4">🔭</div>
+            <div className="w-16 h-16 bg-blue-100 rounded-full flex items-center justify-center mb-4">
+              <svg className="w-8 h-8 text-blue-600" fill="currentColor" viewBox="0 0 20 20">
+                <path d="M10 12a2 2 0 100-4 2 2 0 000 4z"/>
+                <path fillRule="evenodd" d="M.458 10C1.732 5.943 5.522 3 10 3s8.268 2.943 9.542 7c-1.274 4.057-5.064 7-9.542 7S1.732 14.057.458 10zM14 10a4 4 0 11-8 0 4 4 0 018 0z" clipRule="evenodd"/>
+              </svg>
+            </div>
             <h3 className="text-3xl font-bold text-gray-900 mb-4">Our Vision</h3>
             <p className="text-lg text-gray-700">
               To be the leading dental care provider in the UAE, recognized for our 
@@ -127,7 +136,7 @@ function StoryTimeline() {
             description="Opened our first clinic in Dubai Healthcare City with 2 dentists and a vision to provide world-class dental care" 
           />
           <TimelineItem 
-            year="2012" 
+            year="2012"
             title="Technology Upgrade" 
             description="Invested in advanced dental technology including digital X-rays, 3D imaging, and laser dentistry equipment" 
           />
@@ -167,21 +176,71 @@ function TimelineItem({ year, title, description }: TimelineItemProps) {
 }
 
 function Achievements() {
+  const achievements = [
+    {
+      icon: (
+        <svg className="w-12 h-12" fill="currentColor" viewBox="0 0 20 20">
+          <path d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z"/>
+        </svg>
+      ),
+      title: 'Award Winning',
+      desc: 'Best Dental Clinic Dubai 2023'
+    },
+    {
+      icon: (
+        <svg className="w-12 h-12" fill="currentColor" viewBox="0 0 20 20">
+          <path d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z"/>
+        </svg>
+      ),
+      title: '5-Star Rated',
+      desc: '4.9/5 from 2000+ reviews'
+    },
+    {
+      icon: (
+        <svg className="w-12 h-12" fill="currentColor" viewBox="0 0 20 20">
+          <path d="M10.394 2.08a1 1 0 00-.788 0l-7 3a1 1 0 000 1.84L5.25 8.051a.999.999 0 01.356-.257l4-1.714a1 1 0 11.788 1.838L7.667 9.088l1.94.831a1 1 0 00.787 0l7-3a1 1 0 000-1.838l-7-3zM3.31 9.397L5 10.12v4.102a8.969 8.969 0 00-1.05-.174 1 1 0 01-.89-.89 11.115 11.115 0 01.25-3.762zM9.3 16.573A9.026 9.026 0 007 14.935v-3.957l1.818.78a3 3 0 002.364 0l5.508-2.361a11.026 11.026 0 01.25 3.762 1 1 0 01-.89.89 8.968 8.968 0 00-5.35 2.524 1 1 0 01-1.4 0zM6 18a1 1 0 001-1v-2.065a8.935 8.935 0 00-2-.712V17a1 1 0 001 1z"/>
+        </svg>
+      ),
+      title: 'Certified Excellence',
+      desc: 'ISO 9001:2015 Certified'
+    },
+    {
+      icon: (
+        <svg className="w-12 h-12" fill="currentColor" viewBox="0 0 20 20">
+          <path d="M9 6a3 3 0 11-6 0 3 3 0 016 0zM17 6a3 3 0 11-6 0 3 3 0 016 0zM12.93 17c.046-.327.07-.66.07-1a6.97 6.97 0 00-1.5-4.33A5 5 0 0119 16v1h-6.07zM6 11a5 5 0 015 5v1H1v-1a5 5 0 015-5z"/>
+        </svg>
+      ),
+      title: 'Patient Trust',
+      desc: '50,000+ satisfied patients'
+    },
+    {
+      icon: (
+        <svg className="w-12 h-12" fill="currentColor" viewBox="0 0 20 20">
+          <path fillRule="evenodd" d="M7 2a1 1 0 00-.707 1.707L7 4.414v3.758a1 1 0 01-.293.707l-4 4C.817 14.769 2.156 18 4.828 18h10.343c2.673 0 4.012-3.231 2.122-5.121l-4-4A1 1 0 0113 8.172V4.414l.707-.707A1 1 0 0013 2H7zm2 6.172V4h2v4.172a3 3 0 00.879 2.12l1.027 1.028a4 4 0 00-2.171.102l-.47.156a4 4 0 01-2.53 0l-.563-.187a1.993 1.993 0 00-.114-.035l1.063-1.063A3 3 0 009 8.172z" clipRule="evenodd"/>
+        </svg>
+      ),
+      title: 'Advanced Tech',
+      desc: 'Latest dental technology'
+    },
+    {
+      icon: (
+        <svg className="w-12 h-12" fill="currentColor" viewBox="0 0 20 20">
+          <path fillRule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zM4.332 8.027a6.012 6.012 0 011.912-2.706C6.512 5.73 6.974 6 7.5 6A1.5 1.5 0 019 7.5V8a2 2 0 004 0 2 2 0 011.523-1.943A5.977 5.977 0 0116 10c0 .34-.028.675-.083 1H15a2 2 0 00-2 2v2.197A5.973 5.973 0 0110 16v-2a2 2 0 00-2-2 2 2 0 01-2-2 2 2 0 00-1.668-1.973z" clipRule="evenodd"/>
+        </svg>
+      ),
+      title: 'International Team',
+      desc: 'Dentists from 10+ countries'
+    }
+  ]
+
   return (
     <section className="section-padding bg-gradient-to-br from-blue-600 to-blue-800 text-white">
       <div className="container-custom max-w-6xl">
         <h2 className="text-4xl font-bold text-center mb-12">Our Achievements</h2>
         <div className="grid md:grid-cols-3 gap-8">
-          {[
-            { icon: '🏆', title: 'Award Winning', desc: 'Best Dental Clinic Dubai 2023' },
-            { icon: '⭐', title: '5-Star Rated', desc: '4.9/5 from 2000+ reviews' },
-            { icon: '🎓', title: 'Certified Excellence', desc: 'ISO 9001:2015 Certified' },
-            { icon: '👥', title: 'Patient Trust', desc: '50,000+ satisfied patients' },
-            { icon: '🔬', title: 'Advanced Tech', desc: 'Latest dental technology' },
-            { icon: '🌍', title: 'International Team', desc: 'Dentists from 10+ countries' }
-          ].map((item, i) => (
+          {achievements.map((item, i) => (
             <div key={i} className="text-center">
-              <div className="text-6xl mb-4">{item.icon}</div>
+              <div className="flex justify-center mb-4">{item.icon}</div>
               <h3 className="text-xl font-bold mb-2">{item.title}</h3>
               <p className="text-blue-100">{item.desc}</p>
             </div>

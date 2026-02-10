@@ -36,33 +36,24 @@ export function usePWAInstall() {
 
   const handleInstallClick = async () => {
     if (deferredPrompt) {
-      deferredPrompt.prompt()
-      const { outcome } = await deferredPrompt.userChoice
-      
-      if (outcome === 'accepted') {
-        setDeferredPrompt(null)
-        setShowInstallButton(false)
+      try {
+        await deferredPrompt.prompt()
+        const { outcome } = await deferredPrompt.userChoice
+        
+        if (outcome === 'accepted') {
+          setDeferredPrompt(null)
+          setShowInstallButton(false)
+        }
+      } catch (error) {
+        console.error('Installation failed:', error)
       }
-    } else {
-      // Show instructions for manual installation
-      const instructions = `
-To install DentalCare:
-1. Click the menu button (⋮) in your browser
-2. Select "Install" or "Add to Home screen"
-3. Follow the prompts to complete installation
-      `
-      alert(instructions)
     }
   }
 
   const handleIOSInstall = () => {
-    const instructions = `
-To install DentalCare on your iOS device:
-1. Tap the Share button at the bottom of Safari
-2. Scroll down and tap "Add to Home Screen"
-3. Tap "Add" to install the app
-    `
-    alert(instructions)
+    // iOS doesn't support programmatic installation
+    // Show simple instructions
+    alert('Tap the Share button, then "Add to Home Screen" to install')
   }
 
   return {
